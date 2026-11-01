@@ -11,7 +11,7 @@ const STANCE = { SUPPORTED: "var(--support)", REFUTED: "var(--refute)", NOT_ENOU
 const STANCE_LABEL = { SUPPORTED: "Supports", REFUTED: "Contradicts", NOT_ENOUGH_INFO: "Not enough to say" };
 const pct = (x) => `${Math.round(x * 100)}%`;
 
-const SAMPLE = `Paris is the capital of France. Berlin is the capital of France. Acme Corporation was founded in 1999. The Eiffel Tower was completed in 1889.`;
+const SAMPLE = `The United Nations Security Council held an emergency session on the Gaza ceasefire proposal. Spain won the UEFA Euro 2024 championship. The US Federal Reserve raised interest rates to a 22-year high. Global CO2 emissions from fossil fuels reached a new record in 2023. No credible evidence supports claims that 5G towers spread COVID-19. Bitcoin surpassed 70 000 dollars in price in 2024. Canada experienced its worst wildfire season on record in 2023.`;
 
 function Empty({ go }) {
   return (

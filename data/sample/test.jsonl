@@ -1,0 +1,600 @@
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of Norway is Oslo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Acme Corporation was established in 2002 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Cairo.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Norway is Oslo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Athens.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1975 by two engineers.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Berlin.", "label": "REFUTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Warsaw.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Canada is Ottawa.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1984 by two engineers.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1979 by two engineers.", "label": "REFUTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Tokyo.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Ottawa.", "label": "REFUTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Kenya is Nairobi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Lima.", "label": "REFUTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1954 by two engineers.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Berlin.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Paris.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Warsaw.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Madrid.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Warsaw.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Bangkok.", "label": "REFUTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Tehran.", "label": "SUPPORTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Vienna.", "label": "SUPPORTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Lisbon.", "label": "REFUTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Berlin.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lima.", "label": "REFUTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Tokyo.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Tokyo.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1986 by two engineers.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Brasilia.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Madrid.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Oslo.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Havana.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ankara.", "label": "REFUTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Tokyo.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lima.", "label": "REFUTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Athens.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Tokyo.", "label": "SUPPORTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Oslo.", "label": "REFUTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Santiago.", "label": "REFUTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Havana.", "label": "REFUTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1988 by two engineers.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1973 by two engineers.", "label": "REFUTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Lima.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Lisbon.", "label": "REFUTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "The capital city of Turkey is Ankara.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Berlin.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Tehran.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Madrid.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Havana.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is New Delhi.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1961 by two engineers.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "Acme Corporation was established in 1993 by two engineers.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Oslo.", "label": "REFUTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Athens.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Warsaw.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Santiago.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ottawa.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1965 by two engineers.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Tokyo.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1992 by two engineers.", "label": "REFUTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Ankara.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Dublin.", "label": "SUPPORTED"}
+{"claim": "Paris is the capital of France.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "Acme Corporation was established in 2002 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1973 by two engineers.", "label": "REFUTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lisbon.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lisbon.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Ottawa.", "label": "REFUTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Tokyo.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Lisbon.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is Ottawa.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 2007 by two engineers.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Cairo.", "label": "REFUTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Vienna.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Ankara.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1984 by two engineers.", "label": "REFUTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Cairo.", "label": "REFUTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Nairobi.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Brasilia.", "label": "REFUTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Warsaw.", "label": "SUPPORTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "Acme Corporation was established in 2002 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Berlin.", "label": "SUPPORTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Tauri Corporation was established in 2003 by two engineers.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1970 by two engineers.", "label": "REFUTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Dublin.", "label": "REFUTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Stockholm.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Tehran.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1984 by two engineers.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Kathmandu.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Brasilia.", "label": "REFUTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Ankara.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Nairobi.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Santiago.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "The capital city of Kenya is Nairobi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Chile is Santiago.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Santiago.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Kathmandu.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Dublin.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ottawa.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Cairo.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1964 by two engineers.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is Bangkok.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1998 by two engineers.", "label": "REFUTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Havana.", "label": "REFUTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is New Delhi.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Bangkok.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Madrid.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Ottawa.", "label": "REFUTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Athens.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Lima.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Tehran.", "label": "REFUTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Kenya is Nairobi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Canada is Ottawa.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Lisbon.", "label": "REFUTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1981 by two engineers.", "label": "REFUTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Vienna.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Dublin.", "label": "REFUTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "Acme Corporation was established in 1998 by two engineers.", "label": "REFUTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1975 by two engineers.", "label": "REFUTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Lisbon.", "label": "REFUTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Tokyo.", "label": "REFUTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1959 by two engineers.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Tauri Corporation was established in 2014 by two engineers.", "label": "REFUTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Lima.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Bangkok.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1975 by two engineers.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Poland is Ottawa.", "label": "REFUTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Madrid.", "label": "REFUTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Bangkok.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Havana.", "label": "SUPPORTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Havana.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Dublin.", "label": "REFUTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Ottawa.", "label": "REFUTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Warsaw.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Warsaw.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Ankara.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ottawa.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Athens.", "label": "REFUTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ottawa.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Tokyo.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1949 by two engineers.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Athens.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Bangkok.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Vienna.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Turkey is Ankara.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Athens.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Acme Corporation was established in 2002 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "The capital city of Norway is Oslo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of Norway is Oslo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Vienna.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Lisbon.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Cairo.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Stockholm.", "label": "REFUTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Ottawa.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Ottawa.", "label": "REFUTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "Acme Corporation was established in 1998 by two engineers.", "label": "REFUTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Stockholm.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Dublin.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1973 by two engineers.", "label": "REFUTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Paris.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Tokyo.", "label": "REFUTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Tehran.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Oslo.", "label": "REFUTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1961 by two engineers.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1968 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Havana.", "label": "SUPPORTED"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Lima.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Rome.", "label": "REFUTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Tokyo.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1980 by two engineers.", "label": "REFUTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Vienna.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is New Delhi.", "label": "REFUTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Berlin.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1961 by two engineers.", "label": "REFUTED"}
+{"claim": "Rome is the capital of Italy.", "evidence": "The capital city of Italy is Rome.", "label": "SUPPORTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Athens.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Berlin.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Hanoi.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "Quanta Corporation was established in 1968 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Delphi Corporation was founded in 1985.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Tokyo.", "label": "SUPPORTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of Austria is Vienna.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Tehran.", "label": "REFUTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lisbon.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Lisbon.", "label": "SUPPORTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Santiago.", "label": "REFUTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Paris.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1975 by two engineers.", "label": "REFUTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is Ankara.", "label": "REFUTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Athens.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1981 by two engineers.", "label": "REFUTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Brasilia.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Kenya is Nairobi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "Delphi Corporation was established in 1985 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Greece is Vienna.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Santiago.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Dublin.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Warsaw.", "label": "REFUTED"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Dublin.", "label": "SUPPORTED"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Canada is Havana.", "label": "REFUTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Hanoi.", "label": "REFUTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1961 by two engineers.", "label": "REFUTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Madrid.", "label": "REFUTED"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Vienna.", "label": "REFUTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Canada is Ottawa.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Stockholm.", "label": "REFUTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Vienna.", "label": "SUPPORTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1971 by two engineers.", "label": "REFUTED"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1964 by two engineers.", "label": "REFUTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Tehran.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is New Delhi.", "label": "REFUTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Iran is Tehran.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Cuba is Havana.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Tehran.", "label": "REFUTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Lisbon.", "label": "REFUTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Tauri Corporation was established in 2007 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of Austria is Vienna.", "label": "SUPPORTED"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "SUPPORTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Bangkok.", "label": "SUPPORTED"}
+{"claim": "Warsaw is the capital of Poland.", "evidence": "The capital city of Germany is Berlin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Thailand is Bangkok.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Lisbon is the capital of Portugal.", "evidence": "The capital city of Portugal is Berlin.", "label": "REFUTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Portugal is Lisbon.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is New Delhi.", "label": "REFUTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Stockholm.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "Acme Corporation was established in 1993 by two engineers.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Madrid.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Lima.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 2002.", "evidence": "Acme Corporation was established in 2009 by two engineers.", "label": "REFUTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Bangkok.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of France is Paris.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Tokyo.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "The capital city of Italy is Rome.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Canada is Ottawa.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Dublin is the capital of Ireland.", "evidence": "The capital city of Ireland is Dublin.", "label": "SUPPORTED"}
+{"claim": "New Delhi is the capital of India.", "evidence": "The capital city of India is New Delhi.", "label": "SUPPORTED"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Ankara.", "label": "SUPPORTED"}
+{"claim": "Tehran is the capital of Iran.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1980 by two engineers.", "label": "REFUTED"}
+{"claim": "Tauri Corporation was founded in 2007.", "evidence": "Tauri Corporation was established in 2019 by two engineers.", "label": "REFUTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "The capital city of Peru is Lima.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Stockholm.", "label": "REFUTED"}
+{"claim": "Vienna is the capital of Austria.", "evidence": "The capital city of India is New Delhi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Ireland is Dublin.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ankara is the capital of Turkey.", "evidence": "The capital city of Turkey is Warsaw.", "label": "REFUTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "Sirius Corporation was established in 1970 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Lima.", "label": "REFUTED"}
+{"claim": "Zephyr Corporation was founded in 1958.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Vega Corporation was founded in 1981.", "evidence": "The capital city of Portugal is Lisbon.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Greece is Athens.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of Poland is Warsaw.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Athens is the capital of Greece.", "evidence": "The capital city of Vietnam is Hanoi.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Quanta Corporation was founded in 1968.", "evidence": "Quanta Corporation was established in 1968 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Oslo.", "label": "SUPPORTED"}
+{"claim": "Santiago is the capital of Chile.", "evidence": "The capital city of Chile is Santiago.", "label": "SUPPORTED"}
+{"claim": "Lima is the capital of Peru.", "evidence": "The capital city of Peru is Warsaw.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Hanoi is the capital of Vietnam.", "evidence": "The capital city of Japan is Tokyo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Berlin is the capital of Germany.", "evidence": "The capital city of Germany is Rome.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Kenya is Nairobi.", "label": "SUPPORTED"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1965 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Athens.", "label": "REFUTED"}
+{"claim": "Tokyo is the capital of Japan.", "evidence": "The capital city of Japan is Stockholm.", "label": "REFUTED"}
+{"claim": "Bangkok is the capital of Thailand.", "evidence": "The capital city of Thailand is Athens.", "label": "REFUTED"}
+{"claim": "Rigel Corporation was founded in 1977.", "evidence": "Rigel Corporation was established in 1977 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Portugal is Lisbon.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Ottawa is the capital of Canada.", "evidence": "The capital city of Iran is Tehran.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Paris is the capital of France.", "evidence": "The capital city of France is Paris.", "label": "SUPPORTED"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Cygnus Corporation was established in 1995 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Sirius Corporation was founded in 1970.", "evidence": "Sirius Corporation was established in 1977 by two engineers.", "label": "REFUTED"}
+{"claim": "Nairobi is the capital of Kenya.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cygnus Corporation was founded in 1995.", "evidence": "Acme Corporation was established in 2002 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Orion Corporation was founded in 1965.", "evidence": "Orion Corporation was established in 1956 by two engineers.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Vega Corporation was established in 1981 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "New Delhi is the capital of India.", "evidence": "Quanta Corporation was established in 1968 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Borealis Corporation was founded in 1972.", "evidence": "Borealis Corporation was established in 1972 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Zephyr Corporation was established in 1958 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Havana is the capital of Cuba.", "evidence": "The capital city of Cuba is Havana.", "label": "SUPPORTED"}
+{"claim": "Pavo Corporation was founded in 1974.", "evidence": "Pavo Corporation was established in 1974 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Oslo is the capital of Norway.", "evidence": "The capital city of Norway is Warsaw.", "label": "REFUTED"}

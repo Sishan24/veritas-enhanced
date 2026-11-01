@@ -1,0 +1,9 @@
+[project]
+name = "veritas"
+version = "0.1.0"
+description = "VERITAS: evidence-aware deep learning for claim verification and stance detection"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

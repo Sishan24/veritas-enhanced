@@ -1,0 +1,39 @@
+{
+  "name": "bilstm_attn",
+  "arch": "bilstm_attn",
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 27.051032500108704,
+  "best_dev_macro_f1": 0.8457377172533471,
+  "loss": 0.7423012193044026,
+  "accuracy": 0.8616666666666667,
+  "macro_f1": 0.861598456330806,
+  "precision": 0.8786099820820518,
+  "recall": 0.8644807265638602,
+  "confusion_matrix": [
+    [
+      158,
+      49,
+      0
+    ],
+    [
+      5,
+      167,
+      7
+    ],
+    [
+      0,
+      22,
+      192
+    ]
+  ],
+  "latency_ms": 0.1156241671803097,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

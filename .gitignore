@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+ml/checkpoints/*.pt
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+.pytest_cache/

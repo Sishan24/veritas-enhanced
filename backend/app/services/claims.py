@@ -35,6 +35,9 @@ _VERBS = {
     # causation / relationship
     "caused", "triggered", "led", "resulted", "linked", "associated", "connected",
     "attributed", "blamed", "credited", "contains", "causes", "became", "remained",
+    # meetings / sessions
+    "convened", "met", "gathered", "assembled", "opened", "closed", "adjourned",
+    "deliberated", "voted", "ratified", "debated",
 }
 
 

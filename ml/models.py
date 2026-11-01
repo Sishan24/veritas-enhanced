@@ -50,7 +50,14 @@ class RNNEncoder(nn.Module):
         self.out_dim = hidden * (2 if bidirectional else 1)
 
     def forward(self, x, mask):
-        states, _ = self.rnn(x)
+        lengths = mask.sum(1).cpu()
+        packed = nn.utils.rnn.pack_padded_sequence(
+            x, lengths, batch_first=True, enforce_sorted=False
+        )
+        out, _ = self.rnn(packed)
+        states, _ = nn.utils.rnn.pad_packed_sequence(
+            out, batch_first=True, total_length=x.size(1)
+        )
         return masked_mean(states, mask), states
 
 

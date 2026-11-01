@@ -82,7 +82,7 @@ def run(args):
     model = Verifier(args.arch, len(vocab), args.emb_dim, args.hidden, args.dropout, args.activation).to(device)
     opt = make_optimizer(args.optimizer, model.parameters(), args.lr, args.weight_decay)
     crit = nn.CrossEntropyLoss()
-    name = args.name or args.arch
+    name = args.name or f"{args.arch}_s{args.seed}"
     history, best, best_state, bad = [], -1.0, None, 0
     t_start = time.perf_counter()
 
@@ -113,7 +113,9 @@ def run(args):
     train_seconds = time.perf_counter() - t_start
     model.load_state_dict(best_state)
     test_m = evaluate(model, test, device)
-    result = {"name": name, "arch": args.arch, "optimizer": args.optimizer, "activation": args.activation,
+    result = {"name": name, "arch": args.arch, "seed": args.seed,
+              "n_params": sum(p.numel() for p in model.parameters()),
+              "optimizer": args.optimizer, "activation": args.activation,
               "dropout": args.dropout, "weight_decay": args.weight_decay, "epochs_run": len(history),
               "train_seconds": train_seconds, "best_dev_macro_f1": best, **test_m, "labels": LABELS}
 

@@ -51,13 +51,19 @@ def decide(items):
 
     A claim with no relevant, confident evidence is INSUFFICIENT, never automatically false.
     """
+    def top(item):
+        return max(item["probs"], key=item["probs"].get)
+
     rel = [i for i in items if i["retrieval_score"] >= MIN_RETRIEVAL]
-    sup = [i for i in rel if i["probs"]["SUPPORTED"] >= STANCE_THRESHOLD]
-    ref = [i for i in rel if i["probs"]["REFUTED"] >= STANCE_THRESHOLD]
+    sup = [i for i in rel if top(i) == "SUPPORTED" and i["probs"]["SUPPORTED"] >= STANCE_THRESHOLD]
+    ref = [i for i in rel if top(i) == "REFUTED" and i["probs"]["REFUTED"] >= STANCE_THRESHOLD]
     if sup and ref:
-        return "CONFLICTING", max(i["probs"][k] for i, k in [(sup[0], "SUPPORTED"), (ref[0], "REFUTED")])
+        return "CONFLICTING", max(
+            max(i["probs"]["SUPPORTED"] for i in sup),
+            max(i["probs"]["REFUTED"] for i in ref),
+        )
     if sup:
         return "SUPPORTED", max(i["probs"]["SUPPORTED"] for i in sup)
     if ref:
         return "REFUTED", max(i["probs"]["REFUTED"] for i in ref)
-    return "INSUFFICIENT", max((i["probs"]["NOT_ENOUGH_INFO"] for i in rel), default=1.0)
+    return "INSUFFICIENT", max((i["probs"]["NOT_ENOUGH_INFO"] for i in rel), default=0.0)

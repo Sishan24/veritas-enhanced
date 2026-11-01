@@ -1,0 +1,41 @@
+{
+  "name": "bilstm_attn_s42",
+  "arch": "bilstm_attn",
+  "seed": 42,
+  "n_params": 593043,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 184.57683929999985,
+  "best_dev_macro_f1": 0.9901608984755335,
+  "loss": 0.04125022874109568,
+  "accuracy": 0.9933333333333333,
+  "macro_f1": 0.9934940473629493,
+  "precision": 0.9934847101780009,
+  "recall": 0.9936102236421726,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      0,
+      279,
+      0
+    ],
+    [
+      5,
+      1,
+      307
+    ]
+  ],
+  "latency_ms": 0.3980033333351053,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

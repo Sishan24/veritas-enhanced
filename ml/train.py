@@ -37,6 +37,8 @@ def parse(argv=None):
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--name", default=None, help="run name (default: arch)")
     p.add_argument("--no-save", action="store_true", help="skip writing the checkpoint")
+    p.add_argument("--split", choices=["pair", "passage"], default="pair",
+                   help="Data split mode: pair=data/sample (default); passage=data/sample_passage.")
     return p.parse_args(argv)
 
 
@@ -73,16 +75,26 @@ def run(args):
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    d = Path(args.data_dir)
+    split = getattr(args, "split", "pair")
+    # Resolve data directory: explicit --data-dir overrides defaults
+    if args.data_dir != "data/sample":
+        d = Path(args.data_dir)
+    elif split == "passage":
+        d = Path("data/sample_passage")
+    else:
+        d = Path("data/sample")
     train_rows = read_jsonl(d / "train.jsonl")
-    vocab = Vocab.build([r["claim"] for r in train_rows] + [r["evidence"] for r in train_rows])
+    min_freq = 2 if split == "passage" else 1
+    vocab = Vocab.build([r["claim"] for r in train_rows] + [r["evidence"] for r in train_rows],
+                        min_freq=min_freq)
     mk = lambda f, sh: DataLoader(ClaimEvidenceDataset(d / f, vocab), args.batch_size, shuffle=sh, collate_fn=collate)
     train, dev, test = mk("train.jsonl", True), mk("dev.jsonl", False), mk("test.jsonl", False)
 
     model = Verifier(args.arch, len(vocab), args.emb_dim, args.hidden, args.dropout, args.activation).to(device)
     opt = make_optimizer(args.optimizer, model.parameters(), args.lr, args.weight_decay)
     crit = nn.CrossEntropyLoss()
-    name = args.name or f"{args.arch}_s{args.seed}"
+    split_tag = f"_{split}" if split == "passage" else ""
+    name = args.name or f"{args.arch}{split_tag}_s{args.seed}"
     history, best, best_state, bad = [], -1.0, None, 0
     t_start = time.perf_counter()
 

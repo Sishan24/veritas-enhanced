@@ -1,0 +1,41 @@
+{
+  "name": "majority_s0",
+  "arch": "majority",
+  "seed": 0,
+  "n_params": 0,
+  "optimizer": null,
+  "activation": null,
+  "dropout": null,
+  "weight_decay": null,
+  "epochs_run": 0,
+  "train_seconds": 0.007652199827134609,
+  "best_dev_macro_f1": 0.16119067677618645,
+  "loss": null,
+  "accuracy": 0.3422222222222222,
+  "macro_f1": 0.16997792494481237,
+  "precision": 0.11407407407407406,
+  "recall": 0.3333333333333333,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      279,
+      0,
+      0
+    ],
+    [
+      313,
+      0,
+      0
+    ]
+  ],
+  "latency_ms": 0.0003913332087298234,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

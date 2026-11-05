@@ -1,3 +1,4 @@
+from pathlib import Path
 """Tests for passage-split mode (Task 2).
 
 Covers:
@@ -172,3 +173,36 @@ class TestAssertNoPassageOverlap:
         test  = self._make_rows(["ev_d"])
         # Should not raise
         assert_no_passage_overlap(train, dev, test)
+
+
+# ---------------------------------------------------------------------------
+# 4. Verification of the 3 passage splits on disk
+# ---------------------------------------------------------------------------
+
+class TestAllPassageSplitsOnDisk:
+    @pytest.mark.parametrize("split_dir", [
+        "data/sample_passage",
+        "data/sample_passage_ss1",
+        "data/sample_passage_ss2",
+    ])
+    def test_zero_passage_overlap(self, split_dir):
+        from ml.data import read_jsonl
+        d = Path(split_dir)
+        train = read_jsonl(d / "train.jsonl")
+        dev   = read_jsonl(d / "dev.jsonl")
+        test  = read_jsonl(d / "test.jsonl")
+        assert_no_passage_overlap(train, dev, test)
+
+    @pytest.mark.parametrize("split_dir", [
+        "data/sample_passage",
+        "data/sample_passage_ss1",
+        "data/sample_passage_ss2",
+    ])
+    def test_all_classes_present_in_all_subsets(self, split_dir):
+        from ml.data import read_jsonl
+        d = Path(split_dir)
+        expected = {"SUPPORTED", "REFUTED", "NOT_ENOUGH_INFO"}
+        for fname in ("train.jsonl", "dev.jsonl", "test.jsonl"):
+            rows = read_jsonl(d / fname)
+            present = {r["label"] for r in rows}
+            assert present == expected, f"Missing {expected - present} in {split_dir}/{fname}"

@@ -5,6 +5,7 @@
 """
 import argparse
 import json
+import random
 import time
 from pathlib import Path
 
@@ -72,6 +73,7 @@ def evaluate(model, loader, device):
 
 
 def run(args):
+    random.seed(args.seed)
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     device = "cuda" if torch.cuda.is_available() else "cpu"

@@ -104,3 +104,48 @@ def test_custom_out_dir_writes_to_specified_dir(tmp_path, tiny_dataset):
     assert (custom_out / run_name / "metrics.json").exists()
     assert (custom_out / run_name / "history.json").exists()
     assert not (Path("reports") / run_name).exists()
+
+
+def test_custom_data_dir_passage_min_freq(tmp_path):
+    """Passage-style data dir uses min_freq=2 from train only."""
+    passage_dir = tmp_path / "custom_passage_dir"
+    passage_dir.mkdir()
+    rows = [
+        {"claim": "alpha beta common", "evidence": "common word here", "label": "SUPPORTED"},
+        {"claim": "alpha beta common", "evidence": "common word here", "label": "REFUTED"},
+        {"claim": "rare_single_token common", "evidence": "common word here", "label": "NOT_ENOUGH_INFO"},
+    ]
+    for fname in ("train.jsonl", "dev.jsonl", "test.jsonl"):
+        (passage_dir / fname).write_text("\n".join(json.dumps(r) for r in rows), encoding="utf-8")
+
+    custom_out = tmp_path / "runs"
+    args = parse([
+        "--arch", "mlp",
+        "--epochs", "1",
+        "--hidden", "16",
+        "--emb-dim", "16",
+        "--batch-size", "2",
+        "--seed", "42",
+        "--name", "test_min_freq_run",
+        "--out-dir", str(custom_out),
+        "--data-dir", str(passage_dir),
+        "--split", "passage",
+        "--no-save",
+    ])
+    res = run(args)
+    assert (custom_out / "test_min_freq_run" / "metrics.json").exists()
+    assert res["accuracy"] >= 0.0
+
+
+def test_baselines_with_custom_data_dir_and_out_dir(tmp_path):
+    """ml.baselines runs with custom --data-dir and --out-dir."""
+    from ml.baselines import main as baselines_main
+    out_dir = tmp_path / "baseline_runs"
+    r_maj, _ = baselines_main([
+        "--data-dir", "data/sample_passage_ss1",
+        "--out-dir", str(out_dir),
+        "--name", "maj_custom_ss1",
+        "--baseline", "majority",
+    ])
+    assert (out_dir / "maj_custom_ss1" / "metrics.json").exists()
+    assert r_maj["accuracy"] > 0.0

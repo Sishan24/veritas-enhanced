@@ -37,7 +37,9 @@ from ml.data import LABELS, L2I, read_jsonl
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _data_dir(split: str) -> Path:
+def _data_dir(split: str, custom_dir: str = None) -> Path:
+    if custom_dir:
+        return Path(custom_dir)
     return Path("data/sample_passage") if split == "passage" else Path("data/sample")
 
 
@@ -191,6 +193,11 @@ def parse(argv=None):
              "'passage' uses data/sample_passage/.",
     )
     p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--data-dir", default=None, help="Custom data directory with train.jsonl, dev.jsonl, test.jsonl")
+    p.add_argument("--out-dir", default="reports", help="Output directory for reports (default: reports)")
+    p.add_argument("--name", default=None, help="Explicit run name (used when running a single baseline)")
+    p.add_argument("--baseline", choices=["all", "majority", "tfidf_logreg"], default="all",
+                   help="Which baseline to run (default: all)")
     return p.parse_args(argv)
 
 
@@ -198,8 +205,9 @@ def main(argv=None):
     args = parse(argv)
     split = args.split
     seed = args.seed
+    out_base = Path(args.out_dir)
 
-    data_dir = _data_dir(split)
+    data_dir = _data_dir(split, args.data_dir)
     if not (data_dir / "train.jsonl").exists():
         raise FileNotFoundError(
             f"{data_dir}/train.jsonl not found. "
@@ -208,8 +216,8 @@ def main(argv=None):
 
     # Name suffix mirrors the neural convention: include split only for passage
     suffix = f"_{split}" if split == "passage" else ""
-    name_majority   = f"majority{suffix}_s{seed}"
-    name_tfidf_lr   = f"tfidf_logreg{suffix}_s{seed}"
+    name_majority   = args.name if (args.name and args.baseline == "majority") else f"majority{suffix}_s{seed}"
+    name_tfidf_lr   = args.name if (args.name and args.baseline == "tfidf_logreg") else f"tfidf_logreg{suffix}_s{seed}"
 
     print(f"[baselines] Loading data from {data_dir} ...")
     tr_c, tr_e, tr_y = _load_split(data_dir, "train.jsonl")
@@ -217,31 +225,35 @@ def main(argv=None):
     ts_c, ts_e, ts_y = _load_split(data_dir, "test.jsonl")
     print(f"  train={len(tr_y)}  dev={len(dv_y)}  test={len(ts_y)}")
 
+    r_maj, r_tfidf = None, None
+
     # --- majority ---
-    r_maj = run_majority(
-        tr_c, tr_e, tr_y,
-        dv_c, dv_e, dv_y,
-        ts_c, ts_e, ts_y,
-        name=name_majority, seed=seed,
-    )
-    _write_report(Path("reports") / name_majority, r_maj)
-    print(
-        f"[{name_majority}] acc={r_maj['accuracy']:.4f}  "
-        f"macro-F1={r_maj['macro_f1']:.4f}"
-    )
+    if args.baseline in ("all", "majority"):
+        r_maj = run_majority(
+            tr_c, tr_e, tr_y,
+            dv_c, dv_e, dv_y,
+            ts_c, ts_e, ts_y,
+            name=name_majority, seed=seed,
+        )
+        _write_report(out_base / name_majority, r_maj)
+        print(
+            f"[{name_majority}] acc={r_maj['accuracy']:.4f}  "
+            f"macro-F1={r_maj['macro_f1']:.4f}"
+        )
 
     # --- tfidf_logreg ---
-    r_tfidf = run_tfidf_logreg(
-        tr_c, tr_e, tr_y,
-        dv_c, dv_e, dv_y,
-        ts_c, ts_e, ts_y,
-        name=name_tfidf_lr, seed=seed,
-    )
-    _write_report(Path("reports") / name_tfidf_lr, r_tfidf)
-    print(
-        f"[{name_tfidf_lr}] acc={r_tfidf['accuracy']:.4f}  "
-        f"macro-F1={r_tfidf['macro_f1']:.4f}"
-    )
+    if args.baseline in ("all", "tfidf_logreg"):
+        r_tfidf = run_tfidf_logreg(
+            tr_c, tr_e, tr_y,
+            dv_c, dv_e, dv_y,
+            ts_c, ts_e, ts_y,
+            name=name_tfidf_lr, seed=seed,
+        )
+        _write_report(out_base / name_tfidf_lr, r_tfidf)
+        print(
+            f"[{name_tfidf_lr}] acc={r_tfidf['accuracy']:.4f}  "
+            f"macro-F1={r_tfidf['macro_f1']:.4f}"
+        )
 
     return r_maj, r_tfidf
 

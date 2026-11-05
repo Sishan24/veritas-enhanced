@@ -24,7 +24,7 @@ OPTIMIZERS = ["sgd", "momentum", "nesterov", "adam"]
 def parse(argv=None):
     p = argparse.ArgumentParser()
     p.add_argument("--arch", choices=ARCHS, default="bilstm_attn")
-    p.add_argument("--data-dir", default="data/sample")
+    p.add_argument("--data-dir", default=None, help="Directory containing train.jsonl, dev.jsonl, test.jsonl")
     p.add_argument("--epochs", type=int, default=12)
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--optimizer", choices=OPTIMIZERS, default="adam")
@@ -80,14 +80,17 @@ def run(args):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     split = getattr(args, "split", "pair")
     # Resolve data directory: explicit --data-dir overrides defaults
-    if args.data_dir != "data/sample":
+    if args.data_dir:
         d = Path(args.data_dir)
+        is_passage = (split == "passage") or ("passage" in d.name)
     elif split == "passage":
         d = Path("data/sample_passage")
+        is_passage = True
     else:
         d = Path("data/sample")
+        is_passage = False
     train_rows = read_jsonl(d / "train.jsonl")
-    min_freq = 2 if split == "passage" else 1
+    min_freq = 2 if is_passage else 1
     vocab = Vocab.build([r["claim"] for r in train_rows] + [r["evidence"] for r in train_rows],
                         min_freq=min_freq)
     mk = lambda f, sh: DataLoader(ClaimEvidenceDataset(d / f, vocab), args.batch_size, shuffle=sh, collate_fn=collate)

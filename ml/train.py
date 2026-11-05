@@ -37,6 +37,7 @@ def parse(argv=None):
     p.add_argument("--hidden", type=int, default=128)
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--name", default=None, help="run name (default: arch)")
+    p.add_argument("--out-dir", default="reports", help="output directory for reports (default: reports)")
     p.add_argument("--no-save", action="store_true", help="skip writing the checkpoint")
     p.add_argument("--split", choices=["pair", "passage"], default="pair",
                    help="Data split mode: pair=data/sample (default); passage=data/sample_passage.")
@@ -133,7 +134,7 @@ def run(args):
               "dropout": args.dropout, "weight_decay": args.weight_decay, "epochs_run": len(history),
               "train_seconds": train_seconds, "best_dev_macro_f1": best, **test_m, "labels": LABELS}
 
-    out = Path("reports") / name
+    out = Path(args.out_dir) / name
     out.mkdir(parents=True, exist_ok=True)
     (out / "metrics.json").write_text(json.dumps(result, indent=2))
     (out / "history.json").write_text(json.dumps(history, indent=2))

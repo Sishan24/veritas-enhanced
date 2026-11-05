@@ -672,9 +672,13 @@ def _make_rows_from_facts_subset(rng, facts_subset, all_facts, n):
     return rows
 
 
+SPLIT_SEED_MAP = {0: 42, 1: 1, 2: 2}
+
+
 def make_passage_split(seed=42, out_dir="data/sample_passage",
                        train_frac=0.70, dev_frac=0.15,
-                       train_n=8000, dev_n=900, test_n=900):
+                       train_n=8000, dev_n=900, test_n=900,
+                       split_seed=None):
     """Partition the 137 unique evidence passages into train/dev/test (70/15/15),
     then generate rows so every pair sits in its passage's split.
 
@@ -685,6 +689,9 @@ def make_passage_split(seed=42, out_dir="data/sample_passage",
     """
     import random as _random
     from collections import Counter
+
+    if split_seed is not None:
+        seed = SPLIT_SEED_MAP.get(split_seed, split_seed)
 
     rng = _random.Random(seed)
 
@@ -741,7 +748,7 @@ def make_passage_split(seed=42, out_dir="data/sample_passage",
 # SECTION 4: Entry point
 # ---------------------------------------------------------------------------
 
-def _parse_args():
+def _parse_args(argv=None):
     import argparse
     p = argparse.ArgumentParser(description="Generate synthetic VERITAS training data.")
     p.add_argument(
@@ -754,19 +761,33 @@ def _parse_args():
         ),
     )
     p.add_argument(
-        "--out-dir",
+        "--out-dir", "--out",
+        dest="out_dir",
         default=None,
         help="Output directory. Defaults to data/sample (pair) or data/sample_passage (passage).",
     )
-    return p.parse_args()
+    p.add_argument(
+        "--split-seed",
+        type=int,
+        default=None,
+        help="Passage split seed (0 maps to existing data/sample_passage seed 42; 1, 2 for other splits).",
+    )
+    return p.parse_args(argv)
 
 
 if __name__ == "__main__":
     args = _parse_args()
 
     if args.split == "passage":
-        out_dir = args.out_dir or "data/sample_passage"
-        train_rows, dev_rows, test_rows, lc = make_passage_split(out_dir=out_dir)
+        if args.out_dir:
+            out_dir = args.out_dir
+        elif args.split_seed in (None, 0):
+            out_dir = "data/sample_passage"
+        else:
+            out_dir = f"data/sample_passage_ss{args.split_seed}"
+        train_rows, dev_rows, test_rows, lc = make_passage_split(
+            out_dir=out_dir, split_seed=args.split_seed
+        )
         print(f"Wrote train={len(train_rows)}  dev={len(dev_rows)}  test={len(test_rows)}")
         for sp in ("train", "dev", "test"):
             print(f"  {sp} labels: {dict(lc[sp])}")

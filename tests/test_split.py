@@ -82,7 +82,8 @@ class TestPairModeLeakage:
 
 class TestPassageModeNoOverlap:
     @pytest.fixture(scope="class")
-    def passage_data(self, tmp_path_factory):
+    @classmethod
+    def passage_data(cls, tmp_path_factory):
         """Generate passage-split data once for the whole class."""
         out = tmp_path_factory.mktemp("passage_split")
         train, dev, test, lc = make_passage_split(seed=42, out_dir=str(out))

@@ -1,0 +1,41 @@
+{
+  "name": "bilstm_attn_h128_passage_ss0_ms0",
+  "arch": "bilstm_attn",
+  "seed": 0,
+  "n_params": 559743,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 6,
+  "train_seconds": 84.91167770000175,
+  "best_dev_macro_f1": 0.6275178156861031,
+  "loss": 1.3217959266238744,
+  "accuracy": 0.5044444444444445,
+  "macro_f1": 0.5196597370223236,
+  "precision": 0.5673287317757066,
+  "recall": 0.5051537120740017,
+  "confusion_matrix": [
+    [
+      128,
+      160,
+      18
+    ],
+    [
+      136,
+      156,
+      0
+    ],
+    [
+      57,
+      75,
+      170
+    ]
+  ],
+  "latency_ms": 0.33690888848569656,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

@@ -1,5 +1,13 @@
 import pytest
-from ml.sweep_thresholds import evaluate_grid_point, bootstrap_ci, parse_grid, build_parser, DEFAULT_MIN_RET_RANGE, DEFAULT_STANCE_RANGE
+from ml.sweep_thresholds import (
+    evaluate_grid_point,
+    bootstrap_ci,
+    paired_bootstrap_diff,
+    parse_grid,
+    build_parser,
+    DEFAULT_MIN_RET_RANGE,
+    DEFAULT_STANCE_RANGE,
+)
 
 
 def _item(sup=0.0, ref=0.0, score=0.5):
@@ -82,10 +90,46 @@ def test_parse_grid_and_parser():
     assert args.top_k == 5
     assert args.corpus == "data/custom_corpus.jsonl"
 
+    # Test parser with paired comparison args
+    paired_args = parser.parse_args([
+        "--checkpoint", "dummy.pt",
+        "--paired",
+        "--mr-a", "0.05",
+        "--st-a", "0.60",
+        "--mr-b", "0.30",
+        "--st-b", "0.55",
+        "--paired-out", "results/paired.txt",
+    ])
+    assert paired_args.paired is True
+    assert paired_args.mr_a == 0.05
+    assert paired_args.st_b == 0.55
+    assert paired_args.paired_out == "results/paired.txt"
+
+
 
 def test_run_sweep_refuses_test_set():
     from ml.sweep_thresholds import run_sweep
     with pytest.raises(ValueError, match="strictly prohibited on test sets"):
         run_sweep("dummy.pt", "data/claim_level/test_claims.jsonl", "Test-Run", "dummy.csv")
+
+
+def test_paired_bootstrap_diff():
+    targets = ["SUPPORTED", "REFUTED", "INSUFFICIENT", "SUPPORTED"]
+    # A gets 1 right (index 0), 3 wrong
+    preds_a = ["SUPPORTED", "SUPPORTED", "SUPPORTED", "REFUTED"]
+    # B gets 3 right (index 0, 1, 2), 1 wrong
+    preds_b = ["SUPPORTED", "REFUTED", "INSUFFICIENT", "REFUTED"]
+
+    res = paired_bootstrap_diff(targets, preds_a, preds_b, n_resamples=200, seed=42)
+    assert res["n"] == 4
+    assert res["acc_a"] == 0.25
+    assert res["acc_b"] == 0.75
+    assert res["diff"] == pytest.approx(0.50)
+    assert res["b_wins"] == 2  # claims 1 and 2
+    assert res["a_wins"] == 0
+    assert res["both_correct"] == 1  # claim 0
+    assert res["both_incorrect"] == 1  # claim 3
+    assert res["ci_95"][0] <= res["diff"] <= res["ci_95"][1]
+
 
 

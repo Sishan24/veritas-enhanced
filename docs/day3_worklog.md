@@ -70,6 +70,25 @@
     - Best (MR=0.08, ST=0.75): Accuracy = 0.7143 (95% CI: [0.6032, 0.8254]), Macro-F1 = 0.6324 (95% CI: [0.5281, 0.7397]), Shares: SUP=0.476, REF=0.048, CONF=0.000, INS=0.476.
     - Grid position: Interior point at MR=0.08, ST=0.75-0.85 forming a plateau.
 - **Fallbacks**: None.
+- **Commit**: `1f8d648`
 
-
-
+## Step 3: Paired Difference on Dev
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Implemented `paired_bootstrap_diff()` in `ml/sweep_thresholds.py` calculating paired bootstrap 95% CI (1000 resamples, fixed seed=42) for accuracy difference (B - A), individual claim wins (B wins vs A wins), and agreement counts.
+  - Implemented `run_paired_comparison()` and CLI options (`--paired`, `--mr-a`, `--st-a`, `--mr-b`, `--st-b`, `--paired-out`).
+  - Added unit test `test_paired_bootstrap_diff` in `tests/test_sweep.py`.
+  - Evaluated Setting A (0.05, 0.60) vs Setting B (0.30, 0.55) on dev claims (`data/claim_level/dev_claims.jsonl`, N=63) for the clean passage checkpoint (`ml/checkpoints/bilstm_attn_passage_s42.pt`).
+  - Saved detailed breakdown to `results/threshold_sweep_passage_ckpt_paired.txt`.
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m ml.sweep_thresholds --checkpoint ml/checkpoints/bilstm_attn_passage_s42.pt --claims data/claim_level/dev_claims.jsonl --paired --mr-a 0.05 --st-a 0.60 --mr-b 0.30 --st-b 0.55 --paired-out results/threshold_sweep_passage_ckpt_paired.txt`
+  - `.\.venv\Scripts\python -m pytest -q` (67 passed in 9.05s)
+- **Key Outputs**:
+  - Setting A: Acc = 0.3492, Macro-F1 = 0.3355, Shares: SUP=0.5556, REF=0.1111, CONF=0.1429, INS=0.1905.
+  - Setting B: Acc = 0.5238, Macro-F1 = 0.4776, Shares: SUP=0.4444, REF=0.0952, CONF=0.0000, INS=0.4603.
+  - Accuracy Difference (B - A): +0.1746 (95% CI: [+0.0476, +0.3016]).
+  - B wins: 15 claims (11 INSUFFICIENT, 3 SUPPORTED, 1 REFUTED).
+  - A wins: 4 claims (4 SUPPORTED).
+  - Both correct: 18 claims; Both incorrect: 26 claims.
+  - Plain conclusion: Setting B wins mainly by predicting INSUFFICIENT more (46.0% vs true 33.3%). Raising MIN_RETRIEVAL from 0.05 to 0.30 filters out weak irrelevant retrieval hits, converting false positive SUPPORTED/CONFLICTING predictions into correct INSUFFICIENT verdicts (11 of B's 15 wins were on true INSUFFICIENT claims).
+- **Fallbacks**: None.

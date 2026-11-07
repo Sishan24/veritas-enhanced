@@ -83,6 +83,151 @@ def bootstrap_ci(targets, preds, n_resamples=1000, seed=42):
     return acc_ci, f1_ci
 
 
+def paired_bootstrap_diff(targets, preds_a, preds_b, n_resamples=1000, seed=42):
+    """Calculate paired bootstrap 95% CI for accuracy difference (preds_b - preds_a)."""
+    n = len(targets)
+    correct_a = [p == t for p, t in zip(preds_a, targets)]
+    correct_b = [p == t for p, t in zip(preds_b, targets)]
+
+    b_wins = sum(b and not a for a, b in zip(correct_a, correct_b))
+    a_wins = sum(a and not b for a, b in zip(correct_a, correct_b))
+    both_correct = sum(a and b for a, b in zip(correct_a, correct_b))
+    both_incorrect = sum(not a and not b for a, b in zip(correct_a, correct_b))
+
+    acc_a = sum(correct_a) / n if n > 0 else 0.0
+    acc_b = sum(correct_b) / n if n > 0 else 0.0
+    diff_obs = acc_b - acc_a
+
+    diff_arr = np.array([float(b) - float(a) for a, b in zip(correct_a, correct_b)])
+    rng = np.random.RandomState(seed)
+    sampled_diffs = []
+    for _ in range(n_resamples):
+        idx = rng.randint(0, n, size=n)
+        sampled_diffs.append(float(np.mean(diff_arr[idx])))
+
+    ci_low = float(np.percentile(sampled_diffs, 2.5))
+    ci_high = float(np.percentile(sampled_diffs, 97.5))
+
+    return {
+        "n": n,
+        "acc_a": acc_a,
+        "acc_b": acc_b,
+        "diff": diff_obs,
+        "ci_95": (ci_low, ci_high),
+        "b_wins": b_wins,
+        "a_wins": a_wins,
+        "both_correct": both_correct,
+        "both_incorrect": both_incorrect,
+    }
+
+
+def run_paired_comparison(
+    checkpoint_path,
+    claims_path,
+    mr_a=0.05,
+    st_a=0.60,
+    mr_b=0.30,
+    st_b=0.55,
+    out_path=None,
+    corpus_path=EVIDENCE_PATH,
+    top_k=TOP_K,
+):
+    claims = read_jsonl(claims_path)
+    corpus = load_passages(corpus_path)
+    retriever = Retriever(corpus)
+    verifier = VerifierService(checkpoint_path)
+    if not verifier.ready:
+        raise RuntimeError(f"Verifier could not load checkpoint: {checkpoint_path}")
+
+    cached_items = []
+    targets = []
+    for r in claims:
+        hits = retriever.search(r["claim"], k=top_k)
+        preds = verifier.predict(r["claim"], [h["text"] for h in hits])
+        items = [{"id": h["id"], "text": h["text"], "retrieval_score": h["score"], **p} for h, p in zip(hits, preds)]
+        cached_items.append(items)
+        targets.append(r["verdict"])
+
+    res_a = evaluate_grid_point(cached_items, targets, mr=mr_a, st=st_a)
+    res_b = evaluate_grid_point(cached_items, targets, mr=mr_b, st=st_b)
+
+    paired = paired_bootstrap_diff(targets, res_a["_preds"], res_b["_preds"], n_resamples=1000, seed=42)
+
+    b_win_classes = {}
+    a_win_classes = {}
+    for t, pa, pb in zip(targets, res_a["_preds"], res_b["_preds"]):
+        if pb == t and pa != t:
+            b_win_classes[t] = b_win_classes.get(t, 0) + 1
+        if pa == t and pb != t:
+            a_win_classes[t] = a_win_classes.get(t, 0) + 1
+
+    lines = [
+        "=======================================================",
+        f"Paired Difference Analysis on Dev Claims (N={len(targets)})",
+        f"Checkpoint: {checkpoint_path}",
+        f"Claims: {claims_path}",
+        "=======================================================",
+        "",
+        f"Setting A: Default (MIN_RETRIEVAL={mr_a:.2f}, STANCE_THRESHOLD={st_a:.2f})",
+        f"  Accuracy: {res_a['accuracy']:.4f}",
+        f"  Macro-F1: {res_a['macro_f1']:.4f}",
+        f"  Recall SUPPORTED:    {res_a['recall_SUPPORTED']:.4f}",
+        f"  Recall REFUTED:      {res_a['recall_REFUTED']:.4f}",
+        f"  Recall INSUFFICIENT: {res_a['recall_INSUFFICIENT']:.4f}",
+        "  Predicted Shares:",
+        f"    SUPPORTED:    {res_a['share_SUPPORTED']:.4f}",
+        f"    REFUTED:      {res_a['share_REFUTED']:.4f}",
+        f"    CONFLICTING:  {res_a['share_CONFLICTING']:.4f}",
+        f"    INSUFFICIENT: {res_a['share_INSUFFICIENT']:.4f}",
+        "",
+        f"Setting B: Dev-Best (MIN_RETRIEVAL={mr_b:.2f}, STANCE_THRESHOLD={st_b:.2f})",
+        f"  Accuracy: {res_b['accuracy']:.4f}",
+        f"  Macro-F1: {res_b['macro_f1']:.4f}",
+        f"  Recall SUPPORTED:    {res_b['recall_SUPPORTED']:.4f}",
+        f"  Recall REFUTED:      {res_b['recall_REFUTED']:.4f}",
+        f"  Recall INSUFFICIENT: {res_b['recall_INSUFFICIENT']:.4f}",
+        "  Predicted Shares:",
+        f"    SUPPORTED:    {res_b['share_SUPPORTED']:.4f}",
+        f"    REFUTED:      {res_b['share_REFUTED']:.4f}",
+        f"    CONFLICTING:  {res_b['share_CONFLICTING']:.4f}",
+        f"    INSUFFICIENT: {res_b['share_INSUFFICIENT']:.4f}",
+        "",
+        "Paired Comparison (Setting B minus Setting A):",
+        f"  Accuracy Difference (B - A): {paired['diff']:+.4f}",
+        f"  Paired Bootstrap 95% CI: [{paired['ci_95'][0]:+.4f}, {paired['ci_95'][1]:+.4f}]",
+        f"  Claims B gets right that A gets wrong (B wins): {paired['b_wins']}",
+        f"  Claims A gets right that B gets wrong (A wins): {paired['a_wins']}",
+        f"  Claims both get right: {paired['both_correct']}",
+        f"  Claims both get wrong: {paired['both_incorrect']}",
+        f"  B-wins class breakdown: {dict(sorted(b_win_classes.items()))}",
+        f"  A-wins class breakdown: {dict(sorted(a_win_classes.items()))}",
+        "",
+        "Shift and Mechanism Analysis:",
+        f"  True class share is balanced at 33.33% each (21 claims per class).",
+        f"  Setting A severely under-predicted INSUFFICIENT ({res_a['share_INSUFFICIENT']*100:.1f}%) and over-predicted SUPPORTED ({res_a['share_SUPPORTED']*100:.1f}%).",
+        f"  Setting B increased INSUFFICIENT prediction share to {res_b['share_INSUFFICIENT']*100:.1f}%.",
+        f"  Plain conclusion: Setting B wins mainly by predicting INSUFFICIENT more. By raising MIN_RETRIEVAL from {mr_a:.2f} to {mr_b:.2f}, weak irrelevant retrieval hits are suppressed, converting false SUPPORTED/CONFLICTING predictions into correct INSUFFICIENT verdicts ({b_win_classes.get('INSUFFICIENT', 0)} of B's {paired['b_wins']} wins were on true INSUFFICIENT claims).",
+    ]
+    report_text = "\n".join(lines)
+    print(report_text)
+
+    if out_path:
+        Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(report_text + "\n")
+        print(f"\nWrote paired report: {out_path}")
+
+    return {
+        "res_a": res_a,
+        "res_b": res_b,
+        "paired": paired,
+        "b_win_classes": b_win_classes,
+        "a_win_classes": a_win_classes,
+    }
+
+
+
+
 def plot_sweep_figures(results, min_ret_range, stance_range, default_mr, default_st, best_mr, best_st, label, out_png):
     Path(out_png).parent.mkdir(parents=True, exist_ok=True)
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
@@ -273,19 +418,44 @@ def build_parser():
     p = argparse.ArgumentParser(description="Sweep decide() thresholds over claim-level data.")
     p.add_argument("--checkpoint", required=True, help="Path to model checkpoint")
     p.add_argument("--claims", default="data/claim_level/dev_claims.jsonl", help="Claims jsonl file")
-    p.add_argument("--label", required=True, help="Run label (e.g. Passage-Clean or LEAKY-Deployed)")
-    p.add_argument("--out", required=True, help="Output CSV path")
+    p.add_argument("--label", default=None, help="Run label (e.g. Passage-Clean or LEAKY-Deployed)")
+    p.add_argument("--out", default=None, help="Output CSV path")
     p.add_argument("--fig", default=None, help="Output figure PNG path")
     p.add_argument("--mr-grid", default=None, help="Comma-separated float values for MIN_RETRIEVAL grid")
     p.add_argument("--st-grid", default=None, help="Comma-separated float values for STANCE_THRESHOLD grid")
     p.add_argument("--corpus", default=EVIDENCE_PATH, help="Path to evidence corpus jsonl")
     p.add_argument("--top-k", type=int, default=TOP_K, help="Number of retrieved passages per claim")
+
+    # Paired comparison options
+    p.add_argument("--paired", action="store_true", help="Run paired comparison between two settings")
+    p.add_argument("--mr-a", type=float, default=0.05, help="Setting A MIN_RETRIEVAL")
+    p.add_argument("--st-a", type=float, default=0.60, help="Setting A STANCE_THRESHOLD")
+    p.add_argument("--mr-b", type=float, default=0.30, help="Setting B MIN_RETRIEVAL")
+    p.add_argument("--st-b", type=float, default=0.55, help="Setting B STANCE_THRESHOLD")
+    p.add_argument("--paired-out", default=None, help="Path to save paired comparison text report")
     return p
 
 
 def main():
     p = build_parser()
     args = p.parse_args()
+
+    if args.paired:
+        run_paired_comparison(
+            checkpoint_path=args.checkpoint,
+            claims_path=args.claims,
+            mr_a=args.mr_a,
+            st_a=args.st_a,
+            mr_b=args.mr_b,
+            st_b=args.st_b,
+            out_path=args.paired_out,
+            corpus_path=args.corpus,
+            top_k=args.top_k,
+        )
+        return
+
+    if not args.out or not args.label:
+        p.error("--out and --label are required for full sweep mode.")
 
     mr_range = parse_grid(args.mr_grid, DEFAULT_MIN_RET_RANGE)
     st_range = parse_grid(args.st_grid, DEFAULT_STANCE_RANGE)

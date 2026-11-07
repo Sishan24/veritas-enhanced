@@ -4,6 +4,7 @@ from ml.sweep_thresholds import (
     bootstrap_ci,
     paired_bootstrap_diff,
     parse_grid,
+    parse_eval_points,
     build_parser,
     DEFAULT_MIN_RET_RANGE,
     DEFAULT_STANCE_RANGE,
@@ -104,6 +105,23 @@ def test_parse_grid_and_parser():
     assert paired_args.mr_a == 0.05
     assert paired_args.st_b == 0.55
     assert paired_args.paired_out == "results/paired.txt"
+
+    # Test parse_eval_points
+    assert parse_eval_points("0.05:0.60,0.30:0.55") == [(0.05, 0.60), (0.30, 0.55)]
+    assert parse_eval_points("0.05:0.60; 0.30:0.55") == [(0.05, 0.60), (0.30, 0.55)]
+    assert parse_eval_points("0.05/0.60") == [(0.05, 0.60)]
+    assert parse_eval_points("") == []
+
+    # Test parser with eval-points
+    eval_args = parser.parse_args([
+        "--checkpoint", "dummy.pt",
+        "--claims", "data/claim_level/test_claims.jsonl",
+        "--eval-points", "0.05:0.60,0.30:0.55",
+        "--eval-out", "results/test_eval.txt",
+    ])
+    assert eval_args.eval_points == "0.05:0.60,0.30:0.55"
+    assert eval_args.eval_out == "results/test_eval.txt"
+
 
 
 

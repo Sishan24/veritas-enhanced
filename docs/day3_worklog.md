@@ -130,5 +130,28 @@
 - **Key Outputs**:
   - Pre-registration section in `docs/day3_findings.md` locked in place.
 - **Fallbacks**: None.
+- **Commit**: `a6b886d`
+
+## Step 6: One Test Evaluation
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Added `--eval-points` and `--eval-out` modes to `ml/sweep_thresholds.py` allowing evaluation of specific `(min_retrieval, stance_threshold)` pairs with 95% bootstrap CIs without sweeping a full grid (this is the sole mode allowed on test datasets).
+  - Added unit test coverage for `parse_eval_points` and parser in `tests/test_sweep.py`.
+  - Executed test evaluation ONCE on `data/claim_level/test_claims.jsonl` (N=60: 20 SUPPORTED, 20 REFUTED, 20 INSUFFICIENT):
+    - Clean passage checkpoint (`ml/checkpoints/bilstm_attn_passage_s42.pt`): Setting A (0.05, 0.60) and Setting B (0.30, 0.55). Saved to `results/test_evaluation_clean_passage_ckpt.txt`.
+    - LEAKY deployed checkpoint (`ml/checkpoints/bilstm_attn.pt`): Setting A only (0.05, 0.60). Saved to `results/test_evaluation_LEAKY_deployed_ckpt.txt`.
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m ml.sweep_thresholds --checkpoint ml/checkpoints/bilstm_attn_passage_s42.pt --claims data/claim_level/test_claims.jsonl --eval-points "0.05:0.60,0.30:0.55" --label "Passage-Clean-Test" --eval-out results/test_evaluation_clean_passage_ckpt.txt`
+  - `.\.venv\Scripts\python -m ml.sweep_thresholds --checkpoint ml/checkpoints/bilstm_attn.pt --claims data/claim_level/test_claims.jsonl --eval-points "0.05:0.60" --label "LEAKY-Deployed-Test" --eval-out results/test_evaluation_LEAKY_deployed_ckpt.txt`
+  - `.\.venv\Scripts\python -m pytest -q` (67 passed in 8.67s)
+- **Key Outputs**:
+  - **Clean Checkpoint on Test (N=60)**:
+    - Setting A (0.05, 0.60): Accuracy = 0.4500 (95% CI: [0.3496, 0.5667]), Macro-F1 = 0.4838 (95% CI: [0.3610, 0.6018]), Recalls: SUP=0.5000, REF=0.4000, INS=0.4500, Shares: SUP=0.4167, REF=0.2667, CONF=0.1167, INS=0.2000.
+    - Setting B (0.30, 0.55): Accuracy = 0.5333 (95% CI: [0.4167, 0.6500]), Macro-F1 = 0.5115 (95% CI: [0.3848, 0.6271]), Recalls: SUP=0.4500, REF=0.3000, INS=0.8500, Shares: SUP=0.3500, REF=0.1833, CONF=0.0000, INS=0.4667.
+    - Paired Diff (B - A): Accuracy Diff = +0.0833 (95% CI: [-0.0500, +0.2004]). The paired CI crosses zero; B cannot be claimed statistically significantly better than A on unseen test data. B wins on 11 claims, A wins on 6, both correct on 21, both incorrect on 22.
+  - **LEAKY Deployed Checkpoint on Test (N=60)**:
+    - Setting A (0.05, 0.60): Accuracy = 0.6667 (95% CI: [0.5500, 0.7833]), Macro-F1 = 0.6622 (95% CI: [0.5427, 0.7685]), Recalls: SUP=0.7500, REF=0.2500, INS=1.0000, Shares: SUP=0.3833, REF=0.0833, CONF=0.1167, INS=0.4167.
+- **Fallbacks**: None.
+
 
 

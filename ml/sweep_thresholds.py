@@ -40,6 +40,31 @@ def parse_grid(val, default):
     return [float(x.strip()) for x in val_str.split(",") if x.strip()]
 
 
+def parse_eval_points(points_str):
+    """Parse comma/semicolon-separated pairs of mr:st into [(float, float), ...]."""
+    if not points_str:
+        return []
+    pts = []
+    raw_pairs = points_str.replace(";", ",").split(",")
+    for part in raw_pairs:
+        part = part.strip()
+        if not part:
+            continue
+        if ":" in part:
+            mr_s, st_s = part.split(":")
+        elif "/" in part:
+            mr_s, st_s = part.split("/")
+        else:
+            tokens = part.split()
+            if len(tokens) == 2:
+                mr_s, st_s = tokens
+            else:
+                raise ValueError(f"Cannot parse eval point: '{part}'. Expected 'mr:st' format.")
+        pts.append((float(mr_s.strip()), float(st_s.strip())))
+    return pts
+
+
+
 def evaluate_grid_point(cached_items, targets, mr, st):
     preds = [decide(items, min_retrieval=mr, stance_threshold=st)[0] for items in cached_items]
     acc = accuracy_score(targets, preds)
@@ -224,6 +249,96 @@ def run_paired_comparison(
         "b_win_classes": b_win_classes,
         "a_win_classes": a_win_classes,
     }
+
+
+def run_eval_points(
+    checkpoint_path,
+    claims_path,
+    points,
+    label,
+    out_txt=None,
+    corpus_path=EVIDENCE_PATH,
+    top_k=TOP_K,
+):
+    print(f"\n=======================================================")
+    print(f"Evaluation on Fixed Points: {label}")
+    print(f"Checkpoint: {checkpoint_path}")
+    print(f"Claims: {claims_path}")
+    print(f"Corpus: {corpus_path}")
+    print(f"TOP_K: {top_k}")
+    print(f"Points (MIN_RETRIEVAL, STANCE_THRESHOLD): {points}")
+    print(f"=======================================================")
+
+    claims = read_jsonl(claims_path)
+    corpus = load_passages(corpus_path)
+    retriever = Retriever(corpus)
+    verifier = VerifierService(checkpoint_path)
+    if not verifier.ready:
+        raise RuntimeError(f"Verifier could not load checkpoint: {checkpoint_path}")
+
+    cached_items = []
+    targets = []
+    for r in claims:
+        hits = retriever.search(r["claim"], k=top_k)
+        preds = verifier.predict(r["claim"], [h["text"] for h in hits])
+        items = [{"id": h["id"], "text": h["text"], "retrieval_score": h["score"], **p} for h, p in zip(hits, preds)]
+        cached_items.append(items)
+        targets.append(r["verdict"])
+
+    results = []
+    lines = [
+        "================================================================================",
+        f"Evaluation Report on Pre-registered Points: {label}",
+        f"Checkpoint: {checkpoint_path}",
+        f"Claims: {claims_path} (N={len(targets)})",
+        "================================================================================",
+        "",
+    ]
+
+    for idx, (mr, st) in enumerate(points, 1):
+        res = evaluate_grid_point(cached_items, targets, mr, st)
+        acc_ci, f1_ci = bootstrap_ci(targets, res["_preds"], n_resamples=1000, seed=42)
+        res["acc_ci"] = acc_ci
+        res["f1_ci"] = f1_ci
+        results.append(res)
+
+        setting_name = f"Point {idx} (MR={mr:.2f}, ST={st:.2f})"
+        lines.append(f"--- {setting_name} ---")
+        lines.append(f"  Accuracy: {res['accuracy']:.4f} (95% CI: [{acc_ci[0]:.4f}, {acc_ci[1]:.4f}])")
+        lines.append(f"  Macro-F1: {res['macro_f1']:.4f} (95% CI: [{f1_ci[0]:.4f}, {f1_ci[1]:.4f}])")
+        lines.append(f"  Per-class Recall:")
+        lines.append(f"    SUPPORTED:    {res['recall_SUPPORTED']:.4f}")
+        lines.append(f"    REFUTED:      {res['recall_REFUTED']:.4f}")
+        lines.append(f"    INSUFFICIENT: {res['recall_INSUFFICIENT']:.4f}")
+        lines.append(f"  Predicted Verdict Shares:")
+        lines.append(f"    SUPPORTED:    {res['share_SUPPORTED']:.4f}")
+        lines.append(f"    REFUTED:      {res['share_REFUTED']:.4f}")
+        lines.append(f"    CONFLICTING:  {res['share_CONFLICTING']:.4f}")
+        lines.append(f"    INSUFFICIENT: {res['share_INSUFFICIENT']:.4f}")
+        lines.append("")
+
+    if len(results) == 2:
+        res_a, res_b = results[0], results[1]
+        paired = paired_bootstrap_diff(targets, res_a["_preds"], res_b["_preds"], n_resamples=1000, seed=42)
+        lines.append("--- Paired Comparison (Point 2 minus Point 1) ---")
+        lines.append(f"  Accuracy Difference: {paired['diff']:+.4f} (95% CI: [{paired['ci_95'][0]:+.4f}, {paired['ci_95'][1]:+.4f}])")
+        lines.append(f"  Point 2 wins: {paired['b_wins']}")
+        lines.append(f"  Point 1 wins: {paired['a_wins']}")
+        lines.append(f"  Both correct: {paired['both_correct']}")
+        lines.append(f"  Both incorrect: {paired['both_incorrect']}")
+        lines.append("")
+
+    report_text = "\n".join(lines)
+    print(report_text)
+
+    if out_txt:
+        Path(out_txt).parent.mkdir(parents=True, exist_ok=True)
+        with open(out_txt, "w", encoding="utf-8") as f:
+            f.write(report_text + "\n")
+        print(f"\nWrote evaluation report to: {out_txt}")
+
+    return results
+
 
 
 
@@ -433,12 +548,29 @@ def build_parser():
     p.add_argument("--mr-b", type=float, default=0.30, help="Setting B MIN_RETRIEVAL")
     p.add_argument("--st-b", type=float, default=0.55, help="Setting B STANCE_THRESHOLD")
     p.add_argument("--paired-out", default=None, help="Path to save paired comparison text report")
+
+    # Eval points options (permitted on test sets)
+    p.add_argument("--eval-points", default=None, help="Comma-separated 'mr:st' pairs to evaluate fixed points without full grid")
+    p.add_argument("--eval-out", default=None, help="Path to save evaluation points text report")
     return p
 
 
 def main():
     p = build_parser()
     args = p.parse_args()
+
+    if args.eval_points:
+        points = parse_eval_points(args.eval_points)
+        run_eval_points(
+            checkpoint_path=args.checkpoint,
+            claims_path=args.claims,
+            points=points,
+            label=args.label or "Eval-Points",
+            out_txt=args.eval_out,
+            corpus_path=args.corpus,
+            top_k=args.top_k,
+        )
+        return
 
     if args.paired:
         run_paired_comparison(

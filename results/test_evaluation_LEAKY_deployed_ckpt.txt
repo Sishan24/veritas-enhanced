@@ -1,0 +1,19 @@
+================================================================================
+Evaluation Report on Pre-registered Points: LEAKY-Deployed-Test
+Checkpoint: ml/checkpoints/bilstm_attn.pt
+Claims: data/claim_level/test_claims.jsonl (N=60)
+================================================================================
+
+--- Point 1 (MR=0.05, ST=0.60) ---
+  Accuracy: 0.6667 (95% CI: [0.5500, 0.7833])
+  Macro-F1: 0.6622 (95% CI: [0.5427, 0.7685])
+  Per-class Recall:
+    SUPPORTED:    0.7500
+    REFUTED:      0.2500
+    INSUFFICIENT: 1.0000
+  Predicted Verdict Shares:
+    SUPPORTED:    0.3833
+    REFUTED:      0.0833
+    CONFLICTING:  0.1167
+    INSUFFICIENT: 0.4167
+

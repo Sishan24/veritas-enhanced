@@ -1,0 +1,86 @@
+{
+  "checkpoint": "ml/checkpoints/bilstm_attn.pt",
+  "claim": "Paris is the capital of France.",
+  "passages": [
+    "The capital city of France is Paris.",
+    "Lyon is the culinary capital of France."
+  ],
+  "expected": [
+    {
+      "stance": "SUPPORTED",
+      "probs": {
+        "SUPPORTED": 0.993652,
+        "REFUTED": 0.006298,
+        "NOT_ENOUGH_INFO": 5e-05
+      },
+      "attention": [
+        {
+          "token": "the",
+          "weight": 0.0
+        },
+        {
+          "token": "capital",
+          "weight": 0.0
+        },
+        {
+          "token": "city",
+          "weight": 4e-06
+        },
+        {
+          "token": "of",
+          "weight": 0.0
+        },
+        {
+          "token": "france",
+          "weight": 1e-06
+        },
+        {
+          "token": "is",
+          "weight": 2e-06
+        },
+        {
+          "token": "paris",
+          "weight": 0.999992
+        }
+      ]
+    },
+    {
+      "stance": "REFUTED",
+      "probs": {
+        "SUPPORTED": 0.188435,
+        "REFUTED": 0.598038,
+        "NOT_ENOUGH_INFO": 0.213527
+      },
+      "attention": [
+        {
+          "token": "lyon",
+          "weight": 7e-06
+        },
+        {
+          "token": "is",
+          "weight": 2.3e-05
+        },
+        {
+          "token": "the",
+          "weight": 0.005445
+        },
+        {
+          "token": "culinary",
+          "weight": 0.006709
+        },
+        {
+          "token": "capital",
+          "weight": 0.012638
+        },
+        {
+          "token": "of",
+          "weight": 0.006723
+        },
+        {
+          "token": "france",
+          "weight": 0.968455
+        }
+      ]
+    }
+  ]
+}

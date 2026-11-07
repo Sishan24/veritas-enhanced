@@ -128,3 +128,23 @@ def test_failed_run_retried_once_and_logged(tmp_path):
 def test_dry_run():
     cfgs = main(["--dry-run"])
     assert len(cfgs) == 96
+
+
+def test_model_seeds_flag():
+    # Opt-in subset of seeds
+    cfgs = main(["--dry-run", "--model-seeds", "0", "1"])
+    assert len(cfgs) == 64
+    assert set(c["model_seed"] for c in cfgs) == {0, 1}
+    # Ensure run names and properties still follow conventions
+    for c in cfgs:
+        assert f"_ms{c['model_seed']}" in c["name"]
+
+    # Single seed
+    cfgs_single = main(["--dry-run", "--model-seeds", "42"])
+    assert len(cfgs_single) == 32
+    assert set(c["model_seed"] for c in cfgs_single) == {42}
+
+    # Default remains all 3 seeds (0, 1, 2)
+    cfgs_default = main(["--dry-run"])
+    assert len(cfgs_default) == 96
+    assert set(c["model_seed"] for c in cfgs_default) == {0, 1, 2}

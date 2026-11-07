@@ -41,8 +41,10 @@ def make_run_name(arch: str, hidden: int, split: str, split_seed: int | None, mo
     return f"{arch}_h{hidden}_{split_tag}_ms{model_seed}"
 
 
-def get_all_configs() -> list[dict]:
-    """Generate the full list of 96 experimental configurations."""
+def get_all_configs(model_seeds: list[int] | None = None) -> list[dict]:
+    """Generate the full list of experimental configurations."""
+    if model_seeds is None:
+        model_seeds = MODEL_SEEDS
     configs = []
 
     # 1. Neural models (5 default + 1 capacity control = 6 configs)
@@ -51,7 +53,7 @@ def get_all_configs() -> list[dict]:
 
     for arch, hidden in neural_configs:
         for split_info in SPLITS:
-            for ms in MODEL_SEEDS:
+            for ms in model_seeds:
                 name = make_run_name(arch, hidden, split_info["split"], split_info["split_seed"], ms)
                 configs.append({
                     "name": name,
@@ -67,7 +69,7 @@ def get_all_configs() -> list[dict]:
     # 2. Baselines (2 baselines)
     for base in BASELINES:
         for split_info in SPLITS:
-            for ms in MODEL_SEEDS:
+            for ms in model_seeds:
                 name = make_run_name(base, 0, split_info["split"], split_info["split_seed"], ms)
                 configs.append({
                     "name": name,
@@ -177,12 +179,19 @@ def parse_args(argv=None):
     p.add_argument("--out-dir", default="runs", help="Output directory for runs (default: runs)")
     p.add_argument("--log-file", default="results/run_log.csv", help="Path to run log (default: results/run_log.csv)")
     p.add_argument("--only-run", default=None, help="Execute only the specified run name")
+    p.add_argument(
+        "--model-seeds",
+        nargs="+",
+        type=int,
+        default=MODEL_SEEDS,
+        help="Model seeds to run (default: 0 1 2)",
+    )
     return p.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
-    configs = get_all_configs()
+    configs = get_all_configs(model_seeds=args.model_seeds)
 
     if args.only_run:
         matched = [c for c in configs if c["name"] == args.only_run]

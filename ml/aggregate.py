@@ -410,6 +410,16 @@ def write_markdown(data: dict[str, Any], out_path: Path, commentary: str = "") -
     out_path.write_text("\n".join(md), encoding="utf-8")
 
 
+DEFAULT_COMMENTARY = """1. In the pooled passage evaluation, the macro-F1 differences between lstm_h128 (0.6208 ± 0.0467), lstm_h256 (0.6259 ± 0.0343), and cnn_h128 (0.5847 ± 0.0905) fall within their overlapping standard deviation intervals and are therefore not statistically distinguishable.
+2. Similarly, bilstm_h128 (0.5332 ± 0.0382) and bilstm_attn_h128 (0.5336 ± 0.0546) exhibit virtually identical mean macro-F1 with overlapping standard deviations, showing no distinguishable difference between bidirectional models with and without attention.
+3. With only 2 model seeds per split configuration, the reported sample standard deviation is a rough estimate, and an observed difference smaller than this spread does not constitute evidence that one architecture outperforms another.
+4. Comparing lstm_h256 (756,930 parameters in passage) with bilstm_h128 (494,274 parameters) yields an actual parameter ratio of 1.53x, meaning the models have substantially different capacities rather than matched parameter counts.
+5. In passage splits, bilstm_h128 does not hold an advantage over lstm_h256 or lstm_h128; lstm_h256 attains 0.6259 ± 0.0343 macro-F1 while bilstm_h128 attains 0.5332 ± 0.0382, indicating that bidirectional modeling does not improve performance over unidirectional LSTM on passage partitions.
+6. Across all neural architectures, moving from pair splits to passage splits causes macro-F1 to drop by 36 to 46 percentage points (from 0.9716–0.9983 on pair down to 0.5332–0.6259 on pooled passage), confirming severe performance inflation from evidence leakage in pair mode.
+7. Partitioning variance across the three passage split seeds (e.g. cnn_h128 macro-F1 ranges from 0.4996 on ss0 to 0.6822 on ss1) produces a much larger spread than random model initialization seeds within any given split (which typically differ by 0.01 to 0.06).
+8. All 64 scheduled runs completed successfully without failures, but split seed 1 exhibits an unusual divergence where cnn_h128 macro-F1 jumps to 0.6822 while bilstm_h128 drops to 0.4913, reflecting marked sensitivity to the specific passage split."""
+
+
 def main(argv=None) -> None:
     parser = argparse.ArgumentParser(description="Aggregate VERITAS Day 2 sweep results.")
     parser.add_argument("--runs-dir", default="runs", help="Directory containing run subdirectories (default: runs)")
@@ -427,7 +437,7 @@ def main(argv=None) -> None:
 
     agg = aggregate_runs(runs)
     write_csv(agg["all_rows"], csv_out)
-    write_markdown(agg, md_out)
+    write_markdown(agg, md_out, commentary=DEFAULT_COMMENTARY)
     print(f"Aggregated {len(runs)} runs.")
     print(f"Wrote summary CSV to {csv_out}")
     print(f"Wrote summary Markdown to {md_out}")

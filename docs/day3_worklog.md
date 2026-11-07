@@ -187,6 +187,26 @@
   - Checkpoint SHA-256: `797d9726a1d41bb96ca6cd809b966b5a634f0d5278d4677e3887c66be92d5b5f`.
   - Corpus SHA-256: `5b4de55276c544e789902eb4c9cc20cd3f40d2518c64ec990c4ea455eeb65718`.
 - **Fallbacks**: None.
+- **Commit**: `edb2712`
+
+## Step 9a: Day 3 Findings Document
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Completed `docs/day3_findings.md` incorporating:
+    - Extended threshold sweep results (defaults vs dev-best) with 95% bootstrap CIs.
+    - Identification of interior peaks and plateaus.
+    - Paired difference analysis (+0.1746 on dev, CI: [+0.0476, +0.3016]).
+    - Mechanism analysis explaining the INSUFFICIENT shift (11 of B's 15 wins came from true INSUFFICIENT claims).
+    - REFUTED diagnostic summary (95.2% retrieval recall, mean P(REFUTED)=0.2052, lexical overlap bias).
+    - Label check confirmation (10/10 genuine contradictions).
+    - Pre-registered test set results (Setting A = 45.0%, Setting B = 53.3%, Paired Diff = +0.0833 with CI [-0.0500, +0.2004] spanning zero).
+    - Methodological limitations (sample size, wide intervals, single seed, 137-passage corpus).
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m pytest -q`
+- **Key Outputs**:
+  - Comprehensive findings document populated solely with verified figures read from generated files.
+- **Fallbacks**: None.
+
 
 
 

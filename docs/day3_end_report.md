@@ -85,6 +85,7 @@ Output of `git diff --name-status day2-seeds-capacity..HEAD`:
 M	backend/app/services/verifier.py
 A	data/claim_level/dev_claims.jsonl
 A	data/claim_level/test_claims.jsonl
+A	docs/day3_end_report.md
 A	docs/day3_findings.md
 A	docs/day3_worklog.md
 A	docs/demo_claims.md
@@ -118,6 +119,7 @@ A	tests/test_sweep.py
 
 Output of `git log --oneline day2-seeds-capacity..HEAD`:
 ```
+4163275 docs: add day 3 end report and finalise worklog
 f971845 docs: complete day 3 findings with empirical analysis and test results
 edb2712 feat: add demo check script and document verified safe demo claims
 f2c1b02 feat: add corpus scope disclosure notice above claim input
@@ -157,6 +159,7 @@ ed9ba5b feat: add threshold sweep script ml/sweep_thresholds.py
 backend/app/services/verifier.py
 data/claim_level/dev_claims.jsonl
 data/claim_level/test_claims.jsonl
+docs/day3_end_report.md
 docs/day3_findings.md
 docs/day3_worklog.md
 docs/demo_claims.md

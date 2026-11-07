@@ -92,3 +92,26 @@
   - Both correct: 18 claims; Both incorrect: 26 claims.
   - Plain conclusion: Setting B wins mainly by predicting INSUFFICIENT more (46.0% vs true 33.3%). Raising MIN_RETRIEVAL from 0.05 to 0.30 filters out weak irrelevant retrieval hits, converting false positive SUPPORTED/CONFLICTING predictions into correct INSUFFICIENT verdicts (11 of B's 15 wins were on true INSUFFICIENT claims).
 - **Fallbacks**: None.
+- **Commit**: `785b4b0`
+
+## Step 4: REFUTED Diagnostic
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Created `scripts/refuted_diagnostic.py` to analyze all 21 REFUTED dev claims across both checkpoints (`ml/checkpoints/bilstm_attn_passage_s42.pt` and `ml/checkpoints/bilstm_attn.pt`).
+  - Computed word-level Levenshtein edit distance between each false claim and its true counterpart.
+  - Inspected top-3 retrieved passages, retrieval scores, predicted stance probabilities, and `decide()` output.
+  - Performed label check on 10 REFUTED claims against their corpus passages to evaluate whether genuine contradiction exists.
+  - Generated and saved output to `results/refuted_diagnostic.txt`.
+- **Commands Run**:
+  - `.\.venv\Scripts\python scripts/refuted_diagnostic.py`
+  - `.\.venv\Scripts\python -m pytest -q` (67 passed in 8.90s)
+- **Key Outputs**:
+  - 6/21 (28.6%) false claims are within 2 word edits of their true counterpart (e.g. city name swaps, year changes).
+  - Retrieval surfaces the contradicting passage in 20/21 cases (95.2%) for both checkpoints. Retrieval is not the bottleneck.
+  - Model stance probability is the primary failure point:
+    - Clean checkpoint: Mean P(REFUTED) on contradicting passage when surfaced is only 0.2052 (range: 0.0000 - 0.9994); REFUTED is highest probability in only 3/20 cases (15.0%). In 11/20 cases, high lexical overlap causes the model to assign high P(SUPPORTED).
+    - LEAKY deployed checkpoint: Mean P(REFUTED) is 0.0673 (range: 0.0000 - 0.9094); REFUTED is highest in only 1/20 cases (5.0%).
+    - Final decide() verdicts on REFUTED claims at defaults: 2/21 REFUTED (9.5%), 11-12/21 SUPPORTED (false positives), 1-4 CONFLICTING, 4-6 INSUFFICIENT.
+  - Label check: All 10 examined claims are genuinely contradicted by the target corpus passage. No false negatives due to label noise.
+- **Fallbacks**: None triggered (no mislabelled claims in the sample).
+

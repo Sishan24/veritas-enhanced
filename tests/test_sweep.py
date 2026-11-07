@@ -82,3 +82,10 @@ def test_parse_grid_and_parser():
     assert args.top_k == 5
     assert args.corpus == "data/custom_corpus.jsonl"
 
+
+def test_run_sweep_refuses_test_set():
+    from ml.sweep_thresholds import run_sweep
+    with pytest.raises(ValueError, match="strictly prohibited on test sets"):
+        run_sweep("dummy.pt", "data/claim_level/test_claims.jsonl", "Test-Run", "dummy.csv")
+
+

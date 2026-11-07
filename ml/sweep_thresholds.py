@@ -170,6 +170,12 @@ def plot_sweep_figures(results, min_ret_range, stance_range, default_mr, default
 def run_sweep(checkpoint_path, claims_path, label, out_csv, out_png=None,
               min_ret_range=DEFAULT_MIN_RET_RANGE, stance_range=DEFAULT_STANCE_RANGE,
               corpus_path=EVIDENCE_PATH, top_k=TOP_K):
+    if "test" in Path(claims_path).stem.lower():
+        raise ValueError(
+            f"Full-grid sweep is strictly prohibited on test sets ({claims_path}). "
+            "Use pre-registered evaluation points for test sets."
+        )
+
     print(f"\n=======================================================")
     print(f"Running sweep for: {label}")
     print(f"Checkpoint: {checkpoint_path}")

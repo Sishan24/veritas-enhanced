@@ -35,4 +35,17 @@
   - Sweep already retrieves top-3 matching backend config.
   - Grid overrides function cleanly with backwards-compatible defaults.
 - **Fallbacks**: None needed (corpora match and TOP_K=3 matches).
+- **Commit**: `2c74104`
+
+## Step 2a: Extended Sweep Guard (Code)
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Added safety guard in `ml/sweep_thresholds.py` prohibiting full-grid sweeps when `--claims` target path contains "test".
+  - Added unit test `test_run_sweep_refuses_test_set` in `tests/test_sweep.py`.
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m pytest -q` (66 passed in 8.85s)
+- **Key Outputs**:
+  - Attempts to sweep full grid on test files raise `ValueError`.
+- **Fallbacks**: None.
+
 

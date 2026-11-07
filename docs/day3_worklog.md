@@ -47,5 +47,29 @@
 - **Key Outputs**:
   - Attempts to sweep full grid on test files raise `ValueError`.
 - **Fallbacks**: None.
+- **Commit**: `573f858`
+
+## Step 2b: Extended Sweep on Dev (Results)
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Ran extended MIN_RETRIEVAL grid `[0.0, 0.02, 0.04, 0.05, 0.06, 0.08, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.5, 0.6]` on dev claims (`data/claim_level/dev_claims.jsonl`, N=63) for both clean passage checkpoint (`bilstm_attn_passage_s42.pt`) and LEAKY deployed checkpoint (`bilstm_attn.pt`).
+  - Saved outputs:
+    - Clean: `results/threshold_sweep_passage_ckpt_extended.csv` and `.png`
+    - LEAKY: `results/threshold_sweep_LEAKY_deployed_ckpt_extended.csv` and `.png`
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m ml.sweep_thresholds --checkpoint ml/checkpoints/bilstm_attn_passage_s42.pt --claims data/claim_level/dev_claims.jsonl --label "Passage-Clean-Extended" --mr-grid "0.0,0.02,0.04,0.05,0.06,0.08,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6" --out results/threshold_sweep_passage_ckpt_extended.csv --fig results/threshold_sweep_passage_ckpt_extended.png`
+  - `.\.venv\Scripts\python -m ml.sweep_thresholds --checkpoint ml/checkpoints/bilstm_attn.pt --claims data/claim_level/dev_claims.jsonl --label "LEAKY-Deployed-Extended" --mr-grid "0.0,0.02,0.04,0.05,0.06,0.08,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6" --out results/threshold_sweep_LEAKY_deployed_ckpt_extended.csv --fig results/threshold_sweep_LEAKY_deployed_ckpt_extended.png`
+  - `.\.venv\Scripts\python -m pytest -q`
+- **Key Outputs**:
+  - **Clean Checkpoint**:
+    - Default (MR=0.05, ST=0.60): Accuracy = 0.3492 (95% CI: [0.2381, 0.4603]), Macro-F1 = 0.3355 (95% CI: [0.2188, 0.4424]), Shares: SUP=0.556, REF=0.111, CONF=0.143, INS=0.190.
+    - Best (MR=0.30, ST=0.55): Accuracy = 0.5238 (95% CI: [0.3968, 0.6349]), Macro-F1 = 0.4776 (95% CI: [0.3679, 0.5886]), Shares: SUP=0.444, REF=0.095, CONF=0.000, INS=0.460.
+    - Grid position: The peak at MR=0.30 is an interior point on the extended MR grid [0.0, 0.60]. The top region forms a plateau between MR in [0.25, 0.30] and ST in [0.55, 0.70] with accuracy 0.5238 and macro-F1 ~0.475-0.478.
+  - **LEAKY Deployed Checkpoint**:
+    - Default (MR=0.05, ST=0.60): Accuracy = 0.6667 (95% CI: [0.5556, 0.7778]), Macro-F1 = 0.5932 (95% CI: [0.4962, 0.6916]), Shares: SUP=0.492, REF=0.032, CONF=0.048, INS=0.429.
+    - Best (MR=0.08, ST=0.75): Accuracy = 0.7143 (95% CI: [0.6032, 0.8254]), Macro-F1 = 0.6324 (95% CI: [0.5281, 0.7397]), Shares: SUP=0.476, REF=0.048, CONF=0.000, INS=0.476.
+    - Grid position: Interior point at MR=0.08, ST=0.75-0.85 forming a plateau.
+- **Fallbacks**: None.
+
 
 

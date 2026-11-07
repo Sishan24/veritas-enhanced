@@ -29,6 +29,17 @@ DEFAULT_MIN_RET_RANGE = [0.00, 0.02, 0.04, 0.05, 0.06, 0.08, 0.10, 0.15, 0.20, 0
 DEFAULT_STANCE_RANGE = [0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85]
 
 
+def parse_grid(val, default):
+    if val is None:
+        return list(default)
+    if isinstance(val, (list, tuple)):
+        return [float(x) for x in val]
+    val_str = str(val).strip()
+    if not val_str:
+        return list(default)
+    return [float(x.strip()) for x in val_str.split(",") if x.strip()]
+
+
 def evaluate_grid_point(cached_items, targets, mr, st):
     preds = [decide(items, min_retrieval=mr, stance_threshold=st)[0] for items in cached_items]
     acc = accuracy_score(targets, preds)
@@ -157,17 +168,20 @@ def plot_sweep_figures(results, min_ret_range, stance_range, default_mr, default
 
 
 def run_sweep(checkpoint_path, claims_path, label, out_csv, out_png=None,
-              min_ret_range=DEFAULT_MIN_RET_RANGE, stance_range=DEFAULT_STANCE_RANGE):
+              min_ret_range=DEFAULT_MIN_RET_RANGE, stance_range=DEFAULT_STANCE_RANGE,
+              corpus_path=EVIDENCE_PATH, top_k=TOP_K):
     print(f"\n=======================================================")
     print(f"Running sweep for: {label}")
     print(f"Checkpoint: {checkpoint_path}")
     print(f"Claims: {claims_path}")
+    print(f"Corpus: {corpus_path}")
+    print(f"TOP_K: {top_k}")
     print(f"MIN_RETRIEVAL range: {min_ret_range}")
     print(f"STANCE_THRESHOLD range: {stance_range}")
     print(f"=======================================================")
 
     claims = read_jsonl(claims_path)
-    corpus = load_passages(EVIDENCE_PATH)
+    corpus = load_passages(corpus_path)
     retriever = Retriever(corpus)
     verifier = VerifierService(checkpoint_path)
     if not verifier.ready:
@@ -177,7 +191,7 @@ def run_sweep(checkpoint_path, claims_path, label, out_csv, out_png=None,
     cached_items = []
     targets = []
     for r in claims:
-        hits = retriever.search(r["claim"], k=TOP_K)
+        hits = retriever.search(r["claim"], k=top_k)
         preds = verifier.predict(r["claim"], [h["text"] for h in hits])
         items = [{"id": h["id"], "text": h["text"], "retrieval_score": h["score"], **p} for h, p in zip(hits, preds)]
         cached_items.append(items)
@@ -249,16 +263,38 @@ def run_sweep(checkpoint_path, claims_path, label, out_csv, out_png=None,
     }
 
 
-def main():
+def build_parser():
     p = argparse.ArgumentParser(description="Sweep decide() thresholds over claim-level data.")
     p.add_argument("--checkpoint", required=True, help="Path to model checkpoint")
     p.add_argument("--claims", default="data/claim_level/dev_claims.jsonl", help="Claims jsonl file")
     p.add_argument("--label", required=True, help="Run label (e.g. Passage-Clean or LEAKY-Deployed)")
     p.add_argument("--out", required=True, help="Output CSV path")
     p.add_argument("--fig", default=None, help="Output figure PNG path")
+    p.add_argument("--mr-grid", default=None, help="Comma-separated float values for MIN_RETRIEVAL grid")
+    p.add_argument("--st-grid", default=None, help="Comma-separated float values for STANCE_THRESHOLD grid")
+    p.add_argument("--corpus", default=EVIDENCE_PATH, help="Path to evidence corpus jsonl")
+    p.add_argument("--top-k", type=int, default=TOP_K, help="Number of retrieved passages per claim")
+    return p
+
+
+def main():
+    p = build_parser()
     args = p.parse_args()
 
-    run_sweep(args.checkpoint, args.claims, args.label, args.out, args.fig)
+    mr_range = parse_grid(args.mr_grid, DEFAULT_MIN_RET_RANGE)
+    st_range = parse_grid(args.st_grid, DEFAULT_STANCE_RANGE)
+
+    run_sweep(
+        args.checkpoint,
+        args.claims,
+        args.label,
+        args.out,
+        args.fig,
+        min_ret_range=mr_range,
+        stance_range=st_range,
+        corpus_path=args.corpus,
+        top_k=args.top_k,
+    )
 
 
 if __name__ == "__main__":

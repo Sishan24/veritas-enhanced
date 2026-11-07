@@ -1,5 +1,5 @@
 import pytest
-from ml.sweep_thresholds import evaluate_grid_point, bootstrap_ci
+from ml.sweep_thresholds import evaluate_grid_point, bootstrap_ci, parse_grid, build_parser, DEFAULT_MIN_RET_RANGE, DEFAULT_STANCE_RANGE
 
 
 def _item(sup=0.0, ref=0.0, score=0.5):
@@ -57,3 +57,28 @@ def test_bootstrap_ci():
     # Perfect match should yield near-1.0 interval
     assert acc_ci[0] == pytest.approx(1.0)
     assert f1_ci[0] == pytest.approx(1.0)
+
+
+def test_parse_grid_and_parser():
+    # Test parse_grid default and custom values
+    assert parse_grid(None, DEFAULT_MIN_RET_RANGE) == DEFAULT_MIN_RET_RANGE
+    assert parse_grid("", DEFAULT_MIN_RET_RANGE) == DEFAULT_MIN_RET_RANGE
+    assert parse_grid("0.05, 0.1, 0.2", DEFAULT_MIN_RET_RANGE) == [0.05, 0.1, 0.2]
+    assert parse_grid([0.1, 0.25], DEFAULT_MIN_RET_RANGE) == [0.1, 0.25]
+
+    # Test build_parser with opt-in grid flags
+    parser = build_parser()
+    args = parser.parse_args([
+        "--checkpoint", "dummy.pt",
+        "--out", "out.csv",
+        "--label", "test",
+        "--mr-grid", "0.01,0.05,0.1",
+        "--st-grid", "0.4,0.6,0.8",
+        "--top-k", "5",
+        "--corpus", "data/custom_corpus.jsonl"
+    ])
+    assert parse_grid(args.mr_grid, DEFAULT_MIN_RET_RANGE) == [0.01, 0.05, 0.1]
+    assert parse_grid(args.st_grid, DEFAULT_STANCE_RANGE) == [0.4, 0.6, 0.8]
+    assert args.top_k == 5
+    assert args.corpus == "data/custom_corpus.jsonl"
+

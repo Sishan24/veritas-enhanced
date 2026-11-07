@@ -1,0 +1,122 @@
+[
+  {
+    "name": "supported_single",
+    "items": [
+      {
+        "id": "1",
+        "retrieval_score": 0.5,
+        "probs": {
+          "SUPPORTED": 0.85,
+          "REFUTED": 0.05,
+          "NOT_ENOUGH_INFO": 0.1
+        }
+      }
+    ],
+    "expected_verdict": "SUPPORTED",
+    "expected_confidence": 0.85
+  },
+  {
+    "name": "refuted_single",
+    "items": [
+      {
+        "id": "2",
+        "retrieval_score": 0.5,
+        "probs": {
+          "SUPPORTED": 0.05,
+          "REFUTED": 0.85,
+          "NOT_ENOUGH_INFO": 0.1
+        }
+      }
+    ],
+    "expected_verdict": "REFUTED",
+    "expected_confidence": 0.85
+  },
+  {
+    "name": "conflicting",
+    "items": [
+      {
+        "id": "1",
+        "retrieval_score": 0.5,
+        "probs": {
+          "SUPPORTED": 0.8,
+          "REFUTED": 0.1,
+          "NOT_ENOUGH_INFO": 0.1
+        }
+      },
+      {
+        "id": "2",
+        "retrieval_score": 0.4,
+        "probs": {
+          "SUPPORTED": 0.1,
+          "REFUTED": 0.75,
+          "NOT_ENOUGH_INFO": 0.15
+        }
+      }
+    ],
+    "expected_verdict": "CONFLICTING",
+    "expected_confidence": 0.8
+  },
+  {
+    "name": "insufficient_low_retrieval",
+    "items": [
+      {
+        "id": "1",
+        "retrieval_score": 0.02,
+        "probs": {
+          "SUPPORTED": 0.9,
+          "REFUTED": 0.05,
+          "NOT_ENOUGH_INFO": 0.05
+        }
+      }
+    ],
+    "expected_verdict": "INSUFFICIENT",
+    "expected_confidence": 0.0
+  },
+  {
+    "name": "insufficient_low_stance",
+    "items": [
+      {
+        "id": "1",
+        "retrieval_score": 0.5,
+        "probs": {
+          "SUPPORTED": 0.55,
+          "REFUTED": 0.05,
+          "NOT_ENOUGH_INFO": 0.4
+        }
+      }
+    ],
+    "expected_verdict": "INSUFFICIENT",
+    "expected_confidence": 0.4
+  },
+  {
+    "name": "empty_items",
+    "items": [],
+    "expected_verdict": "INSUFFICIENT",
+    "expected_confidence": 0.0
+  },
+  {
+    "name": "multiple_nei",
+    "items": [
+      {
+        "id": "1",
+        "retrieval_score": 0.2,
+        "probs": {
+          "SUPPORTED": 0.1,
+          "REFUTED": 0.2,
+          "NOT_ENOUGH_INFO": 0.7
+        }
+      },
+      {
+        "id": "2",
+        "retrieval_score": 0.1,
+        "probs": {
+          "SUPPORTED": 0.2,
+          "REFUTED": 0.2,
+          "NOT_ENOUGH_INFO": 0.6
+        }
+      }
+    ],
+    "expected_verdict": "INSUFFICIENT",
+    "expected_confidence": 0.7
+  }
+]

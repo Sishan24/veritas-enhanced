@@ -46,7 +46,7 @@ class VerifierService:
         return out
 
 
-def decide(items):
+def decide(items, min_retrieval=MIN_RETRIEVAL, stance_threshold=STANCE_THRESHOLD):
     """Aggregate per-evidence stances into one of SUPPORTED / REFUTED / CONFLICTING / INSUFFICIENT.
 
     A claim with no relevant, confident evidence is INSUFFICIENT, never automatically false.
@@ -54,9 +54,9 @@ def decide(items):
     def top(item):
         return max(item["probs"], key=item["probs"].get)
 
-    rel = [i for i in items if i["retrieval_score"] >= MIN_RETRIEVAL]
-    sup = [i for i in rel if top(i) == "SUPPORTED" and i["probs"]["SUPPORTED"] >= STANCE_THRESHOLD]
-    ref = [i for i in rel if top(i) == "REFUTED" and i["probs"]["REFUTED"] >= STANCE_THRESHOLD]
+    rel = [i for i in items if i["retrieval_score"] >= min_retrieval]
+    sup = [i for i in rel if top(i) == "SUPPORTED" and i["probs"]["SUPPORTED"] >= stance_threshold]
+    ref = [i for i in rel if top(i) == "REFUTED" and i["probs"]["REFUTED"] >= stance_threshold]
     if sup and ref:
         return "CONFLICTING", max(
             max(i["probs"]["SUPPORTED"] for i in sup),

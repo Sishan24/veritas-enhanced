@@ -152,6 +152,42 @@
   - **LEAKY Deployed Checkpoint on Test (N=60)**:
     - Setting A (0.05, 0.60): Accuracy = 0.6667 (95% CI: [0.5500, 0.7833]), Macro-F1 = 0.6622 (95% CI: [0.5427, 0.7685]), Recalls: SUP=0.7500, REF=0.2500, INS=1.0000, Shares: SUP=0.3833, REF=0.0833, CONF=0.1167, INS=0.4167.
 - **Fallbacks**: None.
+- **Commit**: `8c0f276`
+
+## Step 7: Frontend Scope Disclosure
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Located the claim input (`<textarea id="claims">`) in `frontend/screens.jsx` under `ClaimStudio`.
+  - Added disclosure line immediately above the input: `"Claims are verified against the loaded evidence corpus. This system does not search the web."` using existing CSS styling class `hint`.
+  - Committed `frontend/screens.jsx` alone in commit `f2c1b02`.
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m pytest -q` (67 passed in 13.65s)
+- **Key Outputs**:
+  - Disclosure rendered cleanly without breaking React state or UI layout.
+- **Fallbacks**: None.
+- **Commit**: `f2c1b02`
+
+## Step 8: Demo Preparation Through Real API Path
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Created `scripts/demo_check.py` using `fastapi.testclient.TestClient` on `backend.app.main:app` executing full end-to-end path (`extract_claims`, retrieval, deployed checkpoint `config.CHECKPOINT`, `decide()`).
+  - Tested 30 candidate claims (10 dev, 10 test, 10 corpus topics), each run 3 independent times.
+  - Verified stability: checked single-claim extraction, verdict unanimity across runs, and confidence margin $|conf - 0.60| \ge 0.05$.
+  - Tested 3 attempts to produce CONFLICTING using per-request `evidence` parameter (without editing corpus).
+  - Wrote `docs/demo_claims.md` documenting verified safe claims, exact hashes, morning-of-demo command, and limitations on REFUTED and CONFLICTING.
+- **Commands Run**:
+  - `.\.venv\Scripts\python scripts/demo_check.py`
+  - `.\.venv\Scripts\python -m pytest -q` (67 passed in 11.60s)
+- **Key Outputs**:
+  - 26/30 claims evaluated are demo-safe; 4 failed extraction due to heuristic rule-based segmentation returning 0 claims.
+  - Safe SUPPORTED: 14 claims verified.
+  - Safe REFUTED: 3 claims qualified (`Marseille is the capital of France.`, `Istanbul is the capital of Turkey.`, `Gothenburg is the capital of Sweden.`). Most other false variants suffer from lexical overlap bias and flip to SUPPORTED.
+  - Safe INSUFFICIENT: 5 claims verified.
+  - CONFLICTING: Attempt 1 succeeded with `Ankara is the capital of Turkey.` under user-supplied supporting and contradicting passages (verdict: CONFLICTING, conf: 0.9967). Attempts 2 and 3 failed because model predicted same stance on both passages. Plainly documented that CONFLICTING cannot be demonstrated reliably across arbitrary claims.
+  - Checkpoint SHA-256: `797d9726a1d41bb96ca6cd809b966b5a634f0d5278d4677e3887c66be92d5b5f`.
+  - Corpus SHA-256: `5b4de55276c544e789902eb4c9cc20cd3f40d2518c64ec990c4ea455eeb65718`.
+- **Fallbacks**: None.
+
 
 
 

@@ -1,0 +1,60 @@
+{"claim": "Australia declared a national climate emergency.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Australia-climate-emergency"], "source": "generator-true"}
+{"claim": "Buenos Aires is the capital of Argentina.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Argentina"], "source": "generator-true"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["FAO-food-prices"], "source": "generator-true"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Caitlin-Clark-WNBA"], "source": "generator-true"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Apple-market-cap"], "source": "generator-true"}
+{"claim": "Pakistan held general elections amid widespread protests.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Pakistan-elections"], "source": "generator-true"}
+{"claim": "Islamabad is the capital of Pakistan.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Pakistan"], "source": "generator-true"}
+{"claim": "Pretoria is the capital of South Africa.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["South Africa"], "source": "generator-true"}
+{"claim": "Stockholm is the capital of Sweden.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Sweden"], "source": "generator-true"}
+{"claim": "Madrid is the capital of Spain.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Spain"], "source": "generator-true"}
+{"claim": "Brasilia is the capital of Brazil.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Brazil"], "source": "generator-true"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Apple-Vision-Pro"], "source": "generator-true"}
+{"claim": "Kathmandu is the capital of Nepal.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Nepal"], "source": "generator-true"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Saudi Arabia"], "source": "generator-true"}
+{"claim": "Acme Corporation was founded in 1954.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Acme"], "source": "generator-true"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["US-Russia-sanctions"], "source": "generator-true"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["China-Taiwan-exercises"], "source": "generator-true"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Fed-rates"], "source": "generator-true"}
+{"claim": "Cairo is the capital of Egypt.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Egypt"], "source": "generator-true"}
+{"claim": "Kyiv is the capital of Ukraine.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Ukraine"], "source": "generator-true"}
+{"claim": "The Australian parliament rejected the motion declaring a national climate emergency.", "verdict": "REFUTED", "justifying_evidence_ids": ["Australia-climate-emergency"], "source": "generator-false-variant"}
+{"claim": "Cordoba is the capital of Argentina.", "verdict": "REFUTED", "justifying_evidence_ids": ["Argentina"], "source": "generator-false-variant"}
+{"claim": "The Food and Agriculture Organization reported that global food prices surged to record highs for three consecutive months.", "verdict": "REFUTED", "justifying_evidence_ids": ["FAO-food-prices"], "source": "generator-false-variant"}
+{"claim": "Caitlin Clark was selected tenth overall in the second round of the 2024 WNBA Draft.", "verdict": "REFUTED", "justifying_evidence_ids": ["Caitlin-Clark-WNBA"], "source": "generator-false-variant"}
+{"claim": "Microsoft became the first company to reach a three trillion dollar market capitalisation.", "verdict": "REFUTED", "justifying_evidence_ids": ["Apple-market-cap"], "source": "generator-false-variant"}
+{"claim": "Pakistan postponed its general elections indefinitely following an emergency decree.", "verdict": "REFUTED", "justifying_evidence_ids": ["Pakistan-elections"], "source": "generator-false-variant"}
+{"claim": "Lahore is the capital of Pakistan.", "verdict": "REFUTED", "justifying_evidence_ids": ["Pakistan"], "source": "generator-false-variant"}
+{"claim": "Johannesburg is the administrative capital of South Africa.", "verdict": "REFUTED", "justifying_evidence_ids": ["South Africa"], "source": "generator-false-variant"}
+{"claim": "Gothenburg is the capital of Sweden.", "verdict": "REFUTED", "justifying_evidence_ids": ["Sweden"], "source": "generator-false-variant"}
+{"claim": "Barcelona is the capital of Spain.", "verdict": "REFUTED", "justifying_evidence_ids": ["Spain"], "source": "generator-false-variant"}
+{"claim": "Rio de Janeiro is the capital of Brazil.", "verdict": "REFUTED", "justifying_evidence_ids": ["Brazil"], "source": "generator-false-variant"}
+{"claim": "Apple cancelled the Vision Pro project before release due to manufacturing cost overruns.", "verdict": "REFUTED", "justifying_evidence_ids": ["Apple-Vision-Pro"], "source": "generator-false-variant"}
+{"claim": "Pokhara is the capital of Nepal.", "verdict": "REFUTED", "justifying_evidence_ids": ["Nepal"], "source": "generator-false-variant"}
+{"claim": "Jeddah is the capital of Saudi Arabia.", "verdict": "REFUTED", "justifying_evidence_ids": ["Saudi Arabia"], "source": "generator-false-variant"}
+{"claim": "Acme Corporation was founded in 1945.", "verdict": "REFUTED", "justifying_evidence_ids": ["Acme"], "source": "generator-false-variant"}
+{"claim": "The United States lifted all bilateral sanctions on Russian banks and defence contractors.", "verdict": "REFUTED", "justifying_evidence_ids": ["US-Russia-sanctions"], "source": "generator-false-variant"}
+{"claim": "China cancelled all naval and air exercises near Taiwan following diplomatic agreements.", "verdict": "REFUTED", "justifying_evidence_ids": ["China-Taiwan-exercises"], "source": "generator-false-variant"}
+{"claim": "The Federal Reserve lowered benchmark interest rates to near-zero levels to stimulate lending.", "verdict": "REFUTED", "justifying_evidence_ids": ["Fed-rates"], "source": "generator-false-variant"}
+{"claim": "Alexandria is the capital of Egypt.", "verdict": "REFUTED", "justifying_evidence_ids": ["Egypt"], "source": "generator-false-variant"}
+{"claim": "Odesa is the capital of Ukraine.", "verdict": "REFUTED", "justifying_evidence_ids": ["Ukraine"], "source": "generator-false-variant"}
+{"claim": "The Australian parliament established a carbon tariff on liquefied natural gas exports.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Buenos Aires completed a modernization of its international container port facilities.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The UN Food and Agriculture Organization declared emergency grain rationing across eleven nations.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Caitlin Clark signed an exclusive multi-year sponsorship contract with a major European beverage brand.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Apple opened an automated semiconductor testing laboratory in Austin, Texas.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Pakistan implemented an electronic biometric voter registration system for all provinces.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Islamabad hosted an international multilateral summit on South Asian renewable energy transmission.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Pretoria introduced an automated solar metering rebate system for suburban households.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Stockholm converted its municipal public bus fleet entirely to hydrogen fuel cells.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Madrid completed an expansion of its underground thermal heating grid across forty districts.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Brasilia opened a national satellite data archive center operated by the environmental ministry.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Apple announced a specialized enterprise developer edition of the Vision Pro with upgraded memory.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Kathmandu inaugurated a municipal environmental air filtering station in the central valley.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Riyadh completed construction of an indoor winter sports arena in the diplomatic quarter.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Acme Corporation licensed its core sensor patent portfolio to a consortium of automotive suppliers.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The United States opened a diplomatic coordination office in Vilnius to monitor regional sanctions compliance.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "China established a joint maritime search and rescue command centre on Hainan Island.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The Federal Reserve commissioned an independent academic study on the macroeconomic effects of quantitative tightening.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Cairo launched a solar-powered irrigation project along agricultural land in the Nile Delta.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Kyiv established an international reconstruction investment council with representatives from twenty nations.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}

@@ -1,0 +1,41 @@
+{
+  "name": "bilstm_h128_passage_ss1_ms0",
+  "arch": "bilstm",
+  "seed": 0,
+  "n_params": 493607,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 9,
+  "train_seconds": 123.17673150007613,
+  "best_dev_macro_f1": 0.4461674984933263,
+  "loss": 3.0433994473351373,
+  "accuracy": 0.5044444444444445,
+  "macro_f1": 0.4974275620206649,
+  "precision": 0.4965025062378435,
+  "recall": 0.5013283530008882,
+  "confusion_matrix": [
+    [
+      170,
+      88,
+      62
+    ],
+    [
+      133,
+      93,
+      58
+    ],
+    [
+      49,
+      56,
+      191
+    ]
+  ],
+  "latency_ms": 0.39221088867634535,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

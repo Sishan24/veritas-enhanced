@@ -1,0 +1,41 @@
+{
+  "name": "bilstm_h128_pair_ms1",
+  "arch": "bilstm",
+  "seed": 1,
+  "n_params": 527507,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 168.85441839997657,
+  "best_dev_macro_f1": 0.9845451647941609,
+  "loss": 0.04348181279833423,
+  "accuracy": 0.9911111111111112,
+  "macro_f1": 0.99135853094865,
+  "precision": 0.9915611814345991,
+  "recall": 0.9913505177856409,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      1,
+      278,
+      0
+    ],
+    [
+      7,
+      0,
+      306
+    ]
+  ],
+  "latency_ms": 0.4228068885600401,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

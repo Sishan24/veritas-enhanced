@@ -1,0 +1,41 @@
+{
+  "name": "tfidf_logreg_h0_pair_ms1",
+  "arch": "tfidf_logreg",
+  "seed": 1,
+  "n_params": 0,
+  "optimizer": null,
+  "activation": null,
+  "dropout": null,
+  "weight_decay": null,
+  "epochs_run": 0,
+  "train_seconds": 0.20720820012502372,
+  "best_dev_macro_f1": 0.6793957397401383,
+  "loss": null,
+  "accuracy": 0.68,
+  "macro_f1": 0.6886225644995209,
+  "precision": 0.6899099850246334,
+  "recall": 0.6903682962633803,
+  "confusion_matrix": [
+    [
+      184,
+      8,
+      116
+    ],
+    [
+      5,
+      273,
+      1
+    ],
+    [
+      157,
+      1,
+      155
+    ]
+  ],
+  "latency_ms": 0.0002590000318984191,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

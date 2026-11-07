@@ -1,0 +1,41 @@
+{
+  "name": "cnn_h128_pair_ms1",
+  "arch": "cnn",
+  "seed": 1,
+  "n_params": 265792,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 90.03383300011046,
+  "best_dev_macro_f1": 0.995627572016461,
+  "loss": 0.011759956467815047,
+  "accuracy": 0.9977777777777778,
+  "macro_f1": 0.997795072495423,
+  "precision": 0.9977307751579597,
+  "recall": 0.9978700745473909,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      0,
+      279,
+      0
+    ],
+    [
+      1,
+      1,
+      311
+    ]
+  ],
+  "latency_ms": 0.08029844482532805,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "lstm_h256_passage_ss1_ms0",
+  "arch": "lstm",
+  "seed": 0,
+  "n_params": 756263,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 9,
+  "train_seconds": 194.69383109989576,
+  "best_dev_macro_f1": 0.5757833140328696,
+  "loss": 1.5072506009207831,
+  "accuracy": 0.6288888888888889,
+  "macro_f1": 0.6215858215858217,
+  "precision": 0.6464815575747609,
+  "recall": 0.6257355506915366,
+  "confusion_matrix": [
+    [
+      205,
+      34,
+      81
+    ],
+    [
+      154,
+      119,
+      11
+    ],
+    [
+      36,
+      18,
+      242
+    ]
+  ],
+  "latency_ms": 0.3563829997761382,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

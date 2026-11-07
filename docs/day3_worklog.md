@@ -114,4 +114,21 @@
     - Final decide() verdicts on REFUTED claims at defaults: 2/21 REFUTED (9.5%), 11-12/21 SUPPORTED (false positives), 1-4 CONFLICTING, 4-6 INSUFFICIENT.
   - Label check: All 10 examined claims are genuinely contradicted by the target corpus passage. No false negatives due to label noise.
 - **Fallbacks**: None triggered (no mislabelled claims in the sample).
+- **Commit**: `2f15d77`
+
+## Step 5: Pre-register the Test Settings
+- **Date / Time**: 2026-11-07
+- **Actions**:
+  - Authored the "Pre-registration of Test Settings" section of `docs/day3_findings.md`.
+  - Named exactly two evaluation settings:
+    - Setting A (System Defaults): `MIN_RETRIEVAL = 0.05`, `STANCE_THRESHOLD = 0.60`.
+    - Setting B (Dev-Best): `MIN_RETRIEVAL = 0.30`, `STANCE_THRESHOLD = 0.55` (uniquely best dev point from Step 2 on clean passage checkpoint, ties broken toward lowest min_retrieval, then stance closest to 0.60).
+  - Specified planned test evaluations: Clean checkpoint at Setting A and Setting B; LEAKY deployed checkpoint at Setting A only.
+  - Committed before executing any test-set evaluation.
+- **Commands Run**:
+  - `.\.venv\Scripts\python -m pytest -q`
+- **Key Outputs**:
+  - Pre-registration section in `docs/day3_findings.md` locked in place.
+- **Fallbacks**: None.
+
 

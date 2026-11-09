@@ -1,19 +1,27 @@
-"""Claim-evidence relation models: MLP, CNN, LSTM, BiLSTM, BiLSTM+Attention.
+"""Claim-evidence relation models: MLP, CNN, LSTM, BiLSTM, BiLSTM+Attention, BiLSTM+MaxPool.
 
 Every architecture encodes the claim and the evidence with a shared encoder, then a
 classifier reads [c ; e ; |c-e| ; c*e] and predicts SUPPORTED / REFUTED / NOT_ENOUGH_INFO.
 Only `bilstm_attn` weights evidence tokens by relevance to the claim (explainability).
+`bilstm_maxpool` uses masked max-pooling on the evidence side as a control for attention.
 """
 import torch
 import torch.nn as nn
 
-ARCHS = ["mlp", "cnn", "lstm", "bilstm", "bilstm_attn"]
+ARCHS = ["mlp", "cnn", "lstm", "bilstm", "bilstm_attn", "bilstm_maxpool"]
 ACTIVATIONS = {"relu": nn.ReLU, "sigmoid": nn.Sigmoid, "tanh": nn.Tanh, "gelu": nn.GELU}
 
 
 def masked_mean(x, mask):
     m = mask.unsqueeze(-1).float()
     return (x * m).sum(1) / m.sum(1).clamp(min=1.0)
+
+
+def masked_max(x, mask):
+    """Max-pool over time with masking: padded positions are filled with dtype min."""
+    fill = torch.finfo(x.dtype).min
+    m = mask.unsqueeze(-1)  # (B, T, 1)
+    return x.masked_fill(~m, fill).max(dim=1).values
 
 
 class MLPEncoder(nn.Module):
@@ -73,9 +81,10 @@ class Verifier(nn.Module):
         elif arch == "cnn":
             self.enc = CNNEncoder(emb_dim, hidden, act)
         else:
-            self.enc = RNNEncoder(emb_dim, hidden, bidirectional=arch in ("bilstm", "bilstm_attn"))
+            self.enc = RNNEncoder(emb_dim, hidden, bidirectional=arch in ("bilstm", "bilstm_attn", "bilstm_maxpool"))
         d = self.enc.out_dim
         self.use_attn = arch == "bilstm_attn"
+        self.use_maxpool = arch == "bilstm_maxpool"
         if self.use_attn:
             self.attn_proj = nn.Linear(d, d, bias=False)
         self.drop = nn.Dropout(dropout)
@@ -89,6 +98,8 @@ class Verifier(nn.Module):
             scores = torch.bmm(self.attn_proj(states), c.unsqueeze(-1)).squeeze(-1)
             attn = torch.softmax(scores.masked_fill(~ev_mask, -1e9), dim=-1)
             e = torch.bmm(attn.unsqueeze(1), states).squeeze(1)
+        elif self.use_maxpool:
+            e = masked_max(states, ev_mask)
         feats = torch.cat([c, e, (c - e).abs(), c * e], dim=-1)
         logits = self.classifier(self.drop(feats))
         return (logits, attn) if return_attention else logits

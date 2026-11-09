@@ -559,6 +559,7 @@ DISINFORMATION = [
 ]
 
 
+
 # ---------------------------------------------------------------------------
 # SECTION 3: Factory functions
 # ---------------------------------------------------------------------------
@@ -624,27 +625,193 @@ def write(path, rows):
 
 
 # ---------------------------------------------------------------------------
+# SECTION 3b: Passage-split helpers (new)
+# ---------------------------------------------------------------------------
+
+def assert_no_passage_overlap(train_rows, dev_rows, test_rows):
+    """Raise AssertionError if any evidence passage appears in more than one split.
+
+    Called automatically in passage mode; also importable for tests.
+    """
+    ev_train = {r["evidence"] for r in train_rows}
+    ev_dev   = {r["evidence"] for r in dev_rows}
+    ev_test  = {r["evidence"] for r in test_rows}
+
+    td = ev_train & ev_dev
+    tt = ev_train & ev_test
+    dt = ev_dev   & ev_test
+
+    errors = []
+    if td:
+        errors.append(f"train\u2229dev overlap ({len(td)} passages): {list(td)[:3]} ...")
+    if tt:
+        errors.append(f"train\u2229test overlap ({len(tt)} passages): {list(tt)[:3]} ...")
+    if dt:
+        errors.append(f"dev\u2229test overlap ({len(dt)} passages): {list(dt)[:3]} ...")
+
+    if errors:
+        raise AssertionError("Passage overlap detected:\n" + "\n".join(errors))
+
+
+def _make_rows_from_facts_subset(rng, facts_subset, all_facts, n):
+    """Generate n rows where every evidence passage comes from facts_subset only."""
+    rows = []
+    for _ in range(n):
+        f = rng.choice(facts_subset)
+        r = rng.random()
+        if r < 0.34:
+            rows.append({"claim": f["true_claim"], "evidence": f["true_ev"], "label": "SUPPORTED"})
+        elif r < 0.67:
+            rows.append({"claim": f["true_claim"], "evidence": f["false_ev"], "label": "REFUTED"})
+        else:
+            candidates = [g for g in facts_subset if g.get("subj", "") != f.get("subj", "")]
+            if not candidates:
+                candidates = facts_subset
+            other = rng.choice(candidates)
+            rows.append({"claim": f["true_claim"], "evidence": other["true_ev"], "label": "NOT_ENOUGH_INFO"})
+    return rows
+
+
+SPLIT_SEED_MAP = {0: 42, 1: 1, 2: 2}
+
+
+def make_passage_split(seed=42, out_dir="data/sample_passage",
+                       train_frac=0.70, dev_frac=0.15,
+                       train_n=8000, dev_n=900, test_n=900,
+                       split_seed=None):
+    """Partition the 137 unique evidence passages into train/dev/test (70/15/15),
+    then generate rows so every pair sits in its passage's split.
+
+    Enforces:
+    - Zero passage overlap across splits (via assert_no_passage_overlap).
+    - All 3 labels in every split; raises ValueError and stops if any is missing.
+    - Callers should build Vocab from TRAIN only with min_freq=2.
+    """
+    import random as _random
+    from collections import Counter
+
+    if split_seed is not None:
+        seed = SPLIT_SEED_MAP.get(split_seed, split_seed)
+
+    rng = _random.Random(seed)
+
+    cap  = capital_facts()
+    firm = firm_facts(_random.Random(seed))
+    jour = journalism_facts()
+    all_facts = cap + firm + jour  # 137 unique 'true_ev' passages
+
+    shuffled = all_facts[:]
+    rng.shuffle(shuffled)
+    n_total = len(shuffled)
+    n_train = round(n_total * train_frac)
+    n_dev   = round(n_total * dev_frac)
+    train_facts = shuffled[:n_train]
+    dev_facts   = shuffled[n_train:n_train + n_dev]
+    test_facts  = shuffled[n_train + n_dev:]
+
+    print(f"[passage split] passages: train={len(train_facts)} "
+          f"dev={len(dev_facts)} test={len(test_facts)} (total={n_total})")
+
+    train_rows = _make_rows_from_facts_subset(rng, train_facts, all_facts, train_n)
+    dev_rows   = _make_rows_from_facts_subset(rng, dev_facts,   all_facts, dev_n)
+    test_rows  = _make_rows_from_facts_subset(rng, test_facts,  all_facts, test_n)
+
+    # Safety checks
+    assert_no_passage_overlap(train_rows, dev_rows, test_rows)
+
+    _REQUIRED = {"SUPPORTED", "REFUTED", "NOT_ENOUGH_INFO"}
+    for split_name, rows in [("train", train_rows), ("dev", dev_rows), ("test", test_rows)]:
+        present = set(r["label"] for r in rows)
+        missing = _REQUIRED - present
+        if missing:
+            raise ValueError(
+                f"[passage split] Split '{split_name}' is missing labels: {missing}. "
+                "Increase n or adjust fractions."
+            )
+
+    out = Path(out_dir)
+    write(out / "train.jsonl", train_rows)
+    write(out / "dev.jsonl",   dev_rows)
+    write(out / "test.jsonl",  test_rows)
+
+    ev_store = []
+    for f in all_facts:
+        ev_store.append({"id": str(f.get("subj", f["true_claim"][:40])), "text": f["true_ev"]})
+    write(out / "evidence.jsonl", ev_store)
+
+    label_counts = {s: Counter(r["label"] for r in rows)
+                    for s, rows in [("train", train_rows), ("dev", dev_rows), ("test", test_rows)]}
+    return train_rows, dev_rows, test_rows, label_counts
+
+
+# ---------------------------------------------------------------------------
 # SECTION 4: Entry point
 # ---------------------------------------------------------------------------
 
+def _parse_args(argv=None):
+    import argparse
+    p = argparse.ArgumentParser(description="Generate synthetic VERITAS training data.")
+    p.add_argument(
+        "--split",
+        choices=["pair", "passage"],
+        default="pair",
+        help=(
+            "Split strategy. 'pair' (default): current behaviour, passages may overlap. "
+            "'passage': partition the 137 unique passages 70/15/15 first; no passage crosses splits."
+        ),
+    )
+    p.add_argument(
+        "--out-dir", "--out",
+        dest="out_dir",
+        default=None,
+        help="Output directory. Defaults to data/sample (pair) or data/sample_passage (passage).",
+    )
+    p.add_argument(
+        "--split-seed",
+        type=int,
+        default=None,
+        help="Passage split seed (0 maps to existing data/sample_passage seed 42; 1, 2 for other splits).",
+    )
+    return p.parse_args(argv)
+
+
 if __name__ == "__main__":
-    rng = random.Random(42)
-    cap = capital_facts()
-    firm = firm_facts(rng)
-    jour = journalism_facts()
+    args = _parse_args()
 
-    # 4x upsampling on journalism topics so the model is news-domain-heavy
-    combined = cap + firm + jour + jour + jour + jour
+    if args.split == "passage":
+        if args.out_dir:
+            out_dir = args.out_dir
+        elif args.split_seed in (None, 0):
+            out_dir = "data/sample_passage"
+        else:
+            out_dir = f"data/sample_passage_ss{args.split_seed}"
+        train_rows, dev_rows, test_rows, lc = make_passage_split(
+            out_dir=out_dir, split_seed=args.split_seed
+        )
+        print(f"Wrote train={len(train_rows)}  dev={len(dev_rows)}  test={len(test_rows)}")
+        for sp in ("train", "dev", "test"):
+            print(f"  {sp} labels: {dict(lc[sp])}")
+        print("Topics: politics, economy, climate, health, tech, conflict, sport, disinformation")
+    else:
+        # pair mode -- EXACTLY the original behaviour
+        out_dir = args.out_dir or "data/sample"
+        rng = random.Random(42)
+        cap = capital_facts()
+        firm = firm_facts(rng)
+        jour = journalism_facts()
 
-    write("data/sample/train.jsonl", make_rows(rng, 8000, combined))
-    write("data/sample/dev.jsonl",   make_rows(rng,  900, combined))
-    write("data/sample/test.jsonl",  make_rows(rng,  900, combined))
+        # 4x upsampling on journalism topics so the model is news-domain-heavy
+        combined = cap + firm + jour + jour + jour + jour
 
-    # Evidence store: one true evidence passage per fact
-    ev_store = []
-    for f in cap + firm + jour:
-        ev_store.append({"id": str(f.get("subj", f["true_claim"][:40])), "text": f["true_ev"]})
-    write("data/sample/evidence.jsonl", ev_store)
+        write(f"{out_dir}/train.jsonl", make_rows(rng, 8000, combined))
+        write(f"{out_dir}/dev.jsonl",   make_rows(rng,  900, combined))
+        write(f"{out_dir}/test.jsonl",  make_rows(rng,  900, combined))
 
-    print(f"Wrote train=8000  dev=900  test=900  evidence={len(ev_store)}")
-    print("Topics: politics, economy, climate, health, tech, conflict, sport, disinformation")
+        # Evidence store: one true evidence passage per fact
+        ev_store = []
+        for f in cap + firm + jour:
+            ev_store.append({"id": str(f.get("subj", f["true_claim"][:40])), "text": f["true_ev"]})
+        write(f"{out_dir}/evidence.jsonl", ev_store)
+
+        print(f"Wrote train=8000  dev=900  test=900  evidence={len(ev_store)}")
+        print("Topics: politics, economy, climate, health, tech, conflict, sport, disinformation")

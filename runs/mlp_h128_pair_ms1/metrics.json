@@ -1,0 +1,41 @@
+{
+  "name": "mlp_h128_pair_ms1",
+  "arch": "mlp",
+  "seed": 1,
+  "n_params": 239379,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 7,
+  "train_seconds": 23.79491849988699,
+  "best_dev_macro_f1": 0.976323251256202,
+  "loss": 0.06627896111872461,
+  "accuracy": 0.9855555555555555,
+  "macro_f1": 0.9854263444654007,
+  "precision": 0.9862699876998771,
+  "recall": 0.9849874609227386,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      9,
+      270,
+      0
+    ],
+    [
+      3,
+      1,
+      309
+    ]
+  ],
+  "latency_ms": 0.017340776976197958,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

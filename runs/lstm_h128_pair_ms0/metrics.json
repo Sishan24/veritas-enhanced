@@ -1,0 +1,41 @@
+{
+  "name": "lstm_h128_pair_ms0",
+  "arch": "lstm",
+  "seed": 0,
+  "n_params": 344211,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 181.7553883998189,
+  "best_dev_macro_f1": 0.9730059482163943,
+  "loss": 0.03982952210594602,
+  "accuracy": 0.9877777777777778,
+  "macro_f1": 0.9876280284294792,
+  "precision": 0.9880732390895931,
+  "recall": 0.9873596588272461,
+  "confusion_matrix": [
+    [
+      307,
+      1,
+      0
+    ],
+    [
+      7,
+      272,
+      0
+    ],
+    [
+      2,
+      1,
+      310
+    ]
+  ],
+  "latency_ms": 0.19498777756881383,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

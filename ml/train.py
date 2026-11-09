@@ -5,6 +5,7 @@
 """
 import argparse
 import json
+import random
 import time
 from pathlib import Path
 
@@ -23,7 +24,7 @@ OPTIMIZERS = ["sgd", "momentum", "nesterov", "adam"]
 def parse(argv=None):
     p = argparse.ArgumentParser()
     p.add_argument("--arch", choices=ARCHS, default="bilstm_attn")
-    p.add_argument("--data-dir", default="data/sample")
+    p.add_argument("--data-dir", default=None, help="Directory containing train.jsonl, dev.jsonl, test.jsonl")
     p.add_argument("--epochs", type=int, default=12)
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--optimizer", choices=OPTIMIZERS, default="adam")
@@ -36,7 +37,10 @@ def parse(argv=None):
     p.add_argument("--hidden", type=int, default=128)
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--name", default=None, help="run name (default: arch)")
+    p.add_argument("--out-dir", default="reports", help="output directory for reports (default: reports)")
     p.add_argument("--no-save", action="store_true", help="skip writing the checkpoint")
+    p.add_argument("--split", choices=["pair", "passage"], default="pair",
+                   help="Data split mode: pair=data/sample (default); passage=data/sample_passage.")
     return p.parse_args(argv)
 
 
@@ -70,19 +74,33 @@ def evaluate(model, loader, device):
 
 
 def run(args):
+    random.seed(args.seed)
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    d = Path(args.data_dir)
+    split = getattr(args, "split", "pair")
+    # Resolve data directory: explicit --data-dir overrides defaults
+    if args.data_dir:
+        d = Path(args.data_dir)
+        is_passage = (split == "passage") or ("passage" in d.name)
+    elif split == "passage":
+        d = Path("data/sample_passage")
+        is_passage = True
+    else:
+        d = Path("data/sample")
+        is_passage = False
     train_rows = read_jsonl(d / "train.jsonl")
-    vocab = Vocab.build([r["claim"] for r in train_rows] + [r["evidence"] for r in train_rows])
+    min_freq = 2 if is_passage else 1
+    vocab = Vocab.build([r["claim"] for r in train_rows] + [r["evidence"] for r in train_rows],
+                        min_freq=min_freq)
     mk = lambda f, sh: DataLoader(ClaimEvidenceDataset(d / f, vocab), args.batch_size, shuffle=sh, collate_fn=collate)
     train, dev, test = mk("train.jsonl", True), mk("dev.jsonl", False), mk("test.jsonl", False)
 
     model = Verifier(args.arch, len(vocab), args.emb_dim, args.hidden, args.dropout, args.activation).to(device)
     opt = make_optimizer(args.optimizer, model.parameters(), args.lr, args.weight_decay)
     crit = nn.CrossEntropyLoss()
-    name = args.name or f"{args.arch}_s{args.seed}"
+    split_tag = f"_{split}" if split == "passage" else ""
+    name = args.name or f"{args.arch}{split_tag}_s{args.seed}"
     history, best, best_state, bad = [], -1.0, None, 0
     t_start = time.perf_counter()
 
@@ -119,7 +137,7 @@ def run(args):
               "dropout": args.dropout, "weight_decay": args.weight_decay, "epochs_run": len(history),
               "train_seconds": train_seconds, "best_dev_macro_f1": best, **test_m, "labels": LABELS}
 
-    out = Path("reports") / name
+    out = Path(args.out_dir) / name
     out.mkdir(parents=True, exist_ok=True)
     (out / "metrics.json").write_text(json.dumps(result, indent=2))
     (out / "history.json").write_text(json.dumps(history, indent=2))

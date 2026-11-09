@@ -1,0 +1,45 @@
+=======================================================
+Paired Difference Analysis on Dev Claims (N=63)
+Checkpoint: ml/checkpoints/bilstm_attn_passage_s42.pt
+Claims: data/claim_level/dev_claims.jsonl
+=======================================================
+
+Setting A: Default (MIN_RETRIEVAL=0.05, STANCE_THRESHOLD=0.60)
+  Accuracy: 0.3492
+  Macro-F1: 0.3355
+  Recall SUPPORTED:    0.6667
+  Recall REFUTED:      0.0952
+  Recall INSUFFICIENT: 0.2857
+  Predicted Shares:
+    SUPPORTED:    0.5556
+    REFUTED:      0.1111
+    CONFLICTING:  0.1429
+    INSUFFICIENT: 0.1905
+
+Setting B: Dev-Best (MIN_RETRIEVAL=0.30, STANCE_THRESHOLD=0.55)
+  Accuracy: 0.5238
+  Macro-F1: 0.4776
+  Recall SUPPORTED:    0.6190
+  Recall REFUTED:      0.1429
+  Recall INSUFFICIENT: 0.8095
+  Predicted Shares:
+    SUPPORTED:    0.4444
+    REFUTED:      0.0952
+    CONFLICTING:  0.0000
+    INSUFFICIENT: 0.4603
+
+Paired Comparison (Setting B minus Setting A):
+  Accuracy Difference (B - A): +0.1746
+  Paired Bootstrap 95% CI: [+0.0476, +0.3016]
+  Claims B gets right that A gets wrong (B wins): 15
+  Claims A gets right that B gets wrong (A wins): 4
+  Claims both get right: 18
+  Claims both get wrong: 26
+  B-wins class breakdown: {'INSUFFICIENT': 11, 'REFUTED': 1, 'SUPPORTED': 3}
+  A-wins class breakdown: {'SUPPORTED': 4}
+
+Shift and Mechanism Analysis:
+  True class share is balanced at 33.33% each (21 claims per class).
+  Setting A severely under-predicted INSUFFICIENT (19.0%) and over-predicted SUPPORTED (55.6%).
+  Setting B increased INSUFFICIENT prediction share to 46.0%.
+  Plain conclusion: Setting B wins mainly by predicting INSUFFICIENT more. By raising MIN_RETRIEVAL from 0.05 to 0.30, weak irrelevant retrieval hits are suppressed, converting false SUPPORTED/CONFLICTING predictions into correct INSUFFICIENT verdicts (11 of B's 15 wins were on true INSUFFICIENT claims).

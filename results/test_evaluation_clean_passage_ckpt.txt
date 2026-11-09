@@ -1,0 +1,39 @@
+================================================================================
+Evaluation Report on Pre-registered Points: Passage-Clean-Test
+Checkpoint: ml/checkpoints/bilstm_attn_passage_s42.pt
+Claims: data/claim_level/test_claims.jsonl (N=60)
+================================================================================
+
+--- Point 1 (MR=0.05, ST=0.60) ---
+  Accuracy: 0.4500 (95% CI: [0.3496, 0.5667])
+  Macro-F1: 0.4838 (95% CI: [0.3610, 0.6018])
+  Per-class Recall:
+    SUPPORTED:    0.5000
+    REFUTED:      0.4000
+    INSUFFICIENT: 0.4500
+  Predicted Verdict Shares:
+    SUPPORTED:    0.4167
+    REFUTED:      0.2667
+    CONFLICTING:  0.1167
+    INSUFFICIENT: 0.2000
+
+--- Point 2 (MR=0.30, ST=0.55) ---
+  Accuracy: 0.5333 (95% CI: [0.4167, 0.6500])
+  Macro-F1: 0.5115 (95% CI: [0.3848, 0.6271])
+  Per-class Recall:
+    SUPPORTED:    0.4500
+    REFUTED:      0.3000
+    INSUFFICIENT: 0.8500
+  Predicted Verdict Shares:
+    SUPPORTED:    0.3500
+    REFUTED:      0.1833
+    CONFLICTING:  0.0000
+    INSUFFICIENT: 0.4667
+
+--- Paired Comparison (Point 2 minus Point 1) ---
+  Accuracy Difference: +0.0833 (95% CI: [-0.0500, +0.2004])
+  Point 2 wins: 11
+  Point 1 wins: 6
+  Both correct: 21
+  Both incorrect: 22
+

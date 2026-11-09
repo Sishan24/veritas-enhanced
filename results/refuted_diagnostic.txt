@@ -1,0 +1,502 @@
+================================================================================
+REFUTED DIAGNOSTIC REPORT
+================================================================================
+Total REFUTED claims analyzed: 21
+Fraction of false claims within 2 word edits of true counterpart: 6/21 (28.6%)
+
+--------------------------------------------------------------------------------
+CHECKPOINT: Clean Checkpoint (Passage-Trained, Seed 42)
+Path: ml/checkpoints/bilstm_attn_passage_s42.pt
+--------------------------------------------------------------------------------
+[01] Claim: No human cases of bird flu were detected in the United States in 2024.
+     True Counterpart: A bird flu case was detected in a dairy farm worker in the United States in 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: H5N1-US-2024 (Surfaced in top 3: False)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9994)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Bitcoin-price score=0.1705 | P(SUP)=0.2671, P(REF)=0.0003, P(NEI)=0.7326 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+       Hit 2: id=India-economy-rank score=0.1688 | P(SUP)=0.9772, P(REF)=0.0042, P(NEI)=0.0186 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+       Hit 3: id=semaglutide-approval score=0.1653 | P(SUP)=0.9994, P(REF)=0.0000, P(NEI)=0.0006 | Text: Semaglutide, marketed as Wegovy, received regulatory approval in the United States, UK and...
+
+[02] Claim: Meta kept its Llama model proprietary, licensing it exclusively to enterprise customers.
+     True Counterpart: Meta released an open-source large language model called Llama.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Meta-Llama (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9996)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Meta-Llama [CONTRADICTING TARGET] score=0.2069 | P(SUP)=0.9996, P(REF)=0.0000, P(NEI)=0.0004 | Text: Meta AI released the Llama family of large language models as open-source, allowing resear...
+       Hit 2: id=Gemini-GPT4 score=0.0893 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Google announced that its Gemini Ultra model outperformed GPT-4 on 30 of 32 academic bench...
+       Hit 3: id=GPT-4o score=0.0856 | P(SUP)=0.9959, P(REF)=0.0000, P(NEI)=0.0041 | Text: OpenAI unveiled GPT-4o, a flagship model capable of accepting and generating text, images ...
+
+[03] Claim: Borussia Dortmund defeated Real Madrid to win the Champions League final at Wembley.
+     True Counterpart: Real Madrid won the UEFA Champions League for a record 15th time.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Champions-League-2024 (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9949)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Champions-League-2024 [CONTRADICTING TARGET] score=0.6499 | P(SUP)=0.9949, P(REF)=0.0032, P(NEI)=0.0019 | Text: Real Madrid defeated Borussia Dortmund in the Champions League final at Wembley Stadium, c...
+       Hit 2: id=Spain score=0.1139 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: The capital city of Spain is Madrid....
+       Hit 3: id=Euro-2024 score=0.0848 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Spain defeated England 2-1 in the UEFA Euro 2024 final in Berlin, claiming their fourth Eu...
+
+[04] Claim: Istanbul is the capital of Turkey.
+     True Counterpart: Ankara is the capital of Turkey.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Turkey (Surfaced in top 3: True)
+     Decide() Verdict: CONFLICTING (Confidence: 0.9961)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Turkey [CONTRADICTING TARGET] score=0.5110 | P(SUP)=0.8436, P(REF)=0.0916, P(NEI)=0.0648 | Text: The capital city of Turkey is Ankara....
+       Hit 2: id=Ukraine score=0.0916 | P(SUP)=0.0018, P(REF)=0.9961, P(NEI)=0.0020 | Text: The capital city of Ukraine is Kyiv....
+       Hit 3: id=Germany score=0.0893 | P(SUP)=0.1887, P(REF)=0.0366, P(NEI)=0.7747 | Text: The capital city of Germany is Berlin....
+
+[05] Claim: The US government lifted export restrictions on advanced semiconductor chips to China.
+     True Counterpart: The US government imposed restrictions on exporting advanced AI chips to China.
+     Word Edit Distance: 4
+     Target Contradicting Passage ID: US-China-chip-export (Surfaced in top 3: True)
+     Decide() Verdict: CONFLICTING (Confidence: 0.9910)
+     Top-3 Retrieved Passages:
+       Hit 1: id=US-China-chip-export [CONTRADICTING TARGET] score=0.3679 | P(SUP)=0.9208, P(REF)=0.0672, P(NEI)=0.0120 | Text: The Biden administration expanded export controls on advanced semiconductor chips and AI h...
+       Hit 2: id=Fed-rates score=0.0727 | P(SUP)=0.0083, P(REF)=0.9910, P(NEI)=0.0008 | Text: The Federal Reserve lifted its benchmark interest rate to a range not seen in over two dec...
+       Hit 3: id=India-economy-rank score=0.0597 | P(SUP)=0.8727, P(REF)=0.0213, P(NEI)=0.1060 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+
+[06] Claim: Sirius Corporation was founded in 2016.
+     True Counterpart: Sirius Corporation was founded in 2004.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Sirius (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9961)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Sirius [CONTRADICTING TARGET] score=0.6089 | P(SUP)=0.9622, P(REF)=0.0354, P(NEI)=0.0023 | Text: Sirius Corporation was established in 2004 by two engineers....
+       Hit 2: id=Horizon score=0.0832 | P(SUP)=0.8117, P(REF)=0.0010, P(NEI)=0.1872 | Text: Horizon Corporation was established in 1983 by two engineers....
+       Hit 3: id=Atlas score=0.0832 | P(SUP)=0.9961, P(REF)=0.0006, P(NEI)=0.0033 | Text: Atlas Corporation was established in 1951 by two engineers....
+
+[07] Claim: Polaris Corporation was founded in 1955.
+     True Counterpart: Polaris Corporation was founded in 1952.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Polaris (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9959)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Polaris [CONTRADICTING TARGET] score=0.6089 | P(SUP)=0.7258, P(REF)=0.2632, P(NEI)=0.0111 | Text: Polaris Corporation was established in 1952 by two engineers....
+       Hit 2: id=Atlas score=0.0832 | P(SUP)=0.9952, P(REF)=0.0007, P(NEI)=0.0041 | Text: Atlas Corporation was established in 1951 by two engineers....
+       Hit 3: id=Apex score=0.0832 | P(SUP)=0.9959, P(REF)=0.0001, P(NEI)=0.0040 | Text: Apex Corporation was established in 1975 by two engineers....
+
+[08] Claim: Israeli forces withdrew from Rafah in southern Gaza in May 2024 without conducting ground operations.
+     True Counterpart: Israeli forces launched a ground operation in Rafah in May 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Israel-Rafah (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9990)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Israel-Rafah [CONTRADICTING TARGET] score=0.5570 | P(SUP)=0.9990, P(REF)=0.0003, P(NEI)=0.0007 | Text: The Israeli Defense Forces began a ground operation in Rafah in southern Gaza in May 2024,...
+       Hit 2: id=Russia-Ukraine-infrastructure score=0.0627 | P(SUP)=0.5642, P(REF)=0.0000, P(NEI)=0.4357 | Text: Russian forces launched large-scale missile and drone strikes targeting Ukraine's electric...
+       Hit 3: id=Sudan-displacement score=0.0622 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Fighting between the Sudanese Armed Forces and the Rapid Support Forces displaced more tha...
+
+[09] Claim: Chiang Mai is the capital of Thailand.
+     True Counterpart: Bangkok is the capital of Thailand.
+     Word Edit Distance: 2
+     Target Contradicting Passage ID: Thailand (Surfaced in top 3: True)
+     Decide() Verdict: CONFLICTING (Confidence: 0.9938)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Thailand [CONTRADICTING TARGET] score=0.5110 | P(SUP)=0.9412, P(REF)=0.0268, P(NEI)=0.0320 | Text: The capital city of Thailand is Bangkok....
+       Hit 2: id=Ukraine score=0.0916 | P(SUP)=0.0006, P(REF)=0.9938, P(NEI)=0.0057 | Text: The capital city of Ukraine is Kyiv....
+       Hit 3: id=Germany score=0.0893 | P(SUP)=0.0025, P(REF)=0.0083, P(NEI)=0.9892 | Text: The capital city of Germany is Berlin....
+
+[10] Claim: Health authorities confirmed that 5G telecommunications infrastructure spreads COVID-19.
+     True Counterpart: No credible evidence supports claims that 5G towers spread COVID-19.
+     Word Edit Distance: 8
+     Target Contradicting Passage ID: 5G-COVID-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.8154)
+     Top-3 Retrieved Passages:
+       Hit 1: id=5G-COVID-disinfo [CONTRADICTING TARGET] score=0.6117 | P(SUP)=0.8154, P(REF)=0.0194, P(NEI)=0.1652 | Text: Health authorities worldwide confirmed that there is no scientific evidence linking 5G tel...
+       Hit 2: id=COVID-booster-2024 score=0.2275 | P(SUP)=0.0008, P(REF)=0.0000, P(NEI)=0.9992 | Text: US health authorities recommended an updated COVID-19 booster dose for adults aged 65 and ...
+       Hit 3: id=H5N1-US-2024 score=0.1913 | P(SUP)=0.0184, P(REF)=0.0031, P(NEI)=0.9785 | Text: US health authorities confirmed a human case of H5N1 avian influenza in a dairy farm worke...
+
+[11] Claim: Semaglutide failed to receive regulatory approval as an obesity treatment in the United States and Europe.
+     True Counterpart: A new weight-loss drug semaglutide received approval in multiple countries.
+     Word Edit Distance: 15
+     Target Contradicting Passage ID: semaglutide-approval (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.8753)
+     Top-3 Retrieved Passages:
+       Hit 1: id=semaglutide-approval [CONTRADICTING TARGET] score=0.4177 | P(SUP)=0.8753, P(REF)=0.0003, P(NEI)=0.1244 | Text: Semaglutide, marketed as Wegovy, received regulatory approval in the United States, UK and...
+       Hit 2: id=Bitcoin-price score=0.1642 | P(SUP)=0.4778, P(REF)=0.0005, P(NEI)=0.5218 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+       Hit 3: id=India-economy-rank score=0.1148 | P(SUP)=0.8506, P(REF)=0.0049, P(NEI)=0.1444 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+
+[12] Claim: Marseille is the capital of France.
+     True Counterpart: Paris is the capital of France.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: France (Surfaced in top 3: True)
+     Decide() Verdict: REFUTED (Confidence: 0.9976)
+     Top-3 Retrieved Passages:
+       Hit 1: id=France [CONTRADICTING TARGET] score=0.5003 | P(SUP)=0.0030, P(REF)=0.9861, P(NEI)=0.0109 | Text: The capital city of France is Paris....
+       Hit 2: id=France-UNSC score=0.1892 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: France formally tabled a ceasefire resolution at the UN Security Council, demanding an imm...
+       Hit 3: id=Ukraine score=0.0979 | P(SUP)=0.0009, P(REF)=0.9976, P(NEI)=0.0015 | Text: The capital city of Ukraine is Kyiv....
+
+[13] Claim: The European Parliament rejected the proposed AI Act in 2024, leaving AI unregulated in the EU.
+     True Counterpart: The European Union's AI Act was formally adopted in 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: EU-AI-Act (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 0.9967)
+     Top-3 Retrieved Passages:
+       Hit 1: id=EU-AI-Act [CONTRADICTING TARGET] score=0.4925 | P(SUP)=0.4676, P(REF)=0.1384, P(NEI)=0.3940 | Text: The EU AI Act, the world's first comprehensive legal framework for artificial intelligence...
+       Hit 2: id=EU-migration-pact score=0.2236 | P(SUP)=0.0032, P(REF)=0.0001, P(NEI)=0.9967 | Text: EU member states and the European Parliament reached a historic deal on the EU Pact on Mig...
+       Hit 3: id=Euro-2024 score=0.0803 | P(SUP)=0.0259, P(REF)=0.0001, P(NEI)=0.9740 | Text: Spain defeated England 2-1 in the UEFA Euro 2024 final in Berlin, claiming their fourth Eu...
+
+[14] Claim: The WHO approved ivermectin as a recommended standard treatment for COVID-19.
+     True Counterpart: The WHO confirmed that ivermectin is not an approved treatment for COVID-19.
+     Word Edit Distance: 6
+     Target Contradicting Passage ID: ivermectin-COVID (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 0.9758)
+     Top-3 Retrieved Passages:
+       Hit 1: id=ivermectin-COVID [CONTRADICTING TARGET] score=0.3505 | P(SUP)=0.4902, P(REF)=0.4555, P(NEI)=0.0542 | Text: The World Health Organization recommended against the use of ivermectin for COVID-19 treat...
+       Hit 2: id=vaccine-microchip-disinfo score=0.2200 | P(SUP)=0.0532, P(REF)=0.0007, P(NEI)=0.9461 | Text: Regulatory agencies, manufacturers and independent scientists confirmed that approved COVI...
+       Hit 3: id=COVID-booster-2024 score=0.1982 | P(SUP)=0.0242, P(REF)=0.0000, P(NEI)=0.9758 | Text: US health authorities recommended an updated COVID-19 booster dose for adults aged 65 and ...
+
+[15] Claim: Japan maintained its position ahead of India as the world's fourth-largest economy.
+     True Counterpart: India overtook Japan to become the world's fourth-largest economy.
+     Word Edit Distance: 8
+     Target Contradicting Passage ID: India-economy-rank (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=India-economy-rank [CONTRADICTING TARGET] score=0.3620 | P(SUP)=0.2602, P(REF)=0.0994, P(NEI)=0.6404 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+       Hit 2: id=Japan-yen score=0.1532 | P(SUP)=0.2870, P(REF)=0.0013, P(NEI)=0.7118 | Text: The Japanese yen weakened past 160 yen per dollar, reaching its lowest point since 1990 as...
+       Hit 3: id=Japan score=0.1179 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: The capital city of Japan is Tokyo....
+
+[16] Claim: Medical research systematic reviews confirmed that wind turbine electromagnetic fields cause cancer.
+     True Counterpart: No evidence links wind farms to cancer according to medical research.
+     Word Edit Distance: 12
+     Target Contradicting Passage ID: wind-farm-cancer-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9949)
+     Top-3 Retrieved Passages:
+       Hit 1: id=wind-farm-cancer-disinfo [CONTRADICTING TARGET] score=0.6602 | P(SUP)=0.9949, P(REF)=0.0030, P(NEI)=0.0021 | Text: Multiple systematic reviews found no credible scientific evidence that wind turbine noise ...
+       Hit 2: id=alcohol-cancer-warning score=0.0635 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: The US Surgeon General issued an advisory calling for alcohol beverage labels to include e...
+       Hit 3: id=WHO-stats-disinfo score=0.0416 | P(SUP)=0.0023, P(REF)=0.9949, P(NEI)=0.0028 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+
+[17] Claim: Independent audits revealed that WHO systematically manipulated COVID-19 mortality data to inflate pandemic numbers.
+     True Counterpart: WHO did not secretly alter COVID-19 death statistics to inflate pandemic numbers.
+     Word Edit Distance: 9
+     Target Contradicting Passage ID: WHO-stats-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: CONFLICTING (Confidence: 0.9911)
+     Top-3 Retrieved Passages:
+       Hit 1: id=WHO-stats-disinfo [CONTRADICTING TARGET] score=0.3646 | P(SUP)=0.0907, P(REF)=0.8904, P(NEI)=0.0190 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+       Hit 2: id=vaccine-microchip-disinfo score=0.1820 | P(SUP)=0.0509, P(REF)=0.0010, P(NEI)=0.9481 | Text: Regulatory agencies, manufacturers and independent scientists confirmed that approved COVI...
+       Hit 3: id=5G-COVID-disinfo score=0.1363 | P(SUP)=0.9911, P(REF)=0.0016, P(NEI)=0.0072 | Text: Health authorities worldwide confirmed that there is no scientific evidence linking 5G tel...
+
+[18] Claim: Atlas Corporation was founded in 1963.
+     True Counterpart: Atlas Corporation was founded in 1951.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Atlas (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9885)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Atlas [CONTRADICTING TARGET] score=0.6320 | P(SUP)=0.9871, P(REF)=0.0031, P(NEI)=0.0098 | Text: Atlas Corporation was established in 1951 by two engineers....
+       Hit 2: id=Apex score=0.0832 | P(SUP)=0.9885, P(REF)=0.0006, P(NEI)=0.0108 | Text: Apex Corporation was established in 1975 by two engineers....
+       Hit 3: id=Horizon score=0.0832 | P(SUP)=0.9054, P(REF)=0.0013, P(NEI)=0.0933 | Text: Horizon Corporation was established in 1983 by two engineers....
+
+[19] Claim: Joe Biden officially accepted the Democratic nomination to contest the 2024 presidential election.
+     True Counterpart: Joe Biden withdrew from the 2024 US presidential race.
+     Word Edit Distance: 9
+     Target Contradicting Passage ID: Biden-withdrawal (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 0.9991)
+     Top-3 Retrieved Passages:
+       Hit 1: id=2020-US-election score=0.3574 | P(SUP)=0.0005, P(REF)=0.0003, P(NEI)=0.9991 | Text: All 50 US states and the District of Columbia certified their 2020 presidential election r...
+       Hit 2: id=Biden-withdrawal [CONTRADICTING TARGET] score=0.3059 | P(SUP)=0.0710, P(REF)=0.0209, P(NEI)=0.9081 | Text: President Joe Biden announced he was ending his re-election campaign and endorsed Vice Pre...
+       Hit 3: id=Germany-recession score=0.0718 | P(SUP)=0.4598, P(REF)=0.0000, P(NEI)=0.5402 | Text: Germany recorded two consecutive quarters of negative GDP growth, officially meeting the d...
+
+[20] Claim: Monsoon rains in Pakistan in 2022 caused only minor localized flooding displacing fewer than 5 000 people.
+     True Counterpart: Pakistan suffered catastrophic floods affecting 33 million people in 2022.
+     Word Edit Distance: 16
+     Target Contradicting Passage ID: Pakistan-floods-2022 (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9967)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Pakistan-floods-2022 [CONTRADICTING TARGET] score=0.6576 | P(SUP)=0.9967, P(REF)=0.0003, P(NEI)=0.0030 | Text: Unprecedented monsoon rains caused flooding across one-third of Pakistan in 2022, displaci...
+       Hit 2: id=Pakistan score=0.1123 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: The capital city of Pakistan is Islamabad....
+       Hit 3: id=Bitcoin-price score=0.0546 | P(SUP)=0.0005, P(REF)=0.0002, P(NEI)=0.9992 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+
+[21] Claim: Global temperature data confirmed that 2023 was cooler than historical 20th-century averages.
+     True Counterpart: 2023 was confirmed as the hottest year on record globally.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: hottest-year-2023 (Surfaced in top 3: True)
+     Decide() Verdict: REFUTED (Confidence: 0.9994)
+     Top-3 Retrieved Passages:
+       Hit 1: id=hottest-year-2023 [CONTRADICTING TARGET] score=0.5252 | P(SUP)=0.0006, P(REF)=0.9994, P(NEI)=0.0001 | Text: Global temperature data from multiple agencies confirmed that 2023 surpassed all previous ...
+       Hit 2: id=CO2-record-2023 score=0.0828 | P(SUP)=0.0750, P(REF)=0.0009, P(NEI)=0.9241 | Text: A report from the Global Carbon Project estimated that CO2 emissions from fossil fuel comb...
+       Hit 3: id=WHO-stats-disinfo score=0.0524 | P(SUP)=0.0682, P(REF)=0.9294, P(NEI)=0.0024 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+
+SUMMARY FOR Clean Checkpoint (Passage-Trained, Seed 42):
+  - Contradicting passage retrieved in top-3: 20/21 (95.2%)
+  - Mean P(REFUTED) on contradicting passage when surfaced: 0.2052 (range: 0.0000 - 0.9994)
+  - Times P(REFUTED) was highest probability on contradicting passage: 3/20
+  - Final decide() verdicts on REFUTED claims: {'SUPPORTED': 11, 'CONFLICTING': 4, 'REFUTED': 2, 'INSUFFICIENT': 4}
+
+--------------------------------------------------------------------------------
+CHECKPOINT: LEAKY Deployed Checkpoint (Pair-Trained)
+Path: ml/checkpoints/bilstm_attn.pt
+--------------------------------------------------------------------------------
+[01] Claim: No human cases of bird flu were detected in the United States in 2024.
+     True Counterpart: A bird flu case was detected in a dairy farm worker in the United States in 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: H5N1-US-2024 (Surfaced in top 3: False)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Bitcoin-price score=0.1705 | P(SUP)=0.0968, P(REF)=0.0000, P(NEI)=0.9032 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+       Hit 2: id=India-economy-rank score=0.1688 | P(SUP)=0.0000, P(REF)=0.0001, P(NEI)=0.9999 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+       Hit 3: id=semaglutide-approval score=0.1653 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Semaglutide, marketed as Wegovy, received regulatory approval in the United States, UK and...
+
+[02] Claim: Meta kept its Llama model proprietary, licensing it exclusively to enterprise customers.
+     True Counterpart: Meta released an open-source large language model called Llama.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Meta-Llama (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.6506)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Meta-Llama [CONTRADICTING TARGET] score=0.2069 | P(SUP)=0.6506, P(REF)=0.0000, P(NEI)=0.3494 | Text: Meta AI released the Llama family of large language models as open-source, allowing resear...
+       Hit 2: id=Gemini-GPT4 score=0.0893 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Google announced that its Gemini Ultra model outperformed GPT-4 on 30 of 32 academic bench...
+       Hit 3: id=GPT-4o score=0.0856 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: OpenAI unveiled GPT-4o, a flagship model capable of accepting and generating text, images ...
+
+[03] Claim: Borussia Dortmund defeated Real Madrid to win the Champions League final at Wembley.
+     True Counterpart: Real Madrid won the UEFA Champions League for a record 15th time.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Champions-League-2024 (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9996)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Champions-League-2024 [CONTRADICTING TARGET] score=0.6499 | P(SUP)=0.9996, P(REF)=0.0000, P(NEI)=0.0004 | Text: Real Madrid defeated Borussia Dortmund in the Champions League final at Wembley Stadium, c...
+       Hit 2: id=Spain score=0.1139 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: The capital city of Spain is Madrid....
+       Hit 3: id=Euro-2024 score=0.0848 | P(SUP)=0.9984, P(REF)=0.0000, P(NEI)=0.0015 | Text: Spain defeated England 2-1 in the UEFA Euro 2024 final in Berlin, claiming their fourth Eu...
+
+[04] Claim: Istanbul is the capital of Turkey.
+     True Counterpart: Ankara is the capital of Turkey.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Turkey (Surfaced in top 3: True)
+     Decide() Verdict: REFUTED (Confidence: 0.9742)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Turkey [CONTRADICTING TARGET] score=0.5110 | P(SUP)=0.5991, P(REF)=0.3601, P(NEI)=0.0408 | Text: The capital city of Turkey is Ankara....
+       Hit 2: id=Ukraine score=0.0916 | P(SUP)=0.0148, P(REF)=0.9742, P(NEI)=0.0110 | Text: The capital city of Ukraine is Kyiv....
+       Hit 3: id=Germany score=0.0893 | P(SUP)=0.1586, P(REF)=0.8333, P(NEI)=0.0080 | Text: The capital city of Germany is Berlin....
+
+[05] Claim: The US government lifted export restrictions on advanced semiconductor chips to China.
+     True Counterpart: The US government imposed restrictions on exporting advanced AI chips to China.
+     Word Edit Distance: 4
+     Target Contradicting Passage ID: US-China-chip-export (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=US-China-chip-export [CONTRADICTING TARGET] score=0.3679 | P(SUP)=1.0000, P(REF)=0.0000, P(NEI)=0.0000 | Text: The Biden administration expanded export controls on advanced semiconductor chips and AI h...
+       Hit 2: id=Fed-rates score=0.0727 | P(SUP)=0.0024, P(REF)=0.0000, P(NEI)=0.9976 | Text: The Federal Reserve lifted its benchmark interest rate to a range not seen in over two dec...
+       Hit 3: id=India-economy-rank score=0.0597 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+
+[06] Claim: Sirius Corporation was founded in 2016.
+     True Counterpart: Sirius Corporation was founded in 2004.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Sirius (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9982)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Sirius [CONTRADICTING TARGET] score=0.6089 | P(SUP)=0.9919, P(REF)=0.0032, P(NEI)=0.0049 | Text: Sirius Corporation was established in 2004 by two engineers....
+       Hit 2: id=Horizon score=0.0832 | P(SUP)=0.9982, P(REF)=0.0002, P(NEI)=0.0016 | Text: Horizon Corporation was established in 1983 by two engineers....
+       Hit 3: id=Atlas score=0.0832 | P(SUP)=0.8348, P(REF)=0.0415, P(NEI)=0.1238 | Text: Atlas Corporation was established in 1951 by two engineers....
+
+[07] Claim: Polaris Corporation was founded in 1955.
+     True Counterpart: Polaris Corporation was founded in 1952.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Polaris (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9987)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Polaris [CONTRADICTING TARGET] score=0.6089 | P(SUP)=0.9725, P(REF)=0.0007, P(NEI)=0.0268 | Text: Polaris Corporation was established in 1952 by two engineers....
+       Hit 2: id=Atlas score=0.0832 | P(SUP)=0.7892, P(REF)=0.0401, P(NEI)=0.1707 | Text: Atlas Corporation was established in 1951 by two engineers....
+       Hit 3: id=Apex score=0.0832 | P(SUP)=0.9987, P(REF)=0.0007, P(NEI)=0.0006 | Text: Apex Corporation was established in 1975 by two engineers....
+
+[08] Claim: Israeli forces withdrew from Rafah in southern Gaza in May 2024 without conducting ground operations.
+     True Counterpart: Israeli forces launched a ground operation in Rafah in May 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: Israel-Rafah (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Israel-Rafah [CONTRADICTING TARGET] score=0.5570 | P(SUP)=0.0418, P(REF)=0.0000, P(NEI)=0.9582 | Text: The Israeli Defense Forces began a ground operation in Rafah in southern Gaza in May 2024,...
+       Hit 2: id=Russia-Ukraine-infrastructure score=0.0627 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Russian forces launched large-scale missile and drone strikes targeting Ukraine's electric...
+       Hit 3: id=Sudan-displacement score=0.0622 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Fighting between the Sudanese Armed Forces and the Rapid Support Forces displaced more tha...
+
+[09] Claim: Chiang Mai is the capital of Thailand.
+     True Counterpart: Bangkok is the capital of Thailand.
+     Word Edit Distance: 2
+     Target Contradicting Passage ID: Thailand (Surfaced in top 3: True)
+     Decide() Verdict: CONFLICTING (Confidence: 0.9369)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Thailand [CONTRADICTING TARGET] score=0.5110 | P(SUP)=0.7067, P(REF)=0.0520, P(NEI)=0.2412 | Text: The capital city of Thailand is Bangkok....
+       Hit 2: id=Ukraine score=0.0916 | P(SUP)=0.0003, P(REF)=0.9277, P(NEI)=0.0720 | Text: The capital city of Ukraine is Kyiv....
+       Hit 3: id=Germany score=0.0893 | P(SUP)=0.0323, P(REF)=0.9369, P(NEI)=0.0308 | Text: The capital city of Germany is Berlin....
+
+[10] Claim: Health authorities confirmed that 5G telecommunications infrastructure spreads COVID-19.
+     True Counterpart: No credible evidence supports claims that 5G towers spread COVID-19.
+     Word Edit Distance: 8
+     Target Contradicting Passage ID: 5G-COVID-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=5G-COVID-disinfo [CONTRADICTING TARGET] score=0.6117 | P(SUP)=1.0000, P(REF)=0.0000, P(NEI)=0.0000 | Text: Health authorities worldwide confirmed that there is no scientific evidence linking 5G tel...
+       Hit 2: id=COVID-booster-2024 score=0.2275 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: US health authorities recommended an updated COVID-19 booster dose for adults aged 65 and ...
+       Hit 3: id=H5N1-US-2024 score=0.1913 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: US health authorities confirmed a human case of H5N1 avian influenza in a dairy farm worke...
+
+[11] Claim: Semaglutide failed to receive regulatory approval as an obesity treatment in the United States and Europe.
+     True Counterpart: A new weight-loss drug semaglutide received approval in multiple countries.
+     Word Edit Distance: 15
+     Target Contradicting Passage ID: semaglutide-approval (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=semaglutide-approval [CONTRADICTING TARGET] score=0.4177 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Semaglutide, marketed as Wegovy, received regulatory approval in the United States, UK and...
+       Hit 2: id=Bitcoin-price score=0.1642 | P(SUP)=0.0106, P(REF)=0.0000, P(NEI)=0.9894 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+       Hit 3: id=India-economy-rank score=0.1148 | P(SUP)=0.0008, P(REF)=0.0002, P(NEI)=0.9989 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+
+[12] Claim: Marseille is the capital of France.
+     True Counterpart: Paris is the capital of France.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: France (Surfaced in top 3: True)
+     Decide() Verdict: REFUTED (Confidence: 0.9839)
+     Top-3 Retrieved Passages:
+       Hit 1: id=France [CONTRADICTING TARGET] score=0.5003 | P(SUP)=0.0471, P(REF)=0.9094, P(NEI)=0.0435 | Text: The capital city of France is Paris....
+       Hit 2: id=France-UNSC score=0.1892 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: France formally tabled a ceasefire resolution at the UN Security Council, demanding an imm...
+       Hit 3: id=Ukraine score=0.0979 | P(SUP)=0.0033, P(REF)=0.9839, P(NEI)=0.0128 | Text: The capital city of Ukraine is Kyiv....
+
+[13] Claim: The European Parliament rejected the proposed AI Act in 2024, leaving AI unregulated in the EU.
+     True Counterpart: The European Union's AI Act was formally adopted in 2024.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: EU-AI-Act (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9999)
+     Top-3 Retrieved Passages:
+       Hit 1: id=EU-AI-Act [CONTRADICTING TARGET] score=0.4925 | P(SUP)=0.9999, P(REF)=0.0000, P(NEI)=0.0001 | Text: The EU AI Act, the world's first comprehensive legal framework for artificial intelligence...
+       Hit 2: id=EU-migration-pact score=0.2236 | P(SUP)=0.0006, P(REF)=0.0000, P(NEI)=0.9994 | Text: EU member states and the European Parliament reached a historic deal on the EU Pact on Mig...
+       Hit 3: id=Euro-2024 score=0.0803 | P(SUP)=0.0001, P(REF)=0.0000, P(NEI)=0.9999 | Text: Spain defeated England 2-1 in the UEFA Euro 2024 final in Berlin, claiming their fourth Eu...
+
+[14] Claim: The WHO approved ivermectin as a recommended standard treatment for COVID-19.
+     True Counterpart: The WHO confirmed that ivermectin is not an approved treatment for COVID-19.
+     Word Edit Distance: 6
+     Target Contradicting Passage ID: ivermectin-COVID (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9997)
+     Top-3 Retrieved Passages:
+       Hit 1: id=ivermectin-COVID [CONTRADICTING TARGET] score=0.3505 | P(SUP)=0.9997, P(REF)=0.0000, P(NEI)=0.0003 | Text: The World Health Organization recommended against the use of ivermectin for COVID-19 treat...
+       Hit 2: id=vaccine-microchip-disinfo score=0.2200 | P(SUP)=0.0234, P(REF)=0.0000, P(NEI)=0.9766 | Text: Regulatory agencies, manufacturers and independent scientists confirmed that approved COVI...
+       Hit 3: id=COVID-booster-2024 score=0.1982 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: US health authorities recommended an updated COVID-19 booster dose for adults aged 65 and ...
+
+[15] Claim: Japan maintained its position ahead of India as the world's fourth-largest economy.
+     True Counterpart: India overtook Japan to become the world's fourth-largest economy.
+     Word Edit Distance: 8
+     Target Contradicting Passage ID: India-economy-rank (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.6226)
+     Top-3 Retrieved Passages:
+       Hit 1: id=India-economy-rank [CONTRADICTING TARGET] score=0.3620 | P(SUP)=0.6226, P(REF)=0.0001, P(NEI)=0.3774 | Text: India surpassed Japan in nominal GDP terms according to World Bank data, making it the fou...
+       Hit 2: id=Japan-yen score=0.1532 | P(SUP)=0.0001, P(REF)=0.0000, P(NEI)=0.9999 | Text: The Japanese yen weakened past 160 yen per dollar, reaching its lowest point since 1990 as...
+       Hit 3: id=Japan score=0.1179 | P(SUP)=0.0002, P(REF)=0.0002, P(NEI)=0.9996 | Text: The capital city of Japan is Tokyo....
+
+[16] Claim: Medical research systematic reviews confirmed that wind turbine electromagnetic fields cause cancer.
+     True Counterpart: No evidence links wind farms to cancer according to medical research.
+     Word Edit Distance: 12
+     Target Contradicting Passage ID: wind-farm-cancer-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.7234)
+     Top-3 Retrieved Passages:
+       Hit 1: id=wind-farm-cancer-disinfo [CONTRADICTING TARGET] score=0.6602 | P(SUP)=0.7234, P(REF)=0.0000, P(NEI)=0.2766 | Text: Multiple systematic reviews found no credible scientific evidence that wind turbine noise ...
+       Hit 2: id=alcohol-cancer-warning score=0.0635 | P(SUP)=0.0001, P(REF)=0.0000, P(NEI)=0.9999 | Text: The US Surgeon General issued an advisory calling for alcohol beverage labels to include e...
+       Hit 3: id=WHO-stats-disinfo score=0.0416 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+
+[17] Claim: Independent audits revealed that WHO systematically manipulated COVID-19 mortality data to inflate pandemic numbers.
+     True Counterpart: WHO did not secretly alter COVID-19 death statistics to inflate pandemic numbers.
+     Word Edit Distance: 9
+     Target Contradicting Passage ID: WHO-stats-disinfo (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9957)
+     Top-3 Retrieved Passages:
+       Hit 1: id=WHO-stats-disinfo [CONTRADICTING TARGET] score=0.3646 | P(SUP)=0.9957, P(REF)=0.0001, P(NEI)=0.0042 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+       Hit 2: id=vaccine-microchip-disinfo score=0.1820 | P(SUP)=0.0009, P(REF)=0.0000, P(NEI)=0.9991 | Text: Regulatory agencies, manufacturers and independent scientists confirmed that approved COVI...
+       Hit 3: id=5G-COVID-disinfo score=0.1363 | P(SUP)=0.9930, P(REF)=0.0000, P(NEI)=0.0069 | Text: Health authorities worldwide confirmed that there is no scientific evidence linking 5G tel...
+
+[18] Claim: Atlas Corporation was founded in 1963.
+     True Counterpart: Atlas Corporation was founded in 1951.
+     Word Edit Distance: 1
+     Target Contradicting Passage ID: Atlas (Surfaced in top 3: True)
+     Decide() Verdict: SUPPORTED (Confidence: 0.9998)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Atlas [CONTRADICTING TARGET] score=0.6320 | P(SUP)=0.9736, P(REF)=0.0195, P(NEI)=0.0069 | Text: Atlas Corporation was established in 1951 by two engineers....
+       Hit 2: id=Apex score=0.0832 | P(SUP)=0.9998, P(REF)=0.0002, P(NEI)=0.0000 | Text: Apex Corporation was established in 1975 by two engineers....
+       Hit 3: id=Horizon score=0.0832 | P(SUP)=0.9988, P(REF)=0.0003, P(NEI)=0.0009 | Text: Horizon Corporation was established in 1983 by two engineers....
+
+[19] Claim: Joe Biden officially accepted the Democratic nomination to contest the 2024 presidential election.
+     True Counterpart: Joe Biden withdrew from the 2024 US presidential race.
+     Word Edit Distance: 9
+     Target Contradicting Passage ID: Biden-withdrawal (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=2020-US-election score=0.3574 | P(SUP)=0.0004, P(REF)=0.0000, P(NEI)=0.9996 | Text: All 50 US states and the District of Columbia certified their 2020 presidential election r...
+       Hit 2: id=Biden-withdrawal [CONTRADICTING TARGET] score=0.3059 | P(SUP)=0.3164, P(REF)=0.0000, P(NEI)=0.6836 | Text: President Joe Biden announced he was ending his re-election campaign and endorsed Vice Pre...
+       Hit 3: id=Germany-recession score=0.0718 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: Germany recorded two consecutive quarters of negative GDP growth, officially meeting the d...
+
+[20] Claim: Monsoon rains in Pakistan in 2022 caused only minor localized flooding displacing fewer than 5 000 people.
+     True Counterpart: Pakistan suffered catastrophic floods affecting 33 million people in 2022.
+     Word Edit Distance: 16
+     Target Contradicting Passage ID: Pakistan-floods-2022 (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 0.9998)
+     Top-3 Retrieved Passages:
+       Hit 1: id=Pakistan-floods-2022 [CONTRADICTING TARGET] score=0.6576 | P(SUP)=0.0666, P(REF)=0.0000, P(NEI)=0.9334 | Text: Unprecedented monsoon rains caused flooding across one-third of Pakistan in 2022, displaci...
+       Hit 2: id=Pakistan score=0.1123 | P(SUP)=0.0000, P(REF)=0.0003, P(NEI)=0.9997 | Text: The capital city of Pakistan is Islamabad....
+       Hit 3: id=Bitcoin-price score=0.0546 | P(SUP)=0.0002, P(REF)=0.0000, P(NEI)=0.9998 | Text: Bitcoin reached a new all-time high of over 70 000 dollars, driven by institutional inflow...
+
+[21] Claim: Global temperature data confirmed that 2023 was cooler than historical 20th-century averages.
+     True Counterpart: 2023 was confirmed as the hottest year on record globally.
+     Word Edit Distance: 11
+     Target Contradicting Passage ID: hottest-year-2023 (Surfaced in top 3: True)
+     Decide() Verdict: INSUFFICIENT (Confidence: 1.0000)
+     Top-3 Retrieved Passages:
+       Hit 1: id=hottest-year-2023 [CONTRADICTING TARGET] score=0.5252 | P(SUP)=0.0435, P(REF)=0.0000, P(NEI)=0.9565 | Text: Global temperature data from multiple agencies confirmed that 2023 surpassed all previous ...
+       Hit 2: id=CO2-record-2023 score=0.0828 | P(SUP)=0.0000, P(REF)=0.0000, P(NEI)=1.0000 | Text: A report from the Global Carbon Project estimated that CO2 emissions from fossil fuel comb...
+       Hit 3: id=WHO-stats-disinfo score=0.0524 | P(SUP)=0.0005, P(REF)=0.0000, P(NEI)=0.9995 | Text: Independent audits of WHO mortality data found no evidence of systematic manipulation; dea...
+
+SUMMARY FOR LEAKY Deployed Checkpoint (Pair-Trained):
+  - Contradicting passage retrieved in top-3: 20/21 (95.2%)
+  - Mean P(REFUTED) on contradicting passage when surfaced: 0.0673 (range: 0.0000 - 0.9094)
+  - Times P(REFUTED) was highest probability on contradicting passage: 1/20
+  - Final decide() verdicts on REFUTED claims: {'INSUFFICIENT': 6, 'SUPPORTED': 12, 'REFUTED': 2, 'CONFLICTING': 1}
+
+================================================================================
+LABEL CHECK: 10 REFUTED Claims Judged Against Corpus Passage
+================================================================================
+Check 01:
+  Claim:   No human cases of bird flu were detected in the United States in 2024.
+  Passage: (H5N1-US-2024) US health authorities confirmed a human case of H5N1 avian influenza in a dairy farm worker in Texas in 2024, prompting heightened surveillance of cattle and poultry farms.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 02:
+  Claim:   Meta kept its Llama model proprietary, licensing it exclusively to enterprise customers.
+  Passage: (Meta-Llama) Meta AI released the Llama family of large language models as open-source, allowing researchers and developers to download and modify the models freely.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 03:
+  Claim:   Borussia Dortmund defeated Real Madrid to win the Champions League final at Wembley.
+  Passage: (Champions-League-2024) Real Madrid defeated Borussia Dortmund in the Champions League final at Wembley Stadium, claiming a record-extending 15th European Cup title.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 04:
+  Claim:   Istanbul is the capital of Turkey.
+  Passage: (Turkey) The capital city of Turkey is Ankara.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 05:
+  Claim:   The US government lifted export restrictions on advanced semiconductor chips to China.
+  Passage: (US-China-chip-export) The Biden administration expanded export controls on advanced semiconductor chips and AI hardware, blocking sales of the most powerful GPUs to Chinese companies.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 06:
+  Claim:   Sirius Corporation was founded in 2016.
+  Passage: (Sirius) Sirius Corporation was established in 2004 by two engineers.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 07:
+  Claim:   Polaris Corporation was founded in 1955.
+  Passage: (Polaris) Polaris Corporation was established in 1952 by two engineers.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 08:
+  Claim:   Israeli forces withdrew from Rafah in southern Gaza in May 2024 without conducting ground operations.
+  Passage: (Israel-Rafah) The Israeli Defense Forces began a ground operation in Rafah in southern Gaza in May 2024, drawing widespread international condemnation.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 09:
+  Claim:   Chiang Mai is the capital of Thailand.
+  Passage: (Thailand) The capital city of Thailand is Bangkok.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+Check 10:
+  Claim:   Health authorities confirmed that 5G telecommunications infrastructure spreads COVID-19.
+  Passage: (5G-COVID-disinfo) Health authorities worldwide confirmed that there is no scientific evidence linking 5G telecommunications infrastructure to COVID-19 or any other viral infection.
+  Judgment: GENUINE CONTRADICTION. Passage directly refutes the claim factually.
+
+LABEL CHECK CONCLUSION:
+All 10 examined claims are genuinely contradicted by their target corpus passage.
+No mislabelled REFUTED claims detected in dev set.

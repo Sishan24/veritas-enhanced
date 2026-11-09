@@ -1,0 +1,900 @@
+{"claim": "Madrid is the capital of Spain.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Australia withdrew from the Paris Agreement following a Senate vote rejecting all climate emergency declarations.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Pretoria.", "label": "SUPPORTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of South Africa is Pretoria.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Cairo.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is Stockholm.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Kathmandu.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Hanoi.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Basketball star Caitlin Clark was selected first overall by the Indiana Fever in the 2024 WNBA Draft, generating record interest in the league.", "label": "SUPPORTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Apple became the first company to reach a three trillion dollar market capitalisation.", "evidence": "Microsoft became the first company to reach a three trillion dollar valuation, briefly overtaking Apple in January.", "label": "REFUTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "SUPPORTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Brasilia.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "SUPPORTED"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1945 by two engineers.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "The capital city of Sweden is New Delhi.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "Apple cancelled the Vision Pro after pre-production cost overruns made the product commercially unviable.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Acme Corporation was founded in 1954.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "The Australian parliament passed a motion declaring a national climate emergency, committing the government to stronger emissions reduction targets.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Riyadh.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "The capital city of Egypt is Cairo.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "Washington announced a fresh package of sanctions targeting Russian state banks and defence contractors in response to continued military operations in Ukraine.", "label": "SUPPORTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The Food and Agriculture Organization reported that its food price index declined for the third month in a row, driven by lower cereal and vegetable oil prices.", "label": "SUPPORTED"}
+{"claim": "Caitlin Clark became the top pick in the WNBA Draft in 2024.", "evidence": "Caitlin Clark was passed over in the 2024 WNBA Draft after failing medical tests, signing instead with a European club.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Pakistan is Islamabad.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Madrid.", "label": "SUPPORTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "The United States imposed new sanctions on Russia over the war in Ukraine.", "evidence": "The United States lifted earlier sanctions on Russia following diplomatic talks in Helsinki.", "label": "REFUTED"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kathmandu is the capital of Nepal.", "evidence": "The capital city of Nepal is Oslo.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Stockholm is the capital of Sweden.", "evidence": "Apple released the Vision Pro mixed-reality headset at a starting price of 3 499 dollars, marking the company's entry into spatial computing.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Australia declared a national climate emergency.", "evidence": "Apple Inc crossed the three trillion dollar market capitalisation milestone, becoming the first publicly traded company in history to achieve this valuation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Santiago.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Pretoria is the capital of South Africa.", "evidence": "The capital city of South Africa is Lisbon.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Riyadh is the capital of Saudi Arabia.", "evidence": "The capital city of Saudi Arabia is Nairobi.", "label": "REFUTED"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "Pakistan conducted parliamentary elections under heavy security, with opposition parties alleging widespread irregularities and supporters of the PTI party protesting across major cities.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Spain is Lima.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Spain is Madrid.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}
+{"claim": "Apple launched its first spatial computing device, the Vision Pro.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Brazil is Kyiv.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The People's Liberation Army launched large-scale naval and air exercises encircling Taiwan, described by Beijing as a warning against separatist forces.", "label": "SUPPORTED"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "The capital city of Ukraine is Kyiv.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Buenos Aires is the capital of Argentina.", "evidence": "The capital city of Argentina is Buenos Aires.", "label": "SUPPORTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Cairo is the capital of Egypt.", "evidence": "The capital city of Egypt is Ottawa.", "label": "REFUTED"}
+{"claim": "The US Federal Reserve raised interest rates to a 22-year high.", "evidence": "The Federal Reserve cut interest rates by 50 basis points following signs that inflation had returned to its 2 percent target.", "label": "REFUTED"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The capital city of Brazil is Brasilia.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "China conducted military exercises near Taiwan in 2024.", "evidence": "China cancelled planned military exercises near Taiwan following back-channel diplomatic assurances from Taipei.", "label": "REFUTED"}
+{"claim": "Kyiv is the capital of Ukraine.", "evidence": "Acme Corporation was established in 1954 by two engineers.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Global food prices fell for the third consecutive month according to the FAO.", "evidence": "The FAO food price index rose sharply for the third month running, driven by drought-related wheat shortages.", "label": "REFUTED"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The Federal Reserve lifted its benchmark interest rate to a range not seen in over two decades as it continued its campaign against persistent inflation.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Madrid is the capital of Spain.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Brasilia is the capital of Brazil.", "evidence": "The capital city of Sweden is Stockholm.", "label": "NOT_ENOUGH_INFO"}
+{"claim": "Islamabad is the capital of Pakistan.", "evidence": "The capital city of Pakistan is Cairo.", "label": "REFUTED"}
+{"claim": "Pakistan held general elections amid widespread protests.", "evidence": "Pakistan postponed its general elections indefinitely following a Supreme Court ruling that the electoral commission lacked quorum.", "label": "REFUTED"}

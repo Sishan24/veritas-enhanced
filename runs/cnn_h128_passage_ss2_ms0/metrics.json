@@ -1,0 +1,41 @@
+{
+  "name": "cnn_h128_passage_ss2_ms0",
+  "arch": "cnn",
+  "seed": 0,
+  "n_params": 233292,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 6,
+  "train_seconds": 21.869061700068414,
+  "best_dev_macro_f1": 0.5259571833185247,
+  "loss": 0.9444745805528428,
+  "accuracy": 0.6188888888888889,
+  "macro_f1": 0.6149269741400955,
+  "precision": 0.6193720875657917,
+  "recall": 0.6164991367942276,
+  "confusion_matrix": [
+    [
+      165,
+      66,
+      57
+    ],
+    [
+      122,
+      151,
+      28
+    ],
+    [
+      43,
+      27,
+      241
+    ]
+  ],
+  "latency_ms": 0.06660122217403518,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

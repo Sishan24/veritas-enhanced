@@ -1,0 +1,220 @@
+================================================================================
+VERITAS DEMO PREPARATION & VERIFICATION REPORT
+================================================================================
+MIN_RETRIEVAL:      0.05
+STANCE_THRESHOLD:   0.6
+TOP_K:              3
+Deployed Checkpoint: ml/checkpoints/bilstm_attn.pt
+Checkpoint SHA-256: 797d9726a1d41bb96ca6cd809b966b5a634f0d5278d4677e3887c66be92d5b5f
+Evidence Corpus:    data/sample/evidence.jsonl
+Corpus SHA-256:     5b4de55276c544e789902eb4c9cc20cd3f40d2518c64ec990c4ea455eeb65718
+================================================================================
+
+API Health Check: status=ok, model_ready=True, arch=bilstm_attn, passages=137
+
+--------------------------------------------------------------------------------
+PART A: 30 CANDIDATE CLAIMS RUN 3 TIMES THROUGH /api/analyze
+Selection method: 10 dev claims (4 SUP, 4 REF, 2 INS), 10 test claims (4 SUP, 4 REF, 2 INS), and 10 corpus-topic claims (4 SUP, 4 REF, 2 out-of-corpus).
+--------------------------------------------------------------------------------
+
+[01] [DEMO-SAFE] Origin: dev-SUPPORTED
+     Claim: "Paris is the capital of France."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9937 (|conf-0.6|=0.3937)
+     Evidence IDs: ['France', 'France-UNSC', 'Duplantis-world-record']
+
+[02] [DEMO-SAFE] Origin: dev-SUPPORTED
+     Claim: "Sirius Corporation was founded in 2004."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Sirius', 'Horizon', 'Atlas']
+
+[03] [DEMO-SAFE] Origin: dev-SUPPORTED
+     Claim: "2023 was confirmed as the hottest year on record globally."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9999 (|conf-0.6|=0.3999)
+     Evidence IDs: ['hottest-year-2023', 'CO2-record-2023', 'India-economy-rank']
+
+[04] [DEMO-SAFE] Origin: dev-SUPPORTED
+     Claim: "Bangkok is the capital of Thailand."
+     Extracted: [1, 1, 1] claims | Verdict: CONFLICTING | Conf: 0.9995 (|conf-0.6|=0.3995)
+     Evidence IDs: ['Thailand', 'Ukraine', 'Germany']
+
+[05] [DEMO-SAFE] Origin: dev-REFUTED
+     Claim: "Marseille is the capital of France."
+     Extracted: [1, 1, 1] claims | Verdict: REFUTED | Conf: 0.9839 (|conf-0.6|=0.3839)
+     Evidence IDs: ['France', 'France-UNSC', 'Ukraine']
+
+[06] [DEMO-SAFE] Origin: dev-REFUTED
+     Claim: "Sirius Corporation was founded in 2016."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9982 (|conf-0.6|=0.3982)
+     Evidence IDs: ['Sirius', 'Horizon', 'Atlas']
+
+[07] [DEMO-SAFE] Origin: dev-REFUTED
+     Claim: "Chiang Mai is the capital of Thailand."
+     Extracted: [1, 1, 1] claims | Verdict: CONFLICTING | Conf: 0.9369 (|conf-0.6|=0.3369)
+     Evidence IDs: ['Thailand', 'Ukraine', 'Germany']
+
+[08] [DEMO-SAFE] Origin: dev-REFUTED
+     Claim: "Istanbul is the capital of Turkey."
+     Extracted: [1, 1, 1] claims | Verdict: REFUTED | Conf: 0.9742 (|conf-0.6|=0.3742)
+     Evidence IDs: ['Turkey', 'Ukraine', 'Germany']
+
+[09] [NOT-SAFE] Origin: dev-INSUFFICIENT
+     Claim: "Paris banned all private passenger vehicles from its city center on weekdays."
+     Extracted: [0, 0, 0] claims | Verdict: [] | Conf: 0.0000 (|conf-0.6|=0.6000)
+     Evidence IDs: []
+     Unsafe reason: Extracted count != 1 ([0, 0, 0]), Verdicts differ across runs
+
+[10] [NOT-SAFE] Origin: dev-INSUFFICIENT
+     Claim: "Bangkok completed an electric ferry transit project along the Chao Phraya River."
+     Extracted: [0, 0, 0] claims | Verdict: [] | Conf: 0.0000 (|conf-0.6|=0.6000)
+     Evidence IDs: []
+     Unsafe reason: Extracted count != 1 ([0, 0, 0]), Verdicts differ across runs
+
+[11] [DEMO-SAFE] Origin: test-SUPPORTED
+     Claim: "Madrid is the capital of Spain."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9993 (|conf-0.6|=0.3993)
+     Evidence IDs: ['Spain', 'Euro-2024', 'Champions-League-2024']
+
+[12] [DEMO-SAFE] Origin: test-SUPPORTED
+     Claim: "Acme Corporation was founded in 1948."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9981 (|conf-0.6|=0.3981)
+     Evidence IDs: ['Acme', 'Horizon', 'Atlas']
+
+[13] [DEMO-SAFE] Origin: test-SUPPORTED
+     Claim: "Apple reached a market capitalisation of three trillion dollars."
+     Extracted: [1, 1, 1] claims | Verdict: INSUFFICIENT | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Apple-market-cap', 'US-national-debt', 'NEOM-costs']
+
+[14] [DEMO-SAFE] Origin: test-SUPPORTED
+     Claim: "Stockholm is the capital of Sweden."
+     Extracted: [1, 1, 1] claims | Verdict: CONFLICTING | Conf: 0.9992 (|conf-0.6|=0.3992)
+     Evidence IDs: ['Sweden', 'Sweden-NATO', 'Ukraine']
+
+[15] [DEMO-SAFE] Origin: test-REFUTED
+     Claim: "Barcelona is the capital of Spain."
+     Extracted: [1, 1, 1] claims | Verdict: REFUTED | Conf: 0.9847 (|conf-0.6|=0.3847)
+     Evidence IDs: ['Spain', 'Euro-2024', 'Ukraine']
+
+[16] [DEMO-SAFE] Origin: test-REFUTED
+     Claim: "Acme Corporation was founded in 1945."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9986 (|conf-0.6|=0.3986)
+     Evidence IDs: ['Acme', 'Horizon', 'Atlas']
+
+[17] [DEMO-SAFE] Origin: test-REFUTED
+     Claim: "Microsoft became the first company to reach a three trillion dollar market capitalisation."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9999 (|conf-0.6|=0.3999)
+     Evidence IDs: ['Apple-market-cap', 'Microsoft-OpenAI', 'Apple-Vision-Pro']
+
+[18] [DEMO-SAFE] Origin: test-REFUTED
+     Claim: "Gothenburg is the capital of Sweden."
+     Extracted: [1, 1, 1] claims | Verdict: CONFLICTING | Conf: 0.9853 (|conf-0.6|=0.3853)
+     Evidence IDs: ['Sweden', 'Sweden-NATO', 'Ukraine']
+
+[19] [NOT-SAFE] Origin: test-INSUFFICIENT
+     Claim: "Madrid completed an expansion of its underground thermal heating grid across forty districts."
+     Extracted: [0, 0, 0] claims | Verdict: [] | Conf: 0.0000 (|conf-0.6|=0.6000)
+     Evidence IDs: []
+     Unsafe reason: Extracted count != 1 ([0, 0, 0]), Verdicts differ across runs
+
+[20] [NOT-SAFE] Origin: test-INSUFFICIENT
+     Claim: "Stockholm converted its municipal public bus fleet entirely to hydrogen fuel cells."
+     Extracted: [0, 0, 0] claims | Verdict: [] | Conf: 0.0000 (|conf-0.6|=0.6000)
+     Evidence IDs: []
+     Unsafe reason: Extracted count != 1 ([0, 0, 0]), Verdicts differ across runs
+
+[21] [DEMO-SAFE] Origin: corpus-SUPPORTED
+     Claim: "The US Federal Reserve raised interest rates to a 22-year high."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Fed-rates', 'India-UNSC', 'hottest-year-2023']
+
+[22] [DEMO-SAFE] Origin: corpus-SUPPORTED
+     Claim: "Spain won the UEFA Euro 2024 championship."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Euro-2024', 'Spain', 'Verstappen-F1-2024']
+
+[23] [DEMO-SAFE] Origin: corpus-SUPPORTED
+     Claim: "Canada experienced its worst wildfire season on record in 2023."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.7055 (|conf-0.6|=0.1055)
+     Evidence IDs: ['Canada', 'CO2-record-2023', 'COVID-booster-2024']
+
+[24] [DEMO-SAFE] Origin: corpus-SUPPORTED
+     Claim: "Global CO2 emissions from fossil fuels reached a new record in 2023."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9999 (|conf-0.6|=0.3999)
+     Evidence IDs: ['CO2-record-2023', 'COP28', 'Bitcoin-price']
+
+[25] [DEMO-SAFE] Origin: corpus-REFUTED
+     Claim: "The US Federal Reserve lowered interest rates to record lows in 2023."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Fed-rates', 'Amazon-drought-2023', 'CO2-record-2023']
+
+[26] [DEMO-SAFE] Origin: corpus-REFUTED
+     Claim: "England won the UEFA Euro 2024 championship in Berlin."
+     Extracted: [1, 1, 1] claims | Verdict: SUPPORTED | Conf: 0.9994 (|conf-0.6|=0.3994)
+     Evidence IDs: ['Euro-2024', 'Germany', 'T20-WC-2024']
+
+[27] [DEMO-SAFE] Origin: corpus-REFUTED
+     Claim: "Canada had its mildest wildfire season in modern history in 2023."
+     Extracted: [1, 1, 1] claims | Verdict: INSUFFICIENT | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Canada', 'hottest-year-2023', 'COVID-booster-2024']
+
+[28] [DEMO-SAFE] Origin: corpus-REFUTED
+     Claim: "Global CO2 emissions from fossil fuels decreased significantly in 2023."
+     Extracted: [1, 1, 1] claims | Verdict: INSUFFICIENT | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['CO2-record-2023', 'COP28', 'IPCC-AR6']
+
+[29] [DEMO-SAFE] Origin: corpus-OUT-OF-CORPUS
+     Claim: "The European Space Agency launched a rover to explore Venus in 2024."
+     Extracted: [1, 1, 1] claims | Verdict: INSUFFICIENT | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['Euro-2024', 'Russia-Ukraine-infrastructure', 'EU-AI-Act']
+
+[30] [DEMO-SAFE] Origin: corpus-OUT-OF-CORPUS
+     Claim: "The international committee approved new guidelines for lunar mining rights."
+     Extracted: [1, 1, 1] claims | Verdict: INSUFFICIENT | Conf: 1.0000 (|conf-0.6|=0.4000)
+     Evidence IDs: ['India', 'mpox-PHEIC-2024', 'vaccine-microchip-disinfo']
+
+--------------------------------------------------------------------------------
+DEMO SAFETY SUMMARY (Deployed Model: bilstm_attn.pt)
+--------------------------------------------------------------------------------
+Total candidate claims tested: 30
+Total DEMO-SAFE claims: 26
+  - Safe SUPPORTED claims:    14
+  - Safe REFUTED claims:      3
+  - Safe INSUFFICIENT claims: 5
+
+Found 3 demo-safe REFUTED claims.
+
+--------------------------------------------------------------------------------
+PART B: CONFLICTING VERDICT ATTEMPTS (User-Supplied Evidence)
+Note: Labelled 'demo-only user-supplied evidence'. Corpus was NOT modified.
+--------------------------------------------------------------------------------
+
+Attempt 1 [demo-only user-supplied evidence]:
+  Claim: "Ankara is the capital of Turkey."
+  Supplied Passages:
+    - [user-sup-1]: The capital city of Turkey is Ankara.
+    - [user-ref-1]: The capital city of Turkey is Istanbul, according to historical maritime records.
+  Resulting Verdict: CONFLICTING (Confidence: 0.9967)
+  Evidence Item Stances:
+    - id=user-sup-1#1 ret_score=0.6664 probs={'SUPPORTED': 0.996654748916626, 'REFUTED': 0.0032107075676321983, 'NOT_ENOUGH_INFO': 0.00013450213009491563}
+    - id=user-ref-1#1 ret_score=0.2016 probs={'SUPPORTED': 0.10711975395679474, 'REFUTED': 0.8691732287406921, 'NOT_ENOUGH_INFO': 0.023706959560513496}
+
+Attempt 2 [demo-only user-supplied evidence]:
+  Claim: "Acme Corporation was founded in 1948."
+  Supplied Passages:
+    - [user-sup-2]: Acme Corporation was established in 1948 by three partners.
+    - [user-ref-2]: Official corporate archives verify that Acme Corporation was founded in 1975, not in 1948.
+  Resulting Verdict: SUPPORTED (Confidence: 0.9961)
+  Evidence Item Stances:
+    - id=user-ref-2#1 ret_score=0.5176 probs={'SUPPORTED': 0.9960538148880005, 'REFUTED': 0.0010196247603744268, 'NOT_ENOUGH_INFO': 0.0029265847988426685}
+    - id=user-sup-2#1 ret_score=0.3808 probs={'SUPPORTED': 0.7009932398796082, 'REFUTED': 0.2989636957645416, 'NOT_ENOUGH_INFO': 4.30297659477219e-05}
+
+Attempt 3 [demo-only user-supplied evidence]:
+  Claim: "The Federal Reserve raised interest rates."
+  Supplied Passages:
+    - [user-sup-3]: The Federal Reserve raised benchmark interest rates to a multi-decade high.
+    - [user-ref-3]: The Federal Reserve lowered benchmark interest rates by fifty basis points.
+  Resulting Verdict: REFUTED (Confidence: 0.9999)
+  Evidence Item Stances:
+    - id=user-sup-3#1 ret_score=0.5782 probs={'SUPPORTED': 0.0006369907059706748, 'REFUTED': 0.9989187717437744, 'NOT_ENOUGH_INFO': 0.00044432576396502554}
+    - id=user-ref-3#1 ret_score=0.3186 probs={'SUPPORTED': 5.7505607401253656e-05, 'REFUTED': 0.999893069267273, 'NOT_ENOUGH_INFO': 4.946223634760827e-05}
+
+CONFLICTING verdict achieved on 1 of 3 attempts.

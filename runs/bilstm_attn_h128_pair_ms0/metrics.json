@@ -1,0 +1,41 @@
+{
+  "name": "bilstm_attn_h128_pair_ms0",
+  "arch": "bilstm_attn",
+  "seed": 0,
+  "n_params": 593043,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 12,
+  "train_seconds": 237.32354689994827,
+  "best_dev_macro_f1": 0.993437820261736,
+  "loss": 0.031190240220932235,
+  "accuracy": 0.9911111111111112,
+  "macro_f1": 0.991343384119799,
+  "precision": 0.9914021164021164,
+  "recall": 0.9914802981895634,
+  "confusion_matrix": [
+    [
+      308,
+      0,
+      0
+    ],
+    [
+      0,
+      279,
+      0
+    ],
+    [
+      7,
+      1,
+      305
+    ]
+  ],
+  "latency_ms": 4.062030221749511,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

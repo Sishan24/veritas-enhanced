@@ -1,0 +1,63 @@
+{"claim": "A bird flu case was detected in a dairy farm worker in the United States in 2024.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["H5N1-US-2024"], "source": "generator-true"}
+{"claim": "Meta released an open-source large language model called Llama.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Meta-Llama"], "source": "generator-true"}
+{"claim": "Real Madrid won the UEFA Champions League for a record 15th time.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Champions-League-2024"], "source": "generator-true"}
+{"claim": "Ankara is the capital of Turkey.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Turkey"], "source": "generator-true"}
+{"claim": "The US government imposed restrictions on exporting advanced AI chips to China.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["US-China-chip-export"], "source": "generator-true"}
+{"claim": "Sirius Corporation was founded in 2004.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Sirius"], "source": "generator-true"}
+{"claim": "Polaris Corporation was founded in 1952.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Polaris"], "source": "generator-true"}
+{"claim": "Israeli forces launched a ground operation in Rafah in May 2024.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Israel-Rafah"], "source": "generator-true"}
+{"claim": "Bangkok is the capital of Thailand.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Thailand"], "source": "generator-true"}
+{"claim": "No credible evidence supports claims that 5G towers spread COVID-19.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["5G-COVID-disinfo"], "source": "generator-true", "tags": ["negated_form"]}
+{"claim": "A new weight-loss drug semaglutide received approval in multiple countries.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["semaglutide-approval"], "source": "generator-true"}
+{"claim": "Paris is the capital of France.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["France"], "source": "generator-true"}
+{"claim": "The European Union's AI Act was formally adopted in 2024.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["EU-AI-Act"], "source": "generator-true"}
+{"claim": "The WHO confirmed that ivermectin is not an approved treatment for COVID-19.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["ivermectin-COVID"], "source": "generator-true", "tags": ["negated_form"]}
+{"claim": "India overtook Japan to become the world's fourth-largest economy.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["India-economy-rank"], "source": "generator-true"}
+{"claim": "No evidence links wind farms to cancer according to medical research.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["wind-farm-cancer-disinfo"], "source": "generator-true", "tags": ["negated_form"]}
+{"claim": "WHO did not secretly alter COVID-19 death statistics to inflate pandemic numbers.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["WHO-stats-disinfo"], "source": "generator-true", "tags": ["negated_form"]}
+{"claim": "Atlas Corporation was founded in 1951.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Atlas"], "source": "generator-true"}
+{"claim": "Joe Biden withdrew from the 2024 US presidential race.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Biden-withdrawal"], "source": "generator-true"}
+{"claim": "Pakistan suffered catastrophic floods affecting 33 million people in 2022.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["Pakistan-floods-2022"], "source": "generator-true"}
+{"claim": "2023 was confirmed as the hottest year on record globally.", "verdict": "SUPPORTED", "justifying_evidence_ids": ["hottest-year-2023"], "source": "generator-true"}
+{"claim": "No human cases of bird flu were detected in the United States in 2024.", "verdict": "REFUTED", "justifying_evidence_ids": ["H5N1-US-2024"], "source": "generator-false-variant"}
+{"claim": "Meta kept its Llama model proprietary, licensing it exclusively to enterprise customers.", "verdict": "REFUTED", "justifying_evidence_ids": ["Meta-Llama"], "source": "generator-false-variant"}
+{"claim": "Borussia Dortmund defeated Real Madrid to win the Champions League final at Wembley.", "verdict": "REFUTED", "justifying_evidence_ids": ["Champions-League-2024"], "source": "generator-false-variant"}
+{"claim": "Istanbul is the capital of Turkey.", "verdict": "REFUTED", "justifying_evidence_ids": ["Turkey"], "source": "generator-false-variant"}
+{"claim": "The US government lifted export restrictions on advanced semiconductor chips to China.", "verdict": "REFUTED", "justifying_evidence_ids": ["US-China-chip-export"], "source": "generator-false-variant"}
+{"claim": "Sirius Corporation was founded in 2016.", "verdict": "REFUTED", "justifying_evidence_ids": ["Sirius"], "source": "generator-false-variant"}
+{"claim": "Polaris Corporation was founded in 1955.", "verdict": "REFUTED", "justifying_evidence_ids": ["Polaris"], "source": "generator-false-variant"}
+{"claim": "Israeli forces withdrew from Rafah in southern Gaza in May 2024 without conducting ground operations.", "verdict": "REFUTED", "justifying_evidence_ids": ["Israel-Rafah"], "source": "generator-false-variant"}
+{"claim": "Chiang Mai is the capital of Thailand.", "verdict": "REFUTED", "justifying_evidence_ids": ["Thailand"], "source": "generator-false-variant"}
+{"claim": "Health authorities confirmed that 5G telecommunications infrastructure spreads COVID-19.", "verdict": "REFUTED", "justifying_evidence_ids": ["5G-COVID-disinfo"], "source": "generator-false-variant"}
+{"claim": "Semaglutide failed to receive regulatory approval as an obesity treatment in the United States and Europe.", "verdict": "REFUTED", "justifying_evidence_ids": ["semaglutide-approval"], "source": "generator-false-variant"}
+{"claim": "Marseille is the capital of France.", "verdict": "REFUTED", "justifying_evidence_ids": ["France"], "source": "generator-false-variant"}
+{"claim": "The European Parliament rejected the proposed AI Act in 2024, leaving AI unregulated in the EU.", "verdict": "REFUTED", "justifying_evidence_ids": ["EU-AI-Act"], "source": "generator-false-variant"}
+{"claim": "The WHO approved ivermectin as a recommended standard treatment for COVID-19.", "verdict": "REFUTED", "justifying_evidence_ids": ["ivermectin-COVID"], "source": "generator-false-variant"}
+{"claim": "Japan maintained its position ahead of India as the world's fourth-largest economy.", "verdict": "REFUTED", "justifying_evidence_ids": ["India-economy-rank"], "source": "generator-false-variant"}
+{"claim": "Medical research systematic reviews confirmed that wind turbine electromagnetic fields cause cancer.", "verdict": "REFUTED", "justifying_evidence_ids": ["wind-farm-cancer-disinfo"], "source": "generator-false-variant"}
+{"claim": "Independent audits revealed that WHO systematically manipulated COVID-19 mortality data to inflate pandemic numbers.", "verdict": "REFUTED", "justifying_evidence_ids": ["WHO-stats-disinfo"], "source": "generator-false-variant"}
+{"claim": "Atlas Corporation was founded in 1963.", "verdict": "REFUTED", "justifying_evidence_ids": ["Atlas"], "source": "generator-false-variant"}
+{"claim": "Joe Biden officially accepted the Democratic nomination to contest the 2024 presidential election.", "verdict": "REFUTED", "justifying_evidence_ids": ["Biden-withdrawal"], "source": "generator-false-variant"}
+{"claim": "Monsoon rains in Pakistan in 2022 caused only minor localized flooding displacing fewer than 5 000 people.", "verdict": "REFUTED", "justifying_evidence_ids": ["Pakistan-floods-2022"], "source": "generator-false-variant"}
+{"claim": "Global temperature data confirmed that 2023 was cooler than historical 20th-century averages.", "verdict": "REFUTED", "justifying_evidence_ids": ["hottest-year-2023"], "source": "generator-false-variant"}
+{"claim": "The infected dairy farm worker in Texas was treated with an experimental monoclonal antibody.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Meta acquired an AI hardware startup based in London to optimize Llama training.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Real Madrid announced plans to play exhibition matches in Australia following the Wembley victory.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Ankara established a municipal light rail network operating across 40 underground stations.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The US semiconductor export rules established a permanent subsidy fund for domestic fab construction.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Sirius Corporation expanded its consumer retail operations into Scandinavian markets.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Polaris Corporation merged with an industrial robotics supplier in Chicago.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The Rafah border crossing was permanently closed to all humanitarian cargo by international observers.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Bangkok completed an electric ferry transit project along the Chao Phraya River.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Telecommunications regulators mandated that 5G base stations install specialized biological monitoring filters.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The patent on semaglutide expired in 2024, enabling generic formulations across Europe.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Paris banned all private passenger vehicles from its city center on weekdays.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The European Parliament established a central enforcement headquarters for the AI Act in Brussels.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The WHO sponsored clinical trials of ivermectin across forty hospitals in South America.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The World Bank forecast that India's manufacturing sector will double its export output by 2026.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Offshore wind farm installations require annual sound emission permits issued by coastal health authorities.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The World Health Organization revised its excess mortality methodology during a summit in Geneva.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Atlas Corporation launched an aerospace supply division based in Munich.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Joe Biden delivered a televised farewell address from Philadelphia following his announcement.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "The Pakistani government received emergency reconstruction loans from the Asian Development Bank following the 2022 floods.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}
+{"claim": "Global meteorological stations recorded record oceanic surface salinity levels during the summer of 2023.", "verdict": "INSUFFICIENT", "justifying_evidence_ids": [], "source": "synthetic-out-of-corpus"}

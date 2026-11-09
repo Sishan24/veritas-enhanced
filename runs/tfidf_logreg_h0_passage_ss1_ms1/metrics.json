@@ -1,0 +1,41 @@
+{
+  "name": "tfidf_logreg_h0_passage_ss1_ms1",
+  "arch": "tfidf_logreg",
+  "seed": 1,
+  "n_params": 0,
+  "optimizer": null,
+  "activation": null,
+  "dropout": null,
+  "weight_decay": null,
+  "epochs_run": 0,
+  "train_seconds": 0.25074389996007085,
+  "best_dev_macro_f1": 0.2984922119188775,
+  "loss": null,
+  "accuracy": 0.43666666666666665,
+  "macro_f1": 0.4001580851222856,
+  "precision": 0.43507899103566977,
+  "recall": 0.4465657118385991,
+  "confusion_matrix": [
+    [
+      89,
+      158,
+      73
+    ],
+    [
+      29,
+      242,
+      13
+    ],
+    [
+      80,
+      154,
+      62
+    ]
+  ],
+  "latency_ms": 0.00028055549288789433,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

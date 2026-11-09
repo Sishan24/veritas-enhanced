@@ -1,0 +1,41 @@
+{
+  "name": "lstm_h128_passage_ss2_ms0",
+  "arch": "lstm",
+  "seed": 0,
+  "n_params": 311711,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 8,
+  "train_seconds": 56.67048820015043,
+  "best_dev_macro_f1": 0.5658549794612832,
+  "loss": 1.164037242465549,
+  "accuracy": 0.6755555555555556,
+  "macro_f1": 0.6513649994986647,
+  "precision": 0.7981811448674673,
+  "recall": 0.6778989253004059,
+  "confusion_matrix": [
+    [
+      272,
+      0,
+      16
+    ],
+    [
+      218,
+      83,
+      0
+    ],
+    [
+      54,
+      4,
+      253
+    ]
+  ],
+  "latency_ms": 0.22221299974868694,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

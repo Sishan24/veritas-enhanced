@@ -79,6 +79,7 @@ export function ClaimStudio({ run, busy, error, status }) {
   return (
     <section className="page studio">
       <div>
+        <p className="hint">Claims are verified against the loaded evidence corpus. This system does not search the web.</p>
         <label htmlFor="claims">Article or statement</label>
         <textarea id="claims" rows={10} value={text} onChange={(e) => setText(e.target.value)} />
       </div>

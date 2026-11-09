@@ -1,0 +1,41 @@
+{
+  "name": "mlp_h128_passage_ss0_ms1",
+  "arch": "mlp",
+  "seed": 1,
+  "n_params": 206079,
+  "optimizer": "adam",
+  "activation": "relu",
+  "dropout": 0.3,
+  "weight_decay": 0.0,
+  "epochs_run": 5,
+  "train_seconds": 23.261862699873745,
+  "best_dev_macro_f1": 0.588781241821566,
+  "loss": 0.9720748562282986,
+  "accuracy": 0.5533333333333333,
+  "macro_f1": 0.5439334196602063,
+  "precision": 0.6254854447352266,
+  "recall": 0.548966935247493,
+  "confusion_matrix": [
+    [
+      253,
+      53,
+      0
+    ],
+    [
+      214,
+      78,
+      0
+    ],
+    [
+      76,
+      59,
+      167
+    ]
+  ],
+  "latency_ms": 0.053602444370173745,
+  "labels": [
+    "SUPPORTED",
+    "REFUTED",
+    "NOT_ENOUGH_INFO"
+  ]
+}

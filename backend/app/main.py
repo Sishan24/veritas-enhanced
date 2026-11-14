@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app import config
-from backend.app.schemas import AnalyzeRequest
+from backend.app.schemas import AnalyzeRequest, OcclusionRequest
 from backend.app.services.claims import extract_claims
 from backend.app.services.retriever import Retriever, load_passages, passages_from_docs
 from backend.app.services.verifier import VerifierService, decide
@@ -34,9 +34,19 @@ def analyze(req: AnalyzeRequest):
         hits = retriever.search(claim["text"], k)
         preds = verifier.predict(claim["text"], [h["text"] for h in hits])
         evidence = [{"id": h["id"], "text": h["text"], "retrieval_score": h["score"], **p} for h, p in zip(hits, preds)]
-        verdict, confidence = decide(evidence)
+        verdict, confidence = decide(evidence, weighted=bool(req.weighted))
         results.append({**claim, "verdict": verdict, "confidence": confidence, "evidence": evidence})
     return {"model": verifier.arch, "claims": results}
+
+
+@app.post("/api/occlusion")
+def occlusion(req: OcclusionRequest):
+    if not verifier.ready:
+        raise HTTPException(503, "Model not ready")
+    res = verifier.occlusion_check(req.claim, req.evidence)
+    if res is None:
+        raise HTTPException(400, "Could not perform occlusion check on provided input")
+    return res
 
 
 @app.get("/api/reports")

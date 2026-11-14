@@ -47,7 +47,8 @@ class CNNEncoder(nn.Module):
         h = x.transpose(1, 2)
         T = x.size(1)
         outs = [self.act(c(h))[:, :, :T] for c in self.convs]
-        h = torch.cat(outs, dim=1).masked_fill(~mask.unsqueeze(1), -1e9)
+        fill = torch.finfo(x.dtype).min
+        h = torch.cat(outs, dim=1).masked_fill(~mask.unsqueeze(1), fill)
         return h.max(dim=2).values, None
 
 
@@ -96,7 +97,8 @@ class Verifier(nn.Module):
         attn = None
         if self.use_attn:
             scores = torch.bmm(self.attn_proj(states), c.unsqueeze(-1)).squeeze(-1)
-            attn = torch.softmax(scores.masked_fill(~ev_mask, -1e9), dim=-1)
+            fill = torch.finfo(scores.dtype).min
+            attn = torch.softmax(scores.masked_fill(~ev_mask, fill), dim=-1)
             e = torch.bmm(attn.unsqueeze(1), states).squeeze(1)
         elif self.use_maxpool:
             e = masked_max(states, ev_mask)

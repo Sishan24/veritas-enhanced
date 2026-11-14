@@ -8,6 +8,8 @@ from torch.utils.data import Dataset
 LABELS = ["SUPPORTED", "REFUTED", "NOT_ENOUGH_INFO"]
 L2I = {l: i for i, l in enumerate(LABELS)}
 PAD, UNK = 0, 1
+DEFAULT_MAX_CLAIM = 32
+DEFAULT_MAX_EV = 64
 _TOKEN = re.compile(r"[a-z0-9]+(?:'[a-z]+)?")
 
 
@@ -42,7 +44,7 @@ def read_jsonl(path):
 class ClaimEvidenceDataset(Dataset):
     """Rows: {"claim": str, "evidence": str, "label": SUPPORTED|REFUTED|NOT_ENOUGH_INFO}"""
 
-    def __init__(self, path, vocab, max_claim=32, max_ev=64):
+    def __init__(self, path, vocab, max_claim=DEFAULT_MAX_CLAIM, max_ev=DEFAULT_MAX_EV):
         self.rows = read_jsonl(path)
         self.vocab, self.mc, self.me = vocab, max_claim, max_ev
 

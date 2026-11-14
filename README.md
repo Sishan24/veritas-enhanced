@@ -5,7 +5,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg)](https://fastapi.tiangolo.com)
 [![React 18](https://img.shields.io/badge/React-18.3-61DAFB.svg)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF.svg)](https://vitejs.dev)
-[![Tests Passing](https://img.shields.io/badge/Pytest-67%2F67%20Passed-brightgreen.svg)](tests/)
+[![Tests Passing](https://img.shields.io/badge/Pytest-81%2F81%20Passed-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An evidence-aware deep learning framework for **natural-language claim verification**, **stance detection**, and **contextual contradiction analysis**. 
@@ -43,7 +43,7 @@ Input an unstructured document or claim, retrieve relevant context from an index
 
 1. **Claim Extraction Engine**: Segments input articles, computes heuristic claim-worthiness scores, and tags recognized entities.
 2. **Contextual Retrieval**: Sub-millisecond inverted-index TF-IDF search surfacing top-$K$ candidate passages with relevance gating.
-3. **Deep Siamese Stance Classifier**: Multi-architecture support (MLP, CNN, LSTM, BiLSTM, BiLSTM+Attention) with bilinear evidence token attention scoring.
+3. **Deep Siamese Stance Classifier**: Multi-architecture support (MLP, CNN, LSTM, BiLSTM, BiLSTM+Attention, BiLSTM+MaxPool) with bilinear evidence token attention scoring.
 4. **Principled Verdict Synthesizer**: Four mutually exclusive states (`SUPPORTED`, `REFUTED`, `CONFLICTING`, `INSUFFICIENT`) enforcing the scientific axiom that absence of evidence is **never** counted as refutation.
 5. **Word-Level Explainability**: Inspectable token highlight weights allowing analysts to see exactly which tokens drove the stance decision.
 6. **Full-Stack Interface**: React 18 / Vite interactive dashboard with Claim Studio, Evidence Chamber, Neural Lab, and Research Journal.
@@ -420,6 +420,32 @@ Extracts claims, retrieves candidate evidence, executes stance scoring, and prod
 }
 ```
 
+### `POST /api/occlusion`
+Performs an explainability sensitivity test by removing the top-attended token from the candidate evidence and evaluating the resulting prediction delta and stance stability.
+
+**Request**:
+```json
+{
+  "claim": "Paris is the capital of France.",
+  "evidence": "Paris is the capital and largest city of France."
+}
+```
+
+**Response**:
+```json
+{
+  "top_token": "capital",
+  "top_weight": 0.34,
+  "base_stance": "SUPPORTED",
+  "base_prob": 0.9937,
+  "occluded_stance": "SUPPORTED",
+  "occluded_prob": 0.9612,
+  "delta": 0.0325,
+  "flipped": false,
+  "occluded_text": "Paris is the and largest city of France."
+}
+```
+
 ### `GET /api/reports`
 Returns all benchmark results, parameter counts, and training histories for visualization in Neural Lab.
 
@@ -429,19 +455,21 @@ Returns all benchmark results, parameter counts, and training histories for visu
 
 ```
 veritas-enhanced/
+├── .github/workflows/ci.yml  # GitHub Actions automated CI matrix
+├── LICENSE                   # MIT License
 ├── backend/                  # FastAPI Application
 │   └── app/
-│       ├── main.py           # REST endpoints (/api/health, /api/analyze, /api/reports)
+│       ├── main.py           # REST endpoints (/api/health, /api/analyze, /api/occlusion, /api/reports)
 │       ├── config.py         # Service settings, defaults & thresholds
 │       ├── schemas.py        # Pydantic request/response schemas
 │       └── services/
 │           ├── claims.py     # Sentence segmentation & claim extraction
 │           ├── retriever.py  # TF-IDF inverted index & cosine retrieval
-│           └── verifier.py   # Checkpoint inference & decide() aggregation
+│           └── verifier.py   # Checkpoint inference, decide() aggregation, occlusion check
 ├── ml/                       # Machine Learning & Experiments
-│   ├── models.py             # PyTorch Siamese architectures (MLP, CNN, LSTM, BiLSTM, Attn)
+│   ├── models.py             # PyTorch Siamese architectures (MLP, CNN, LSTM, BiLSTM, Attn, MaxPool)
 │   ├── train.py              # Training loop, early stopping, best dev-F1 restoration
-│   ├── data.py               # Dataset loader, tokenization, vocabulary building
+│   ├── data.py               # Dataset loader, tokenization, centralized length limits
 │   ├── sweep_thresholds.py   # 2D grid sweeps over MIN_RETRIEVAL & STANCE_THRESHOLD
 │   ├── build_claim_splits.py # Passage-level zero-leakage partition builder
 │   └── checkpoints/          # Trained model weights (.pt files)
@@ -459,6 +487,7 @@ veritas-enhanced/
 │   ├── ARCHITECTURE.md       # High-level architecture and syllabus mapping
 │   ├── day3_findings.md      # Formal findings, paired bootstrap, pre-registration
 │   ├── day3_end_report.md    # Complete milestone summary
+│   ├── day4_worklog.md       # Day 4 enhancements & regression verification
 │   └── demo_claims.md        # Vetted claims catalog & morning check protocol
 ├── results/                  # Generated plots, response surfaces, CSV tables
 │   ├── threshold_sweep_passage_ckpt_extended.png
@@ -467,7 +496,7 @@ veritas-enhanced/
 ├── scripts/                  # Diagnostic & Verification Utilities
 │   ├── demo_check.py         # Automated API demo verification
 │   └── refuted_diagnostic.py # Lexical overlap & failure mode analyzer
-├── tests/                    # Pytest Suite (67 tests, 100% passing)
+├── tests/                    # Pytest Suite (81 tests, 100% passing)
 │   ├── test_aggregate.py     # Decision logic tests
 │   ├── test_baselines.py     # Majority & TF-IDF baseline tests
 │   ├── test_pipeline.py      # End-to-end integration tests

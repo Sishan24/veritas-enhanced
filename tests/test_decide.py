@@ -55,3 +55,31 @@ def test_decide_overriding_changes_outcome():
     item_mod_sup = [_make_item(sup=0.65, score=0.10)]
     assert decide(item_mod_sup)[0] == "SUPPORTED"
     assert decide(item_mod_sup, stance_threshold=0.70)[0] == "INSUFFICIENT"
+
+
+def test_decide_retrieval_weighted_avoids_spurious_conflicting():
+    # Strong support with high retrieval (0.85) vs marginal refute with low retrieval (0.06)
+    items = [
+        _make_item(sup=0.95, score=0.85),
+        _make_item(ref=0.65, score=0.06),
+    ]
+    # Unweighted treats both as equal votes -> CONFLICTING
+    assert decide(items, weighted=False)[0] == "CONFLICTING"
+
+    # Weighted recognizes support has overwhelming retrieval mass (>80%) -> SUPPORTED
+    verdict, conf = decide(items, weighted=True)
+    assert verdict == "SUPPORTED"
+    assert abs(conf - 0.95) < 1e-4
+
+
+def test_decide_retrieval_weighted_balanced_conflict():
+    # Both support and refute have substantial retrieval weight
+    items = [
+        _make_item(sup=0.90, score=0.60),
+        _make_item(ref=0.80, score=0.40),
+    ]
+    verdict, conf = decide(items, weighted=True)
+    assert verdict == "CONFLICTING"
+    # Weighted average confidence: (0.90*0.60 + 0.80*0.40) / 1.0 = 0.86
+    assert abs(conf - 0.86) < 1e-4
+
